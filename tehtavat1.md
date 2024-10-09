@@ -5,10 +5,7 @@ inheader: no
 permalink: /tehtavat1
 ---
 
-
-
-Tämän viikon tehtävissä harjoitellaan ensin muutaman tärkeän ohjelmistokehityksen työkalun (_komentorivi, versionhallinta, riippuvuuksien hallinta, automatisoitu testaus, jatkuva integraatio_) käyttöä. 
-
+Tämän viikon tehtävissä harjoitellaan ensin muutaman tärkeän ohjelmistokehityksen työkalun (_komentorivi, versionhallinta, riippuvuuksien hallinta, automatisoitu testaus, jatkuva integraatio_) käyttöä.
 
 ### Typoja tai epäselvyyksiä tehtävissä?
 
@@ -126,7 +123,7 @@ Olet jo todennäköisesti käyttänyt Gitiä aiemmilla kursseilla. Tässä teht�
 - `git checkout -- file`
 - `git reset HEAD`
 
-- Jos et vielä hallitse komentoja, kertaan kurssin 
+- Jos et vielä hallitse komentoja, kertaan kurssin
   [Ohjelmointi 2 Git -materiaali](https://tim.jyu.fi/view/kurssit/tie/ohj2/tyokalut/git/ohj2git).
 
 Lisää Git-ohjeita löytyy runsaasti internetistä, esim:
@@ -245,7 +242,9 @@ Ohjelmoinnin peruskursseilla olet suorittanyt koodia Timissä tai paikallisisest
 
 Koodin suorittaminen komentoriviltä `python3`-komennolla ei itsessään ole kovin hankalaa. Ongelmia alkaa syntyä vasta, kun projekti tarvitsee ulkoisia _riippuvuuksia_ erilaisten asennettavien kirjastojen muodossa. Kirjastojen asennukseen ja hallintaan tarvitaan erilisiä työkaluja. Pythonin kohdalla suosituin komentorivityökaluja tähän tarkoitukseen on [pip](https://pypi.org/project/pip/).
 
-Jotta samalla tietokoneella olevien projektien riippuvuuksissa ei syntyisi ristiriitoja, on käytössä usein niin kutsuttuja projektikohtaisia _virtuaaliympäristöjä_. Näitä virtuaaliympäristöjä luodaan ja käytetään [venv](https://docs.python.org/3/library/venv.html)-moduulin kautta. Jotta saisimme helposti käyttöömme pipin ja virtuaaliympäristön tuomat edut, voimme käyttää [Poetry](https://python-poetry.org/)-komentorivityökalua. Poetryn dokumentaation antama kuvaus on seuraava:
+Jotta samalla tietokoneella olevien projektien riippuvuuksissa ei syntyisi ristiriitoja, on käytössä usein niin kutsuttuja projektikohtaisia _virtuaaliympäristöjä_. Näitä virtuaaliympäristöjä luodaan ja käytetään [venv](https://docs.python.org/3/library/venv.html)-moduulin kautta.
+
+Jotta saisimme helposti käyttöömme pipin ja virtuaaliympäristön tuomat edut, voimme käyttää [Poetry](https://python-poetry.org/)-komentorivityökalua. Poetryn dokumentaation antama kuvaus on seuraava:
 
 > Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
 
@@ -260,7 +259,7 @@ Jotta samalla tietokoneella olevien projektien riippuvuuksissa ei syntyisi risti
 - Tarkastele juurihakemistossa olevan _poetry.lock_-tiedoston sisältöä
   - Tiedoston sisällön ei ole tarkoitus olla ihmisluettava, _eikä sitä pitäisikään missään nimessä muokata_. Tiedosto on täysin Poetryn ylläpitämä. Poetry tallentaa tiedostoon projektiin asennettujen riippuvuuksien versiot, jotta jokaisen asennuksen yhteydessä riippuvuuksista voidaan asentaa juuri oikeat versiot
 
-Ohjelmakoodin editointi kannattaa tehdä järkevällä editorilla, esim. Visual Studio Codella, mutta Poetry-komentojen suorittaminen onnistuu helpoiten komentoriviltä. 
+Ohjelmakoodin editointi kannattaa tehdä järkevällä editorilla, esim. Visual Studio Codella, mutta Poetry-komentojen suorittaminen onnistuu helpoiten komentoriviltä.
 
 {% include no_pip.md %}
 
@@ -391,7 +390,7 @@ jobs:
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: "3.10"
       - name: Install Poetry
         run: pip install poetry
       - name: Install dependencies
@@ -442,7 +441,7 @@ jobs:
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: "3.10"
       - name: Install Poetry
         run: pip install poetry
       - name: Install dependencies
@@ -530,7 +529,6 @@ on:
 
 Olemme käyttäneet nimeä _CI_, nimi voi kuitenkin olla mikä vaan, esimerkiksi:
 
-
 ```
 https://github.com/mluukkai/ohtuvarasto/workflows/CI/badge.svg
 ```
@@ -586,12 +584,12 @@ hint: invocation.
 Käytännössä Git haluaa tietää minkälaisella strategialla paikallisen ja etärepositoriosi koodi tulisi yhdistää. Vaihtoehdoista kannattanee valita keskimäinen, eli anna komentorivillä komento
 
 ```
-git config pull.rebase true 
+git config pull.rebase true
 ```
 
 Käytännössä valittu vaihtoehto tarkoittaa sitä, että Git suorittaa uudet lokaalit commitit etärepositoriossa olevien committien perään.
 
-Voit nyt pullata koodin uudelleen komennolla `git pull`. Komento  `git push` onnistuu nyt. Jatkossa vastaavista tilanteista selviää komennoilla `git pull` ja `git push`.
+Voit nyt pullata koodin uudelleen komennolla `git pull`. Komento `git push` onnistuu nyt. Jatkossa vastaavista tilanteista selviää komennoilla `git pull` ja `git push`.
 
 Jos muutit paikallisesti tiedostoa README.md, saatoit aiheuttaa ns. merge-konfliktin jonka selvittämiseen vaaditaan jo hieman vaivaa. Palaamme asiaan tulevilla viikoilla...
 
@@ -621,7 +619,6 @@ Saamme muodostettua Codecovin ymmärtämän testikattavuusraportin käyttämäll
 {% endraw %}
 ```
 
-
 **HUOM** rivit on sisennettävä samalle tasolle kuin muut stepit.
 
 Aiemmin codevoc ei vaatinut julkisten repositorioiden osalta upload tokenin käyttöä, mutta nykyisin tällainen tarvitaan. Käytännössä Codecovin upload token on avain, jonka avulla palvelu tunnistaa sinut. Tällaisten avainten käytölle on tyypillistä, että niitä ei haluta kaikkien saataville julkiseen repositorioon. Avaimen luominen ja lisääminen Github Actioneiden käyttöön on selitetty [Codecovin dokumentaatiossa](https://docs.codecov.com/docs/adding-the-codecov-token). Laajemmin sailaisuuksien sisällyttämisestä Githubiin on kuvattu
@@ -631,7 +628,7 @@ Kertauksena:
 
 1. Luo avain codecovin ohjeiden mukaan
 1. Siirrä avain Githubin secretiksi (Githubin repossa settings -> secrets and variables / actions -> New repository secret -> nimeksi CODECOV_TOKEN ja arvoksi avain)
-1. Lisää yllä olevat vaiheet GitHub Action -konfiguraatiosio 
+1. Lisää yllä olevat vaiheet GitHub Action -konfiguraatiosio
 
 Kun seuraavan kerran koodi pushataan GitHubiin, ilmestyy Codecoviin koodin testikattavuusraportti:
 
@@ -674,5 +671,3 @@ Pushaa koodi GitHubiin ja varmista, että Codecov generoi raportin siten, että 
 ### Tehtävien palauttaminen
 
 Pushaa kaikki tekemäsi tehtävät (paitsi ne, joissa mainitaan, että tehtävää ei palauteta mihinkään) GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-1)
-
-
