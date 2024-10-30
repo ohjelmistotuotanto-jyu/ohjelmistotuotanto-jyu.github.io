@@ -18,9 +18,9 @@ Tämän viikon tehtävissä harjoitellaan ensin muutaman tärkeän ohjelmistokeh
 
 ### Tehtävien palauttaminen
 
-Tehtävät palautetaan GitHubiin, sekä merkitsemällä tehdyt tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/tjta330/ohjelmistotuotanto-k2024/tehtavat/konfigurointitehtavat-osa-1). Viikon tehtävät palautetaan yhdellä kertaa, eli tee merkintä palautussovellukseen vasta kun olet valmis viikon tehtävien osalta.
+Tehtävät palautetaan GitHubiin, sekä merkitsemällä tehdyt tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-1). Viikon tehtävät palautetaan yhdellä kertaa, eli tee merkintä palautussovellukseen vasta kun olet valmis viikon tehtävien osalta.
 
-Käytännössä tällä viikolla tehdään palautusta varten yksi gitHub repositoria nimeltään ohtuvarasto.Jos et vielä tiedä mikä on GitHub ja repositorio, niin pian opit.
+Käytännössä tällä viikolla tehdään palautusta varten yksi gitHub repositoria nimeltään ohtuvarasto. Jos et vielä tiedä mikä on GitHub ja repositorio, niin pian opit.
 
 Tehtävää 1 ei varsinaisesti palauteta minnekään, eikä sitä arvostella.
 
