@@ -43,7 +43,7 @@ Laskuharjoitusten oletettu kuormittavuus on noin 8 tuntia ensimmäisen kolmen vi
 
 ### Miniprojekti
 
-Kurssin loppupuolella, viikoilla 4-7 järjestetään _miniprojekti_, eli ryhmässä tehtävä pieni harjoitustyö, jonka pääasiallisena tarkoituksena on projektinhallinnan sekä eräiden laadunhallintatekniikoiden harjoittelu.
+Kurssin loppupuolella järjestetään _miniprojekti_, eli ryhmässä tehtävä pieni harjoitustyö, jonka pääasiallisena tarkoituksena on projektinhallinnan sekä eräiden laadunhallintatekniikoiden harjoittelu.
 
 Kukin miniprojektiryhmä koostuu 4-6 opiskelijasta, ryhmillä on myös asiakas, jota ryhmä tapaa viikoittain. Ensimmäisellä viikolla asiakastapaamiseen tulee varata 60 minuuttia, jälkimmäisillä 30 minuuttia.
 
@@ -58,9 +58,7 @@ Miniprojektit tapaavat asiakasta kampuksella. Tarvittaessa tehdään yksi tai ka
 
 #### Miniprojektin hyväksilukeminen
 
-Miniprojektiin osallistuminen ei ole välttämätöntä, jos sinulla on vähintään _kolmen kuukauden työkokemus_ ohjelmistokehitystiimissä toimimisesta.
-
-Jos hyväksiluet miniprojektin työkokemuksella, kerro asiasta emailitse (petri.j.ihantola@jyu.fi) siinä vaiheessa kun olet tehnyt ensimmäiset tehtävät (viikolla 2).
+Miniprojektiin osallistuminen ei ole välttämätöntä, jos sinulla on vähintään _kolmen kuukauden työkokemus_ ohjelmistokehitystiimissä toimimisesta. Jos hyväksiluet miniprojektin työkokemuksella, kerro asiasta emailitse (petri.j.ihantola@jyu.fi) siinä vaiheessa kun olet tehnyt ensimmäiset tehtävät (viikolla 2). Hyväksiluetuista projekteista järjestetään yhdelle (ajankohta sovitaan yhdessä opiskelijoiden kanssa) luentokerralle paneelikeskustelu, jossa työkokemusta saaneet opiskelijat pääsevät jakamaan kokemuksiaan. Kurssin opettaja juontaa paneelikeskustelun.
 
 ### Kurssin arvostelu
 
