@@ -65,15 +65,15 @@ Miniprojektiin osallistuminen ei ole välttämätöntä, jos sinulla on vähint
 Kurssilta on jaossa yhteensä 40 pistettä, jotka jakautuvat eri komponenttien kesken seuraavasti (alustava)
 
 - laskarit, 10 pistettä (laskaripisteet skaalataan välille 0-10)
-- miniprojekti 11 pistettä
+  - teoriatehtävät 4p
+  - konfigurointitehtävät 6p
+- miniprojekti 10 pistettä
 - koe 18 pistettä
-- osallistuminen paikan päällä vierailuluennoille 3 pistettä
+- osallistuminen paikan päällä vierailuluennoille 2 pistettä
 
 Tarkat arvosanarajat päätetään myöhemmin, mutta arvosanaan 1 riittää 20 pistettä.
 
-Läpipääsy edellyttää lisäksi miniprojektin hyväksyttyä suoritusta (tai hyväksilukua) ja vähintään puolia kokeen pisteistä. 
-
-
+Läpipääsy edellyttää lisäksi miniprojektin hyväksyttyä suoritusta (tai hyväksilukua) ja kokeen hyväksyttyä suorittamista. 
 
 ### Luennot - laskuharjoitukset - miniprojekti
 
