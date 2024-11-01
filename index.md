@@ -5,14 +5,24 @@ permalink: /
 
 Kurssilla käsitellään ohjelmistotuotantoprojektien hallinnan, työvaiheiden ja työvälineiden perusteita painottaen ketteriä ohjelmistotuotantomenetelmiä. 
 
+Kurssin opetusjärjestelyt ja arvosteluperusteet on kuvattu [osassa 0](/osa0), lue ne tarkasti heti kurssin alussa!
+
+## Neuvonta
+
 Kurssilla on oma Discord kanava, jossa voit keskustella esimerkiksi tehtävistä: <https://discord.gg/J5gMVcsp>
 
-Kurssin opetusjärjestelyt ja arvosteluperusteet on kuvattu [osassa 0](/osa0), lue ne tarkasti heti kurssin alussa!
+Tehtävävien tekemistä tukevat harjoitusryhmät järjestetään yhdessä kurssin [ohjelmistoteustaus](https://opencs.it.jyu.fi/software-testing/) kanssa: 
+
+- Maanantaisin klo 10.15-11.45, AgC331.3
+- Torstaisin klo 10.15-11.45, AgC331.3
+
+Ryhmiin osallistuminen on vapaaehtoista ja niihin voi tulla tekemään tehtäviä ja kysymään apua opettajilta. Lisäapua saa esim. [Koodaamon](https://tim.jyu.fi/view/tiedekunnat/it/koodaamo/ilmoittautuminen#koodaamo-ilmoittautuminen) neuvontapäivystyksen kautta.
+
 
 ## Alustava aikataulu
 
 ### Viikko 1:
-- Ti 29.10.2024 10.15–12.00 Ag B122.1 Alfa – Luento
+- Ti 29.10.2024 10.15–12.00 Ag B122.1 Alfa – Luento 
 - Ke 30.10.2024 10.15–12.00 Ag B122.1 Alfa – Luento
 - Su 3.11.2024 Teoriatehtävät 1 (palautus)
 
@@ -54,8 +64,8 @@ Kurssin opetusjärjestelyt ja arvosteluperusteet on kuvattu [osassa 0](/osa0), l
 - Ke 11.12.2024 10.15–12.00 Ag B122.1 Alfa – Luento (varalla)
 
 ### Viikko 8
-17.12.2024 10.15–12.00 Ag B122.1 Alfa – Agora (Miniprojektien demot)
-18.12.2024 10.15–12.00 Ag B122.1 Alfa – Agora (Tentti)
+- 17.12.2024 10.15–12.00 Ag B122.1 Alfa – Agora (Miniprojektien demot)
+- 18.12.2024 10.15–12.00 Ag B122.1 Alfa – Agora (Tentti)
 
 
 

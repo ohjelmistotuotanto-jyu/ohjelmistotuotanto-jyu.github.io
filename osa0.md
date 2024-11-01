@@ -40,6 +40,17 @@ Toinen osa tehtävistä käsittelee ohjelmistotuotantoon liittyviä teknisempiä
 
 Laskuharjoitusten oletettu kuormittavuus on noin 8 tuntia ensimmäisen kolmen viikon aikana ja 4 tuntia jälkimmäisinä viikkoina. Teoriatehtäviin vastaaminen on suhteellisen nopeaa, mutta järkevästi vastaaminen edellyttää osallistumista luennoille ja/tai viikon materiaalin lukemista.
 
+### Apua laskuharjoituksiin
+
+Kurssilla on oma Discord kanava, jossa voit keskustella esimerkiksi tehtävistä: <https://discord.gg/J5gMVcsp>
+
+Tehtävävien tekemistä tukevat harjoitusryhmät järjestetään yhdessä kurssin [ohjelmistoteustaus](https://opencs.it.jyu.fi/software-testing/) kanssa: 
+
+- Maanantaisin klo 10.15-11.45, AgC331.3
+- Torstaisin klo 10.15-11.45, AgC331.3
+
+Ryhmiin osallistuminen on vapaaehtoista ja niihin voi tulla tekemään tehtäviä ja kysymään apua opettajilta. Lisäapua saa esim. [Koodaamon](https://tim.jyu.fi/view/tiedekunnat/it/koodaamo/ilmoittautuminen#koodaamo-ilmoittautuminen) neuvontapäivystyksen kautta.
+
 
 ### Miniprojekti
 
