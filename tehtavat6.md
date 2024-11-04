@@ -4,6 +4,7 @@ title: Viikko 6
 inheader: no
 permalink: /tehtavat6/
 ---
+{% include paivitys_kesken.md %}
 
 {% include miniprojekti_ilmo.md %}
 

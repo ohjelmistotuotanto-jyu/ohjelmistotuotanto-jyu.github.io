@@ -5,6 +5,7 @@ inheader: no
 permalink: /tehtavat2/
 ---
 
+{% include paivitys_kesken.md %}
 
 Tehtävissä tutustutaan koodin _staattiseen analyysin_ Pylint-työkalun avulla, _riippuvuuksien injektointiin_ ja jatketaan Gitiin tutustumista.
 

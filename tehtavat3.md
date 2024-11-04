@@ -5,6 +5,9 @@ inheader: no
 permalink: /tehtavat3/
 ---
 
+{% include paivitys_kesken.md %}
+
+
 Tehtävässä tutustutaan hyväksymistestien kirjoittamiseen robot -kirjaston avulla,
 
 ### Typoja tai epäselvyyksiä tehtävissä?
