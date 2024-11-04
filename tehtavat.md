@@ -27,7 +27,7 @@ Ensimmäiset tehtävät julkaistaan keskiviikkona.
 ### Viikko 2
 
 - [teoriatehtävät](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/teoriatehtavat-osa-2) deadline 10.11. 23:59
-- ohjelmointi/versionhallinta/konfigurointitehtävät (avataan maanantaina) deadline 12.11. 23:59
+- [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat2) deadline 12.11. 23:59
 
 <!--
 ### Viikko 3
