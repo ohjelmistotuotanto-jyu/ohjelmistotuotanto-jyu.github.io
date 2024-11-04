@@ -5,7 +5,6 @@ inheader: no
 permalink: /tehtavat2/
 ---
 
-{% include paivitys_kesken.md %}
 
 Tehtävissä tutustutaan koodin _staattiseen analyysin_ Pylint-työkalun avulla, _riippuvuuksien injektointiin_ ja jatketaan Gitiin tutustumista.
 
@@ -82,8 +81,6 @@ osa2
   riippuvuuksien-injektointi-1
   nhl-statistics-1
   poetry-web
-  project-reader
-  nhl-reader
 osa3
   login-robot
 ...
@@ -128,18 +125,58 @@ Tutustu riippuvuuksien injektointiin esimerkin avulla. Asenna projektin riippuvu
 
 ```python
 stats = StatisticsService(
-  PlayerReader("https://studies.cs.helsinki.fi/nhlstats/2022-23/players.txt")
+  PlayerReader("https://raw.githubusercontent.com/ohjelmistotuotanto-jyu/tehtavat/refs/heads/main/osa2/stats/players-23-24.txt")
 )
 ```
 
 **HUOM:** jos törmäät virheeseen `URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed`, mahdollinen ratkaisu ongelmaan löytyy [täältä](https://stackoverflow.com/a/42334357).
 
+Mikäli olio-ohjelmointi Pythonilla ei ole ennestään tuttua (ja vaikka olisikin), niin tehtävä kannattaa tutustumalla lähdekoodiin. Luokkakuvauksia lukiessasi kannattaa huomata, että konstruktori on aina nimeltään __init__. Konstruktori ja muut metodit olettavat, että funktion ensimmäinen argumentti viittaa käsiteltävään olioon. Yleinen käytäntö on antaa tälle muuttujalle nimi self - tämä ei kuitenkaan ole mitään varattu sana, vaan pelkästään konventio (riippumatta metodin ensimmäisen argumentin nimestä, se viittaa käsiteltävän luokan ilmentymään = olioon).
 
-### 6. Poetryn harjoittelua
+### 6. NHL-tilastot-ohjelman yksikkötestaus
+
+**Myös Tämä tehtävä tehdään juuri luomaasi palautusrepositorioon**
+
+
+- Tee yksikkötestit luokalle `StatisticsService`
+  - Muista nimetä testitiedosto, testiluokka ja testimetodit [unittest-ohjeiden](/unittest) mukaisesti. Muuten Pytest ei löydä suoritettavia testejä
+  - Testien haarautumakattavuuden tulee `StatisticsService`-luokan osalta olla 100% (mittaa kattavuus coveragen avulla, katso [tehtävä 8](https://ohjelmistotuotanto-hy.github.io/tehtavat1#8-unittest))
+    - Huomaa, että kattavuusraportti ei generoidu ennen kun sovellukseen on lisätty testejä
+  - Testit eivät saa käyttää verkkoyhteyttä
+  - Verkkoyhteyden tarpeen saat eliminoitua luomalla testiä varten `PlayerReader`-luokkaa muistuttavan "stubin", jonka sisälle kovakoodaat palautettavan pelaajalistan
+
+```python
+import unittest
+from statistics_service import StatisticsService
+from player import Player
+
+class PlayerReaderStub:
+    def get_players(self):
+        return [
+            Player("Semenko", "EDM", 4, 12),
+            Player("Lemieux", "PIT", 45, 54),
+            Player("Kurri",   "EDM", 37, 53),
+            Player("Yzerman", "DET", 42, 56),
+            Player("Gretzky", "EDM", 35, 89)
+        ]
+
+class TestStatisticsService(unittest.TestCase):
+    def setUp(self):
+        # annetaan StatisticsService-luokan oliolle "stub"-luokan olio
+        self.stats = StatisticsService(
+            PlayerReaderStub()
+        )
+
+    # ...
+```
+
+Kun injektoit `PlayerReaderStub`-olion testissä `StatisticsService`-oliolle, palauttaa se aina saman pelaajalistan.
+
+### 7. Poetryn harjoittelua
 
 **Myös Tämä tehtävä tehdään juuri luomaasi palautusrepositorioon, eli EI KÄYTETÄ viime viikon ohtuvarasto-repositoriota.**
 
-- Tee palautusrepositorioon hakemisto _osa2_ ja sen sisälle hakemisto _poetry-web_ tätä tehtävää varten
+- Tee palautusrepositorioon hakemiston _osa2_ sisälle hakemisto _poetry-web_ tätä tehtävää varten
 
 {% include no_pip2.md %}
 
@@ -210,7 +247,7 @@ Workspacen konfigurointi luo tiedoston _poetry-web.code-workspace_ jonka sisält
 
 Konfiguroinnin voi tehdä myös luomalla kyseisen sisältöisen tiedoston suoraan projektin alle. Pythonin oikea versio on kuitenkin ehkä valittava itse. Komennon _poetry install_ tulee myös olla suoritettuna jotta kaikki toimisi.
 
-### 7. Riippuvuuksien hyödyntäminen
+### 8. Riippuvuuksien hyödyntäminen
 
 
 Ohjelmistokehittäjälle tulee usein vastaan tilanne, jossa pitäisi löytää tiettyyn käyttötarkoitukseen sopiva kirjasto. Harjoittelemme kyseistä tilannetta tässä tehtävässä.
@@ -579,7 +616,7 @@ Jotkut editorit, esim [Visual Studio Code](https://code.visualstudio.com) sisäl
 
 ![]({{ "/images/lh2-merge.png" | absolute_url }}){:height="350px" }
 
-### 11. Git: branchit ja GitHub [versionhallinta]
+### 12. Git: branchit ja GitHub [versionhallinta]
 
 **Tämä tehtävä tehdään palautusrepositorioon. Tekeminen on kuitenkin vapaaehtoista, eikä tehtävää arvostella**
 
@@ -682,7 +719,9 @@ Ohjelmistokehitystiimi voi soveltaa Gitin branchaystä hyvin monella eri tyylill
 
 Jos kiinnostaa, lue lisää yllä olevasta dokumentista.
 
-### 12. Git: epäajantasaisen kloonin pushaaminen [versionhallinta]
+### 13. Git: epäajantasaisen kloonin pushaaminen [versionhallinta]
+
+**Tämä tehtävä tehdään palautusrepositorioon. Tekeminen on kuitenkin vapaaehtoista, eikä tehtävää arvostella**
 
 Demonstroidaan vielä (viime viikon [tehtävässä 11](/tehtavat1#11-github-actions-osa-3) mainittu) usein esiintyvä tilanne, missä epäajantasaisen repositorion pushaaminen GitHubissa olevaan etärepositorioon epäonnistuu.
 
@@ -736,6 +775,6 @@ Voit nyt pullata koodin uudelleen komennolla `git pull`. Komento `git push` onni
 
 ### Tehtävien palauttaminen
 
-Pushaa kaikki tekemäsi tehtävät (paitsi ne, joissa mainitaan, että tehtävää ei palauteta mihinkään) GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/tjta330/ohjelmistotuotanto-k2024/tehtavat/konfigurointitehtavat-osa-2)
+Pushaa kaikki tekemäsi tehtävät (paitsi ne, joissa mainitaan, että tehtävää ei palauteta mihinkään) GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-2)
 
 
