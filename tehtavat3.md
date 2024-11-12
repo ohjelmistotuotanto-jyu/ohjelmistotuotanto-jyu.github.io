@@ -14,7 +14,7 @@ Tehtävässä tutustutaan hyväksymistestien kirjoittamiseen robot -kirjaston av
 
 {% include typo_instructions.md %}
 
-### Tehtävi palauttaminen
+### Tehtävien palauttaminen
 
 
 **Kaikki tämän viikon tehtävät palautetaan** jo edellisillä viikoilla käyttämääsi **palautusrepositorioon**, jonne teit hakemiston _osa2_. Tee repositorioon hakemisto _osa3_ ja palauta tehtävän sinne. 
@@ -218,5 +218,5 @@ Kun olet lopettanut debuggaamiseen, syötä `exit()` ja poista koodista `set_tra
 
 ### Tehtävien palauttaminen
 
-Pushaa kaikki tekemäsi tehtävät ja GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/tjta330/ohjelmistotuotanto-k2024/tehtavat/konfigurointitehtavat-osa-3)
+Pushaa kaikki tekemäsi tehtävät ja GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-3)
 

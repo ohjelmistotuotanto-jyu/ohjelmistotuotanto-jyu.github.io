@@ -29,11 +29,13 @@ Ensimmäiset tehtävät julkaistaan keskiviikkona.
 - [teoriatehtävät](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/teoriatehtavat-osa-2) deadline 10.11. 23:59
 - [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat2) deadline 12.11. 23:59
 
-<!--
+
 ### Viikko 3
 
-- [teoriatehtävät](https://tim.jyu.fi/view/kurssit/tie/tjta330/ohjelmistotuotanto-k2024/tehtavat/teoriatehtavat-osa-2) deadline 21.4 23:59
-- [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat2) [deadline 22.4 23:59](https://tim.jyu.fi/view/kurssit/tie/tjta330/ohjelmistotuotanto-k2024/tehtavat/konfigurointitehtavat-osa-2) 
+- [teoriatehtävät](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/teoriatehtavat-osa-2) deadline 17.11 23:59
+- [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat2) [deadline 19.11 23:59](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-2) 
+
+<!--
 
 ### Viikko 4 (palautus vasta vapun jälkeen perjantaina)
 
