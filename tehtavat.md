@@ -32,8 +32,10 @@ Ensimmäiset tehtävät julkaistaan keskiviikkona.
 
 ### Viikko 3
 
+Konfigurointitehtävän yhteydessä oli pitkään väärä linkki ja tehtvän määräaikaa on jatkettu viikolla. Uusi määräaika on 26.11.
+
 - [teoriatehtävät](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/teoriatehtavat-osa-3) deadline 17.11 23:59
-- [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat2) [deadline 19.11 23:59](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-3) 
+- [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat3) [deadline 26.11. 23:59](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-3) 
 
 <!--
 

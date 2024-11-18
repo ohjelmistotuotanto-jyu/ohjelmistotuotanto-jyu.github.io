@@ -18,6 +18,11 @@ Tehtävävien tekemistä tukevat harjoitusryhmät järjestetään yhdessä kurss
 
 Ryhmiin osallistuminen on vapaaehtoista ja niihin voi tulla tekemään tehtäviä ja kysymään apua opettajilta. Lisäapua saa esim. [Koodaamon](https://tim.jyu.fi/view/tiedekunnat/it/koodaamo/ilmoittautuminen#koodaamo-ilmoittautuminen) neuvontapäivystyksen kautta.
 
+## Miniprojekti
+
+- [Ilmoittautuminen](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/ajanvaraus).
+- [tarkemmat ohjeet](/miniprojekti)
+
 
 ## Alustava aikataulu
 

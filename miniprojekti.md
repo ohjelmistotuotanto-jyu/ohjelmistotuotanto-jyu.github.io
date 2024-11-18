@@ -6,7 +6,7 @@ permalink: /miniprojekti/
 
 ### Johdanto
 
-- Kurssin viikoilla 4-7 tehdään miniprojekti
+- Kurssin viikoilla 4-8 tehdään miniprojekti
 - **Kurssin läpipääsy edellyttää hyväksyttyä osallistumista miniprojektiin** tai sen [hyväksilukemista](/osa0#miniprojektin-hyv%C3%A4ksilukeminen)
 
 - Projekti tehdään noin 5 hengen ryhmissä
@@ -18,7 +18,7 @@ permalink: /miniprojekti/
 
 ### Ryhmän muodostaminen
 
-Täytä ryhmien muodostamisessa käytettävä lomaka ennen perjantai 19.4. aamua (klo 9:00). Lomake löytyy [täältä](https://tim.jyu.fi/view/kurssit/tie/tjta330/ohjelmistotuotanto-k2024/ajanvaraus). Ryhmät ja ryhmien tapaamisajat julkaistaan saman päivän luennolla (klo 12-14). Ensimmäiset tapaamiset ovat heti seuraavalla viikolla. Ensimmäinen tapaaminen kestää yhden tunnin (tapaaminen jatkuu puoli tuntia valitsemasi ajan jälkeen) 
+Täytä ryhmien muodostamisessa käytettävä lomaka viimeistään keskiviikkona 20.11. Lomake löytyy [täältä](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/ajanvaraus). Ryhmät ja ryhmien tapaamisajat julkaistaan torstaina (21.11.). Ensimmäiset tapaamiset ovat heti seuraavalla viikolla. Ensimmäinen tapaaminen voi kestää enemmän, kuin puoli tuntia (tapaaminen jatkuu puoli tuntia valitsemasi ajan jälkeen - tai aloitetaan puoli tuntia aikaisemmin) 
 
 - Ensimmäiseen tapaamiseen tullessa on syytä tuntea materiaalin osien 1 ja 2 asioista ainakin seuraavat:
   - Scrum
@@ -28,7 +28,10 @@ Täytä ryhmien muodostamisessa käytettävä lomaka ennen perjantai 19.4. aamua
   - sprint backlog
   - hyväksymäkriteeri
   - definition of done
-- Tämä dokumentti ja miniprojektin [arvosteluperusteet](/miniprojektin_arvosteluperusteet) on myös syytä lukea huolellisesti ennen aloitustilaisuutta
+- Tämä dokumentti ja miniprojektin ensimmäiseen asiakastapaamiseen mennessä julkaistavat arvosteluperusteet kannattaa lukea huolellisesti
+<!--
+ [arvosteluperusteet](/miniprojektin_arvosteluperusteet) on myös syytä lukea huolellisesti ennen aloitustilaisuutta
+-->
 
 ### Hankkeen alustava kuvaus
 
@@ -38,36 +41,32 @@ Täytä ryhmien muodostamisessa käytettävä lomaka ennen perjantai 19.4. aamua
 
 Seuraavien viikkojen asiakastapaaminen (sprintin katselmointi ja uuden sprintin suunnittelu) tapahtuu saman 2h sisällä missä aloitustilaisuus pidetään. Tilaisuuden kesto on 30 minuuttia. 
 
-#### viikko 3 (19.4.)
+#### viikko 4 (18.11. alkava viikko)
 
 - Ryhmä muodostuvat/muodostetaan
-- Projektiaihetta esitellään alustavasti luennon toisella puoliskolla
+- Kaikille ryhmille yhteisenä tehtävänä ennen ensimmäistä tapaamista versionhallinnan pystyttäminen ja alustavan backlogin laatiminen
 
-#### viikko 4 (22-26.4.)
+#### viikko 5
 
-- Ensimmäinen tapaaminen (varaa tähän poikkeuksellisesti 1h)
-- Projektin tarkempi esittely ja vaatimusten alustava kartoitus ja ensimmäisen sprintin suunnittelu
+- Ensimmäinen tapaaminen
+- Vaatimusten tarkempi kartoitus ja ensimmäisen sprintin suunnittelu
 
-#### viikko 5 (29.4.-3.5. - Vappuviikko)
+#### viikko 6
 
 - Sprintin 1 katselmointi ja sprintin 2 suunnittelu
 
-#### viikko 6 (6-10.5.)
+#### viikko 7 
 
-- Sprintin 2 katselmointi ja sprintin 3 suunnittelu
+- Sprintin 2 katselmointi, retrospektiivi ja sprintin 3 suunnittelu
 
-#### viikko 7 (13-17.5.)
+#### viikko 8 
 
-- Sprintin 3 katselmointi ja sprintin 4 suunnittelu
-
-#### viikko 7 (20-24.5. - Kurssin viimeinen viikko)
-
-- Loppudemot perjantainau
+- Loppudemot
 
 
 ### Toteutettava ohjelmisto
 
-Esitellään alustavasti perjantain 19.4. luennolla ja tarkemmin ensimmäisessä asikastapaamisessa.
+Esitellään alustavasti perjantain 19.11. luennolla ja tarkemmin ensimmäisessä asikastapaamisessa.
 
 ### Tekniset ja prosessiin liittyvät vaatimukset
 
