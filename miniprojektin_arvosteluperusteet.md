@@ -5,7 +5,7 @@ inheader: no
 permalink: /miniprojektin_arvosteluperusteet/
 ---
 
-- [Valmistautuminen ensimmäiseen tapaamiseen](/miniprojektin_arvosteluperusteet#valmistautuminen-ennen-ensimmaista-sprinttia)
+- [Valmistautuminen ensimmäiseen tapaamiseen](/miniprojektin_arvosteluperusteet#valmistautuminen)
 - [Ensimmäisen sprintin arvosteluperusteet](/miniprojektin_arvosteluperusteet#ensimmäisen-sprintin-arvosteluperusteet)
 - [Toisen sprintin arvosteluperusteet](/miniprojektin_arvosteluperusteet#toisen-sprintin-arvosteluperusteet)
 - [Kolmannen sprintin arvosteluperusteet](/miniprojektin_arvosteluperusteet#kolmannen-sprintin-arvosteluperusteet)
@@ -34,7 +34,7 @@ Perusteeton osallistumattomuus johonkin sprinttiin johtaa miniprojektisuoritukse
 
 Alla olevat sprinttien arvosteluperusteet ovat suuntaa antavia ja arvotelussa pyritään ottamaan huomioon ennen kaikkea kokonaisuus. 
 
-### Valmistautuminen ennen ensimmäistä sprinttiä
+### Valmistautuminen
 
 Ennen ensimmäistä sprinttiä pyri huolehtimaan seuraavista
 
@@ -201,7 +201,7 @@ Sprintin maksimi on 2.5 pistettä.
 
 ### Lopputoimenpiteet
 
-#### Loppudemo ja sprintin 4 päättyminen
+#### Loppudemo ja sprintin 3 päättyminen
 
 Loppudemot pidetään 17.12. luennolla. Demossa on aikaa max 15 minuuttia per ryhmä. Demon lopussa ryhmä kertoo lyhyesti kokemuksistaan: mikä onnistui hyvin ja mihin jäi parantamisen varaa.
 
