@@ -5,12 +5,15 @@ inheader: no
 permalink: /miniprojektin_arvosteluperusteet/
 ---
 
+- [Valmistautuminen ensimmäiseen tapaamiseen](/miniprojektin_arvosteluperusteet#valmistautuminen-ennen-ensimmaista-sprinttia)
 - [Ensimmäisen sprintin arvosteluperusteet](/miniprojektin_arvosteluperusteet#ensimmäisen-sprintin-arvosteluperusteet)
+- [Toisen sprintin arvosteluperusteet](/miniprojektin_arvosteluperusteet#toisen-sprintin-arvosteluperusteet)
+- [Kolmannen sprintin arvosteluperusteet](/miniprojektin_arvosteluperusteet#kolmannen-sprintin-arvosteluperusteet)
 
-
+<!--
 Miniprojektista saa maksimissaan 11 kurssipistettä seuraavien kriteereiden ja periaatteiden mukaan (kurssin eri osioista saatavat pisteet skaalataan ennen kokonaisarvosanan muodostamista)
-
-- Jokaisesta sprintistä on jaossa **ryhmälle** 2.5 kurssipistettä, eli maksimissaan neljästä sprintistä ryhmä voi saada 10 pistettä
+-->
+- Jokaisesta sprintistä on jaossa **ryhmälle** 2.5 kurssipistettä
   - Ensisijainen arvostelukriteeri on prosessin seuraaminen, tasainen eteneminen ja ohjelmaan toteutettujen ominaisuuksien laatu
   - Toteutettujen ominaisuuksien määrän merkitys arvostelussa on aika pieni mutta ei toki nolla, eli jotain koodiakin tulee tehdä
   - Tarkemmat sprinttikohtaiset arvosteluperusteet alla
@@ -29,9 +32,25 @@ Miniprojektista saa maksimissaan 11 kurssipistettä seuraavien kriteereiden ja p
 
 Perusteeton osallistumattomuus johonkin sprinttiin johtaa miniprojektisuorituksen hylkäämiseen.
 
+Alla olevat sprinttien arvosteluperusteet ovat suuntaa antavia ja arvotelussa pyritään ottamaan huomioon ennen kaikkea kokonaisuus. 
+
+### Valmistautuminen ennen ensimmäistä sprinttiä
+
+Ennen ensimmäistä sprinttiä pyri huolehtimaan seuraavista
+
+- Ryhmällä on yhteinen repositorio, jonne kaikilla on pääsy. Repositoriossa on vähintään README tiedosto, jonne sprinteissä tarvittavat tiedot voidaan myöshemmin litäsä (esim. ajankäytön seuranta).
+- Ryhmällä on yhteinen viestintäkanava ja ryhmä on sopinnut työtavoistaan.
+- Ryhmällä on alustava backlog
+  - Backlogit voi toteuttaa esim. Google Docs -spreadsheetinä, mallia voi ottaa seuraavista:
+    - erään ohtuprojektin [backlogit](https://docs.google.com/spreadsheets/d/13RzIZI2NFFuV0zdRjrrfoC-CrootK8AZNuHS571Wlxo/edit#gid=1)
+    - <http://www.mountaingoatsoftware.com/scrum/sprint-backlog> (tämä on sikäli huono, että siitä eivät ilmene taskin tekijät)
+  - Backlogit voi tehdä Google Docsin sijaan myös johonkin backlogien ylläpitämiseen tarkoitettuun työkaluun
+    - kannattaa varmistaa, että työkalu kuitenkin tukee edellä lueteltuja vaatimuksia
+
+
 ### Ensimmäisen sprintin arvosteluperusteet
 
-Projekti tulee olla rekisteröity Timiin. **Tämän lisätään linkki rekisteröintisivulle** Jokaisen ryhmäläisen on oltava rekisteröitynyt projektiin viimeistään ensimmäisen sprintin lopuksi pidettävässä asiakastapaamisessa.
+Jokaisen ryhmäläisen on oltava rekisteröitynyt projektiin viimeistään ensimmäisen sprintin lopuksi pidettävässä asiakastapaamisessa.
 
 Linkit projektin backlogeihin ja muihin dokumentteihin, ja GitHub Actionsiin (tai muuhun käytössä olevaan CI-palveluun) tulee laittaa projektin GitHub-repositorion README:hen!
 
@@ -123,17 +142,23 @@ Pisteitä kertyy seuraavista asioista:
 - (0.125p) GitHubin README:stä linkki testikattavuusraporttiin
 - (0.25p) [Retrospektiivi](/miniprojektin_arvosteluperusteet/#retrospektiivi) on pidetty sprintin 2 lopussa ja siitä on tehty asialliset muistiinpanot
 - (0.25p) suurin osa sprintin user storyistä toteutettu definition of donen mukaisella tasolla
-- (0.125p) toimivasta, demossa näytettävästä versiosta on luotu GitHubiin [release](https://help.github.com/articles/creating-releases/).
-- (0.125p) Ohjelmalle on valittu sopiva lisenssi, ja määritely se repositorioon
+- (0.125p) toimivasta, demossa näytettävästä versiosta on luotu GitHubiin [release](https://help.github.com/articles/creating-releases/) ja ohjelmalle on valittu sopiva lisenssi, ja määritely se repositorioon
   - Lue [täältä](/lisenssit/) enemmän ohjelmistolisensseistä
-- (0.125p) sprintin katselmointiin on valmistauduttu asiallisesti
-  - Katselmoinnin pitää eri henkilö, kuin edellisessä katselmoinnissa
-  - Katselmoinnin pitäjä on sovittu ja tarvittavat esivalmistelut on tehty etukäteen
-  - Katselmoinnin aikana asiakkaalle näytetään, että jokainen sprinttiin valittu user story on toteutettu hyväksymiskriteerien mukaisesti
-  - Katselmoinnissa sovellus näytetään videotykillä. Koneen kytkemistä videotykkiin **tulee harjoitella** etukäteen, esim. näyttö tulee olla valmiiksi konfiguroida oikein (display mirroring) tai konfiguraatio tulee osata tehdä maksimissaan viidessä sekunnissa
+- (0.25p) loppudemoon on valmistauduttu asiallisesti (valmistautuminen arvioidaan sen perusteella miten demo menee)
+  - Kone osataan kytkeä videotykkiin nopeasti (5 sekunnissa) siten, että näyttö on konfiguroitu oikein
+  - Sovittu etukäteen kuka tekee mitäkin
+  - Mietitty mitä esitetään
+    - Kannattaa esitellä tärkein toiminnallisuus, aikaa demossa on vähän joten ei kannata rönsyillä
+  - Testidata on järkevää
+    - tietokanta ei saa olla etukäteen tyhjä
+    - tietokannassa oleva data ja demottaessa käytettävät syötteet järkeviä, eli _ei_ esimerkiksi _12345_, _asdf_, _nimi1_, _nimi2_
+  - **Lue viimeinen bullet uudelleen** jostain syystä se jää 25% huomaamatta...
+
+
 
 Sprintin maksimi on 2.5 pistettä.
 
+<!--
 ### Neljännen sprintin arvosteluperusteet
 
 Pisteitä kertyy seuraavista asioista:
@@ -172,26 +197,26 @@ Pisteitä kertyy seuraavista asioista:
   - **Lue viimeinen bullet uudelleen** jostain syystä se jää 25% huomaamatta...
 
 Sprintin maksimi on 2.5 pistettä.
-
+-->
 
 ### Lopputoimenpiteet
 
 #### Loppudemo ja sprintin 4 päättyminen
 
-Loppudemot pidetään perjantain 24.5. luennolla. Demossa on aikaa max 15 minuuttia per ryhmä. Demon lopussa ryhmä kertoo lyhyesti kokemuksistaan: mikä onnistui hyvin ja mihin jäi parantamisen varaa.
+Loppudemot pidetään 17.12. luennolla. Demossa on aikaa max 15 minuuttia per ryhmä. Demon lopussa ryhmä kertoo lyhyesti kokemuksistaan: mikä onnistui hyvin ja mihin jäi parantamisen varaa.
 
 
 #### Vertaispalaute
 
 - Arvosteluperusteiden alussa mainittu henkilökohtainen pisteytys perustuu mm. vertaispalautteeseen
-- Jokaisen ryhmäläisen tulee antaa **vertaispalaute viimeistään perjantaina 24.5. klo 23:59**
+- Jokaisen ryhmäläisen tulee antaa **vertaispalaute viimeistään 20.12. klo 23:59**
   - Vertaispalautteen antaminen on _pakollista_. Jos vertaispalaute puuttuu, ovat miniprojektin henkilökohtaiset pisteet -1.5p
-- Vertaispalautteen antaminen tapahtuu Timin kautta **TODO: linkki**
+- Vertaispalautteen antaminen tapahtuu Timin kautta
   - Ryhmäläiset eivät näe toistensa vertaispalautteita
 
 #### Raportti
 
-Vertaispalautteen lisäksi ryhmä laatii projektin kulusta pienen raportin (noin 2 sivua)
+Vertaispalautteen lisäksi ryhmä laatii projektin kulusta pienen raportin (noin 1 sivu)
 
 - Kerrataan jokaisen sprintin aikana kohdatut ongelmat (prosessiin-, projektityöskentelyyn- ja teknisiin asioihin liittyvät)
 - Mikä sujui projektissa hyvin, mitä pitäisi parantaa seuraavaa kertaa varten
@@ -199,7 +224,7 @@ Vertaispalautteen lisäksi ryhmä laatii projektin kulusta pienen raportin (noin
 - Jos raportti puuttuu, vähennetään ryhmältä 2 pistettä
 - Raportti palautetaan lisäämällä raporttiin linkki projektin GitHubin README:hen
 - Raportista tulee ilmetä jokaisen projektiin osallistuneen nimi
-- **Raportin deadline maanantaina 27.5. klo 23:59** Raportin voi kuitenkin palauttaa jo 4. sprintin aikana, kurssin viineisellä viikolla
+- **Raportin deadline on 20.12. klo 23:59** Raportin voi kuitenkin palauttaa jo 3. sprintin aikana, kurssin viineisellä viikolla
 
 ### Varmista, että commitisi näkyvät GitHubissa oikein
 
