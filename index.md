@@ -9,7 +9,7 @@ Kurssin opetusjärjestelyt ja arvosteluperusteet on kuvattu [osassa 0](/osa0), l
 
 ## Neuvonta
 
-Kurssilla on oma Discord kanava, jossa voit keskustella esimerkiksi tehtävistä: <https://discord.gg/J5gMVcsp>
+Kurssilla on oma Discord kanava, jossa voit keskustella esimerkiksi tehtävistä: <https://discord.gg/g9eyybWzFr>
 
 Tehtävävien tekemistä tukevat harjoitusryhmät järjestetään yhdessä kurssin [ohjelmistoteustaus](https://opencs.it.jyu.fi/software-testing/) kanssa: 
 
@@ -53,7 +53,7 @@ Ryhmiin osallistuminen on vapaaehtoista ja niihin voi tulla tekemään tehtävi�
 ### Viikko 5
 - Miniprojektien tapaamiset (ryhmillä omat aikataulut)
 - Ti 26.11.2024 10.15–12.00 Ag B121.1 Beeta – Luento
-- Ti 26.11.2024 Konfigurointitehtävät 4 (palautus) 
+- Ti 26.11.2024 Konfigurointitehtävät 3 (palautus siirretty edelliseltä viikolta) 
 - Ke 27.11.2024 10.15–12.00 Ag B122.1 Alfa – Agora
 - Su 1.12. Teoriatehtävät 5 (palautus)
 
