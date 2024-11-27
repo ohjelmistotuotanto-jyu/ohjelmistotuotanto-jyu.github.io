@@ -42,7 +42,7 @@ Laskuharjoitusten oletettu kuormittavuus on noin 8 tuntia ensimmäisen kolmen vi
 
 ### Apua laskuharjoituksiin
 
-Kurssilla on oma Discord kanava, jossa voit keskustella esimerkiksi tehtävistä: <https://discord.gg/J5gMVcsp>
+Kurssilla on oma Discord kanava, jossa voit keskustella esimerkiksi tehtävistä: <https://discord.gg/g9eyybWzFr>
 
 Tehtävävien tekemistä tukevat harjoitusryhmät järjestetään yhdessä kurssin [ohjelmistoteustaus](https://opencs.it.jyu.fi/software-testing/) kanssa: 
 
