@@ -40,7 +40,7 @@ Konfigurointitehtävän yhteydessä oli pitkään väärä linkki ja tehtvän m�
 
 ### Viikko 4
 
-- [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat3) deadline 10.12. 23:59 
+- [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat4) deadline 10.12. 23:59 
 - miniprojekti
 
 <!--
