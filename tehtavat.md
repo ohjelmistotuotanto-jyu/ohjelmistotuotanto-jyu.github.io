@@ -37,14 +37,13 @@ Konfigurointitehtävän yhteydessä oli pitkään väärä linkki ja tehtvän m�
 - [teoriatehtävät](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/teoriatehtavat-osa-3) deadline 17.11 23:59
 - [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat3) [deadline 26.11. 23:59](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-3) 
 
-<!--
 
-### Viikko 4 (palautus vasta vapun jälkeen perjantaina)
+### Viikko 4
 
-- [teoriatehtävät](https://tim.jyu.fi/view/kurssit/tie/tjta330/ohjelmistotuotanto-k2024/tehtavat/teoriatehtavat-osa-3) deadline 3.5. 23:59 
-- [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat3) deadline 3.5. 23:59 
+- [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat3) deadline 10.12. 23:59 
 - miniprojekti
 
+<!--
 ### Viikko 5 (Vappuviikko)
 
 - teoriatehtävät
