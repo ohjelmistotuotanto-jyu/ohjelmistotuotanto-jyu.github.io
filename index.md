@@ -9,7 +9,7 @@ Kurssin opetusjärjestelyt ja arvosteluperusteet on kuvattu [osassa 0](/osa0), l
 
 ## Koe
 
-Koe tehdään 18.12. klo 8 ja 23:59 välillä. Koe tehdään itse valittuna aikana ja siihen voi käyttää kolme tuntia. Aineistojen käyttäminen on sallittua. Koe löytyy [täältä](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tentti)
+Koe tehdään 18.12. klo 7 ja 23:59 välillä. Koe tehdään itse valittuna aikana ja siihen voi käyttää kolme tuntia. Aineistojen käyttäminen on sallittua. Koe löytyy [täältä](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tentti).
 
 ## Neuvonta
 
