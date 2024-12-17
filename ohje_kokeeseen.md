@@ -11,9 +11,9 @@ Uusintakoe järjestetään erikseen sovittavalla tavalla (mahdollisesti yleisin�
 
 ### Kurssikoe
 
-Kurssikoe pidetään tiistaina 21.5. Kokeessa on vastaamisaikaa 3 tuntia siitä hetkestä kun aloitat kokeen. Huomaa, että riippumatta siitä monelta kokeen aloitat, loppuu se klo 23.59.
+Kurssikoe pidetään 18.12 Kokeessa on vastaamisaikaa 3 tuntia siitä hetkestä kun aloitat kokeen. Huomaa, että riippumatta siitä monelta kokeen aloitat, loppuu se klo 23.59.
 
-Internet on melko vapaasti käytettävissä kokeessa. 
+Internet on vapaasti käytettävissä kokeessa. 
 
 Kannattaa huomata, että koe ja sen "oikeat vastaukset" perustuvat kurssimateriaaliin. Eli vaikka löytäisit googlaamalla satunnaiselta sivulta vastauksen johonkin kysymykseen, jos se käyttää eri terminologiaa kuin kurssi, tai muuten poikkeaa radikaalisti kurssilla esitetystä, voi olla että vastaus ei paljoa pisteitä tuo.
 
@@ -34,5 +34,7 @@ Koe muistuttaa Helsingin yliopiston kurssin edellisten vuosien kokeita, esim.
 - [syksy 2023](/koe2023)
 - [syksy 2022](/koe2022)
 - [syksy 2021](/koe2021)
+
+
 
 

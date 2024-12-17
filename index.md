@@ -7,6 +7,10 @@ Kurssilla käsitellään ohjelmistotuotantoprojektien hallinnan, työvaiheiden j
 
 Kurssin opetusjärjestelyt ja arvosteluperusteet on kuvattu [osassa 0](/osa0), lue ne tarkasti heti kurssin alussa!
 
+## Koe
+
+Koe tehdään 18.12. klo 8 ja 23:59 välillä. Koe tehdään itse valittuna aikana ja siihen voi käyttää kolme tuntia. Aineistojen käyttäminen on sallittua. Koe löytyy [täältä](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tentti)
+
 ## Neuvonta
 
 Kurssilla on oma Discord kanava, jossa voit keskustella esimerkiksi tehtävistä: <https://discord.gg/g9eyybWzFr>
