@@ -26,7 +26,7 @@ permalink: /miniprojektix
 - Ryhmät muodostetaan sunnuntaina 20.11. "algoritmisesti", pääasiassa noudattaen ilmoittautumisessa (ks. linkit ylempää) kerrottuja sopivia työskentelyaikoja
 - Ryhmäsi aloitustilaisuuden ajankohta selviää ilmoittautumissovelluksesta. Kaikkien ryhmäläisten on **pakko osallistua** tilaisuuteen, jonka kesto on noin 2 tuntia
 - Aloitustilaisuuteen tullessa on syytä tuntea materiaalin osien 1 ja 2 asioista ainakin seuraavat:
-  - scrum
+  - Scrum
   - sprintti
   - user story
   - product backlog
@@ -74,12 +74,12 @@ Seuraavien viikkojen asiakastapaaminen (sprintin katselmointi ja uuden sprintin 
 
 ### Toteutettava ohjelmisto
 
-Sovelluksen osittainen kuvaus [täällä](/speksi)
+Sovelluksen osittainen kuvaus [täällä](/speksi), tarkemmat yksityiskohdat kuulet asiakkaalta.
 
 ### Tekniset ja prosessiin liittyvät vaatimukset
 
 - Ryhmä laatii yhdessä asiakkaan kanssa _product backlogin_
-  - Vaatimukset kirjataan backlogiin user story:inä
+  - Vaatimukset kirjataan backlogiin user storyinä
 - Sprintin suunnittelun yhteydessä ryhmä sitoutuu toteuttamaan sopivan määrän backlogin kärjessä olevista user storyistä
   - Jokaisen ryhmäläisen "työaika" on 6 tuntia viikossa
     - Työajan ylittävä sankarikoodaus ei ole suositeltavaa, se on jopa kiellettyä
@@ -136,17 +136,27 @@ README:ssa tulee löytyä ainakin seuraavat asiat:
 - Jos kyse työpöytäsovelluksesta, tulee ohjelmalle olla asennus- ja käyttöohje
 - Työlle tulee määritellä lisenssi <https://help.github.com/articles/licensing-a-repository/>
 
+### Vihjeitä ryhmätyöskentelyyn
+
+Melko varma resepti epäonnistumiseen on huono kommunikaatio. Tehkää siis asioita mahdollisimman paljon yhdessä, mieluiten paikanpäällä tai jos se ei onnistu niin esim. Discordin voice chatissa. Ylipäänsä on hyvä kommunikoida ryhmälle mitä lähtee tekemään ja milloin on saanut sen valmiiksi, tällöin vältytään päällekkäisyyksiltä. Erityisesti projektin alkuvaiheessa esim. GitHub-actionsia konfiguroitaessa yhdessä tapahtuvaan työskentelyyn kannattaa panostaa. Projektin kuluessa omatoiminenkin työskentely muuttuu jo helpommaksi jos ja kun ryhmä on sopinut työskentelyn periaatteista ja pelisäännöistä.
+
+Pariohjelmointi/konfigurointi on havaittu erittäin hyödylliseksi. Voikin olla hyvä idea, että jokaista user storyä työstää aina kaksi henkilöä.
+
+Jokaiselle asialle, kuten vaikkapa README.md-tiedostolle, project backlogille ja sprint backlogille kannattanee nimetä joku vastuuhenkilö joka varmistaa, että ryhmä hoitaa asian. Asian X vastuuhenkilö ei välttämättä siis tee asiaa itse, vaan varmistaa että se tulee tehdyksi.
+
+Pitäkää ohjelma koko ajan toimintakykyisenä. On erittäin huono idea koittaa saada viikon aikana eri ihmisten koodaamat tuotokset integroitua tunti ennen asiakaspalaveria...
+
 ### Teknologisia vihjeitä
 
 - Kokonaan uusien teknologioiden opettelu miniprojektin yhteydessä ei ole järkevää
 - **Mahdollisten ulkoisten kirjastojen käyttöönotto, testien tekeminen ja CI:n konfigurointi tulee viemään ainakin alussa todella paljon aikaa**
 - Komentoriviltä toimiva sovellus on teknologioiden suhteen riskittömin vaihtoehto ainakin Javaa käytettäessä
 - Web-pohjaiselle Python-sovellukselle voi ottaa mallia kurssin [esimerkkisovelluksesta](https://github.com/ohjelmistotuotanto-hy/todo-web)
-  - **Herokun maksuton palvelu poistui käytöstä marraskuun viimeisellä viikolla.
-- Jos haluatte käyttää tietokantaa, on Tikapestakin tuttu _SQLite_ hyvä vaihtoehto** tämän takia Web-sovelluksen tekeminen voi olla riskialtista jos vaihtoehtoista sijoituspaikkaa ei ole tiedossa
+  - \*\*Herokun maksuton palvelu poistui käytöstä marraskuun viimeisellä viikolla.
+- Jos haluatte käyttää tietokantaa, on Tikapestakin tuttu _SQLite_ hyvä vaihtoehto\*\* tämän takia Web-sovelluksen tekeminen voi olla riskialtista jos vaihtoehtoista sijoituspaikkaa ei ole tiedossa
   - SQLiten käyttöön Pythonilla löytyy ohjeita ainakin [Ohjelmistotekniikka-kurssin](https://ohjelmistotekniikka-hy.github.io/python/toteutus#tietojen-tallennus) materiaalista
   - Ohjelmistotekniikka-kurssin [todo-sovellus](https://github.com/ohjelmistotekniikka-hy/python-todo-app) on esimerkkisovellus SQLiten tietokannan käytöstä Python-projektissa
-  - Huomaa, että jos tarkoituksena on julkaista sovellus esimerkiksi _Heroku_-palveluun, SQLiteä parempi vaihtoehto on _PostgreSQL_. Mallia PostgreSQL:n käyttöön Python-sovelluksessa voi ottaa esimerkiksi kurssin [esimerkkisovelluksesta](https://github.com/ohjelmistotuotanto-hy/todo-web)
+  - Huomaa, että jos tarkoituksena on julkaista sovellus jossain pilvipalvelussa, SQLiteä parempi vaihtoehto on _PostgreSQL_. Mallia PostgreSQL:n käyttöön Python-sovelluksessa voi ottaa esimerkiksi seuraavasta tälle kurssille tehdystä [esimerkkisovelluksesta](https://github.com/ohjelmistotuotanto-hy/todo-web)
   - Tikapen laskareissa käytetty [todo-sovellus](https://github.com/ohjelmistotuotanto-hy/tikape-todo) on esimerkkisovellus SQLite tietokannan käytöstä Gradle-pohjaisessa Java-projektissa
 - Viikon 3 laskareista kannattaa ottaa mallia Robot Frameworkilla, tai Cucumberilla tapahtuvaan storyjen testaamiseen
 - JavaFX:llä tehtyjen sovellusten automatisoitu testaaminen on mahdollista [TestFX](https://github.com/TestFX/TestFX)-kirjaston avulla. Kirjaston dokumentaatio ei ole parhaasta päästä
