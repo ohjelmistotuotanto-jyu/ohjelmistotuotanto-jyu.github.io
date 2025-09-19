@@ -72,9 +72,9 @@ Luo GitHubiin repositorio nimellä _ohtuvarasto_
 
 ![]({{ "/images/lh1-1-22.png" | absolute_url }})
 
-**Jos et ole vielä luonut** koneellesi _ssh-avainta_, tee se nyt. Lisää julkinen avain GitHubiin. Ohjeet avaimen luomiseen ja lisäämiseen löytyvät täältä::
+**Jos et ole vielä luonut** koneellesi _ssh-avainta_, tee se nyt. Lisää julkinen avain GitHubiin. Ohjeet avaimen luomiseen ja lisäämiseen löytyvät täältä:
 
-- <https://github.com/settings/ssh>
+- Ohje [täällä](/avain)
 
 Tämän jälkeen pystyt käyttämään GitHubia ilman salasanan syöttämistä koneelta, josta juuri luodun avaimen salainen pari löytyy
 
