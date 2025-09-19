@@ -17,7 +17,7 @@ Tämän viikon tehtävissä harjoitellaan ensin muutaman tärkeän ohjelmistokeh
 
 Tehtävät palautetaan GitHubiin, sekä merkitsemällä tehdyt tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-1). Viikon tehtävät palautetaan yhdellä kertaa, eli tee merkintä palautussovellukseen vasta kun olet valmis viikon tehtävien osalta.
 
-Käytännössä tällä viikolla tehdään palautusta varten yksi gitHub repositoria nimeltään ohtuvarasto. Jos et vielä tiedä mikä on GitHub ja repositorio, niin pian opit.
+Käytännössä tällä viikolla tehdään palautusta varten yksi GitHub repositoria nimeltään ohtuvarasto. Jos et vielä tiedä mikä on GitHub ja repositorio, niin pian opit.
 
 Tehtävää 1 ei varsinaisesti palauteta minnekään, eikä sitä arvostella.
 
@@ -111,7 +111,7 @@ missä komennon `git clone` parametrina on repositoriosi sivulla näkyvä merkki
 
 ![]({{ "/images/lh1-2-22.png" | absolute_url }})
 
-Nyt paikalliselle koneellesi syntynyt hakemisto _ohtuvarasto_ (hakemiston nimi on sama kuin repositoriosi), joka on on GitHubissa olevan repositorion klooni.
+Nyt paikalliselle koneellesi syntynyt hakemisto _ohtuvarasto_ (hakemiston nimi on sama kuin repositoriosi), joka on GitHubissa olevan repositorion klooni.
 
 ### 3. Gitin alkeet [versionhallinta]
 
@@ -129,7 +129,7 @@ Olet jo todennäköisesti käyttänyt Gitiä aiemmilla kursseilla. Tässä teht�
 Lisää Git-ohjeita löytyy runsaasti internetistä, esim:
 
 - [Pro Git -opas](http://git-scm.com/book), kannattaa lukea näin alkuun luku 2
-- [Githubin helpit](https://help.github.com/articles/)
+- [GitHubin helpit](https://help.github.com/articles/)
 - <https://www.atlassian.com/git/tutorials>
 - <https://we.riseup.net/debian/git-development-howto>
 - <http://www.ralfebert.de/tutorials/git/>
@@ -175,7 +175,7 @@ GitHubissa pitäisi näyttää suunnilleen seuraavalta
 
 ### 5. Monta kloonia samasta repositoriosta [versionhallinta]
 
-Yleensä on tapana pitää GitHubissa olevaa repositorioa tiedostojen "keskitettynä" sijoituspaikkana ja liittää paikallisella koneella oleva repositorio GitHubissa olevan repositorion etärepositorioksi, kuten teimme tehtävässä 1.
+Yleensä on tapana pitää GitHubissa olevaa repositoriota tiedostojen "keskitettynä" sijoituspaikkana ja liittää paikallisella koneella oleva repositorio GitHubissa olevan repositorion etärepositorioksi, kuten teimme tehtävässä 1.
 
 Jos työskennellään useammalta koneelta, on GitHubissa olevasta repositoriosta monta kloonia ja kloonien tila on pidettävä ajantasalla.
 
@@ -265,6 +265,8 @@ Ohjelmakoodin editointi kannattaa tehdä järkevällä editorilla, esim. Visual 
 
 Ennen siirtymistä tehtävien pariin, ja et ole aiemmin Poetryä käyttänyt, tutustu Poetryn asennus- ja käyttöohjeisiin lukemalla [tämä dokumentti](https://ohjelmistotuotanto-jyu.github.io/poetry). Kurssilla käytetään Poetryn versiota 1.6.1. Jos koneellasi on vanhempi versio, se on syytä päivittää.
 
+On suositeltavaa, että teet [tämän](/poetry#asetusten-hienosäätö) muutoksen Poetryn asetuksiin! Varmista vielä, että asetus on koneellasi oikein tehtynä.
+
 **Tee nyt seuraavat toimenpiteet**.
 
 - Asenna varasto-projektin riippuvuudet suorittamalla sen juurihakemistossa komento `poetry install`
@@ -347,7 +349,7 @@ source = src
 
 ### 9. GitHub Actions, osa 1
 
-Poetryn avulla testien suorittaminen on mahdollista tehdä skriptattavaksi, eli helposti komentoriviltä yhdellä komennolla suoritettavaksi. Seuraava askel on suorittaa buildausprosessi, eli ohjelman suorittamiseen vaadittavat toimenpiteet ja siihen liittyvien testien suoritus, erillisellä _build-palvelimella_ (engl. build server).
+Poetryn avulla testien suorittaminen on mahdollista tehdä skriptattavaksi, eli helposti komentoriviltä yhdellä komennolla suoritettavaksi. Seuraava askel on suorittaa [buildausprosessi](https://en.wikipedia.org/wiki/Software_build), eli ohjelman suorittamiseen vaadittavat toimenpiteet ja siihen liittyvien testien suoritus, erillisellä _build-palvelimella_ (engl. build server).
 
 Ideana on, että ohjelmistokehittäjä noudattaa seuraavaa sykliä:
 
@@ -388,9 +390,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: '3.10'
       - name: Install Poetry
         run: pip install poetry
       - name: Install dependencies
@@ -417,9 +419,9 @@ Kun avaan nyt repositorion välilehden _Actions_, huomaat että sinne on ilmesty
 
 ### 10. GitHub Actions, osa 2
 
-Katsotaan hieman tarkemmin mitä GitHub actionien konepellin alla tapahtuu.
+Katsotaan hieman tarkemmin mitä GitHub Actionien konepellin alla tapahtuu.
 
-GitHub actionit ovat sarjoja erilaisia "toimenpiteitä", joita GitHub voi suorittaa repositoriossa olevalle koodille. Actionin toiminta määritellään hakemiston _.github/workflows_ sijoitettavissa _.yml_-päätteisissä tiedostoissa.
+GitHub Actionit ovat sarjoja erilaisia "toimenpiteitä", joita GitHub voi suorittaa repositoriossa olevalle koodille. Actionin toiminta määritellään hakemiston _.github/workflows_ sijoitettavissa _.yml_-päätteisissä tiedostoissa.
 
 Tarkastellaan äsken määrittelemäämme tiedostoa:
 
@@ -439,9 +441,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: '3.10'
       - name: Install Poetry
         run: pip install poetry
       - name: Install dependencies
@@ -452,7 +454,7 @@ jobs:
 
 Kohta [on](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestbranchestags) määrittelee missä tilanteissa actionit suoritetaan. Konfiguraatiomme määrää, että actionit suoritetaan aina kun repositorion päähaaraan pushataan koodia (sekä silloin jos päähaaraan tehdään ns. pull request).
 
-Osiossa [jobs](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#jobs) voidaan määritellä yksi tai useampi "työ", eli useasta askeleesta koostuva tehtäväsarja. Määrittelimme tällä kertaa vain yhden työn, jolle annoimme nimen _build_. Jos töitä olisi useita, suorittaisi GitHub actions ne rinnakkain.
+Osiossa [jobs](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#jobs) voidaan määritellä yksi tai useampi "työ", eli useasta askeleesta koostuva tehtäväsarja. Määrittelimme tällä kertaa vain yhden työn, jolle annoimme nimen _build_. Jos töitä olisi useita, suorittaisi GitHub Actions ne rinnakkain.
 
 Yksittäinen työ koostuu useista askelista, jotka on määritelty työn alla kohdassa [steps](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#jobsjob_idsteps).
 
@@ -470,7 +472,7 @@ suorittaa valmiiksi määritellyn actionin [checkout](https://github.com/marketp
 
 Eli _checkout_ action siis hakee repositorion koodin askeleet suorittavalle virtuaalikoneelle.
 
-Toinen askel on action [setup-python](https://github.com/marketplace/actions/setup-python), joka asentaan työn suorittavalle virtuaalikoneelle haluamme Python-version. Jostain syystä versionumero on annettava hipsuissa, eli muodossa '3.10', jos hipsuja ei ole, yrtää GitHub Actions asettaa Pythonista version 3.1
+Toinen askel on action [setup-python](https://github.com/marketplace/actions/setup-python), joka asentaan työn suorittavalle virtuaalikoneelle haluamme Python-version. Jostain syystä versionumero on annettava hipsuissa, eli muodossa '3.10'. Jos hipsuja ei ole, yrittää GitHub Actions asentaa Pythonista version 3.1
 
 Molemmat näistä actioneista olivat GitHubin [marketplacesta](https://github.com/marketplace?type=actions) löytyviä valmiita actioneja. Esim. Pythonin asentaminen työn suorittavalle virtuaalikoneelle on itsessään aika monimutkainen toimenpide, mutta valmiiksi määritelty action tekee sen helpoksi.
 
@@ -485,7 +487,7 @@ Se suorittaa komentorivillä komennon, joka asentaa Poetryn.
 
 Neljäs askel asentaa projektin riippuvuudet `poetry install`-komennolla.
 
-Viides askel on kaikkein tärkein, se suorittaa poetryn avulla projektin testit ja kerää testikattavuuden:
+Viides askel on kaikkein tärkein, se suorittaa Poetryn avulla projektin testit ja kerää testikattavuuden:
 
 ```yml
 - name: Run tests
@@ -508,7 +510,7 @@ Korjaa testi ja pushaa muutokset uudelleen GitHubiin. Tarkkaile jälleen Actions
 
 ### 11. GitHub Actions, osa 3
 
-Laita repositiossa olevaan tiedostoon _README.md_ koodin tilasta kertova _Status Badge_.
+Laita repositoriossa olevaan tiedostoon _README.md_ koodin tilasta kertova _Status Badge_.
 
 [Tämän](https://docs.github.com/en/free-pro-team@latest/actions/managing-workflow-runs/adding-a-workflow-status-badge) ohjeen mukaan badgen osoite on muotoa
 
@@ -556,7 +558,7 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
-Tulet todennäköisesti törmäämään vastaavaan virheeseen usein. Syynä virheelle on se, että yrität pushata muutoksia GitHubiin vaikka GitHub on "edellä" paikallista repositorioasi (ts. sinne lisättiin tiedosto _README.md_).
+Tulet todennäköisesti törmäämään vastaavaan virheeseen usein. Syynä virheelle on se, että yrität pushata muutoksia GitHubiin vaikka GitHub on "edellä" paikallista repositoriotasi (ts. sinne lisättiin tiedosto _README.md_).
 
 Ongelma ratkeaa seuraavasti. Tee ensin komento `git pull`. Saat Gitiltä pitkän valitusviestin:
 
@@ -593,6 +595,8 @@ Voit nyt pullata koodin uudelleen komennolla `git pull`. Komento `git push` onni
 
 Jos muutit paikallisesti tiedostoa README.md, saatoit aiheuttaa ns. merge-konfliktin jonka selvittämiseen vaaditaan jo hieman vaivaa. Palaamme asiaan tulevilla viikoilla...
 
+**Tee vielä** lopuksi badgestasi linkki Actions-välilehdelle. Eli kun badgea painetaan, tulee selaimen ohjautua repositorion Actions-välilehdelle, esim. omassa tapauksessani osoitteeseen <https://github.com/mluukkai/ohtuvarasto/actions>
+
 ### 12. Codecov
 
 Tehtävässä 8 määrittelimme projektin testauskattavuuden coveragen avulla. <https://codecov.io> -palvelu mahdollistaa projektien koodikattavuuden julkaisemisen verkossa.
@@ -606,14 +610,25 @@ Saatat joutua odottamaan hetken, ennen kuin Codecov löytää repositoriosi. On 
 
 ![]({{ "/images/lh1-codecov.png" | absolute_url }})
 
+Projektin lisäämisen jälkeen aukeavassa näkymässä oleva _Step 2_ sisältää oleellisen tärkeän asian, eli _repository tokenin_:
+
+![]({{ "/images/codecov2.png" | absolute_url }})
+
+Käytännössä Codecovin repository token on _avain_, jonka avulla palvelu tunnistaa sinut. Tällaisten avainten käytölle on tyypillistä, että niitä ei haluta kaikkien saataville julkiseen repositorioon. 
+
+Lisää nyt avain Github Actioneiden käyttöön [Codecovin dokumentaatiota](https://docs.codecov.com/docs/adding-the-codecov-token) seuraten. Laajemmin sailaisuuksien sisällyttämisestä GitHubiin on kuvattu [GitHubin dokumentaatiossa](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions).
+
+
 Saamme muodostettua Codecovin ymmärtämän testikattavuusraportin käyttämällä `coverage html`-komennon sijaan komentoa `coverage xml`. Kyseinen komento muodostaa XML-muotoisen testikattavuusraportin. Lisätään GitHub Action -konfiguraatiomme loppuun kaksi uutta askelta:
+
+Lisätään GitHub Action -konfiguraatiomme loppuun kaksi uutta askelta:
 
 ```yml
 {% raw %}
 - name: Coverage report
   run: poetry run coverage xml
 - name: Coverage report to Codecov
-  uses: codecov/codecov-action@v3
+  uses: codecov/codecov-action@v4
   env:
     CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 {% endraw %}
@@ -626,25 +641,25 @@ Aiemmin codevoc ei vaatinut julkisten repositorioiden osalta upload tokenin käy
 
 Kertauksena:
 
-1. Luo avain codecovin ohjeiden mukaan
-1. Siirrä avain Githubin secretiksi (Githubin repossa settings -> secrets and variables / actions -> New repository secret -> nimeksi CODECOV_TOKEN ja arvoksi avain)
+1. Luo avain Codecovin ohjeiden mukaan
+1. Siirrä avain GitHubin secretiksi (Githubin repossa settings -> secrets and variables / actions -> New repository secret -> nimeksi CODECOV_TOKEN ja arvoksi avain)
 1. Lisää yllä olevat vaiheet GitHub Action -konfiguraatiosio
 
 Kun seuraavan kerran koodi pushataan GitHubiin, ilmestyy Codecoviin koodin testikattavuusraportti:
 
-![]({{ "/images/lh1-codecov3.png" | absolute_url }})
+![]({{ "/images/codecov3.png" | absolute_url }})
 
-Klikkaailemalla tiedostojen nimiä, pääset katsomaan yksittäisten luokkien testauksen kattamat rivit:
+Klikkailemalla tiedostojen nimiä, pääset katsomaan yksittäisten luokkien testauksen kattamat rivit:
 
 ![]({{ "/images/py-lh1-15-22.png" | absolute_url }})
 
-Käytännössä pyydämme nyt GitHub actioneja suorittamaan ensin testit ja keräämään testikattavuuden (komennolla `poetry run coverage run --branch -m pytest`), jonka jälkeen muodostetaan XML-muotoinen testikattavuusraportti (komennolla `poetry run coverage xml`). Tämä testikattavuusraportti lähetetään Codeviin.
+Käytännössä pyydämme nyt GitHub Actioneja suorittamaan ensin testit ja keräämään testikattavuuden (komennolla `poetry run coverage run --branch -m pytest`), jonka jälkeen muodostetaan XML-muotoinen testikattavuusraportti (komennolla `poetry run coverage xml`). Tämä testikattavuusraportti lähetetään Codeviin.
 
-GitHub actionien loki näyttää miten askelten suoritus etenee:
+GitHub Actionien loki näyttää miten askelten suoritus etenee:
 
 ![]({{ "/images/py-lh1-29-22.png" | absolute_url }})
 
-Lisää repositoriosi README.md-tiedostoon myös Codecov-badge. Löydät badgen repositorion Codecov-sivun Settings-valikosta
+Lisää repositoriosi README.md-tiedostoon myös Codecov-badge. Löydät badgen repositorion Codecov-sivun Configuration-valikosta.
 
 Projektisi GitHub-sivun tulisi lopulta näyttää suunnilleen seuraavalta:
 

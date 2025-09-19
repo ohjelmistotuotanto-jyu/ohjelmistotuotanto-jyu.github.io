@@ -106,11 +106,34 @@ Komento avaa komentotulkin Docker-konttiin, missä kaikki Poetry-komennot, esim.
 
 Lisää Dockerista kurssilla [Devops with Docker](https://devopswithdocker.com/).
 
+#### Docker ja Robot-testit
+
+Web-sovelluksia testatessa käytä imagen [mluukkai/poetry](https://hub.docker.com/repository/docker/mluukkai/poetry) sijaan imagea [mluukkai/poetry-robot](https://hub.docker.com/repository/docker/mluukkai/poetry-robot/). Image toimii ainoastaan intelin prosessoriarkkitehtuurilla varustetuilla koneilla, eli M1 käyttäjät joutuvat etsimään jonkun muun ratkaisun...
+
+Jotta kontissa suoritettu web-sovellus näkyisi isäntäkoneelle, tulee konttia käynnistettäessä julkaista kontin portti 5001 (missä sovellus toimii) isäntäkoneen porttiin. Tämä tapahtuu seuraavasti:
+
+```bash
+docker run -it -p 5001:5001 --volume="$PWD:/mydir" mluukkai/poetry-robot
+```
+
+Robot-testit suoritetaan menemällä komennolla `docker exec` samaan kontiin, missä sovellus on jo päällä: 
+
+```bash
+docker exec -it kontainerintunnistetahan bash
+```
+
+Kontainerin tunniste selviää komennolla `docker ps`.
+
+Testit toimivat valitettavasti ainoastaan ns. headless modessa, jonka saat päälle [tehtävän 7](/tehtavat3/#7-web-sovelluksen-testaaminen-osa-3) alussa neuvotulla tavalla.
+
+Testit on mahdollista saada toimimaan myös siten että testejä suorittava selain näytetään. Tämä vaatii kuitenkin erinäistä säätöä, googlaa jos kiinnostaa esim. hakusanoilla [linux docker gui apps](https://www.google.com/search?q=linux+docker+gui+apps).
+
+
 ### Ongelmia Poetryn asennuksessa?
 
 Tämän sivun [lopussa](/poetry#ratkaisuja-yleisiin-ongelmiin) on ohjeita muutamiin ongelmatilanteisiin.
 
-### Asetukset
+### Asetusten hienosäätö
 
 Ennen kuin aloitamme Poetryn käytön, tehdään pieni muutos konfiguraatioihin. 
 
@@ -203,13 +226,11 @@ Virtuaaliympäristön alustamisen lisäksi tämä komento asentaa ainoastaan pro
 
 Komennon suorittamisen  `poetry install` jälkeen hakemistoon pitäisi ilmestyä tiedosto _poetry.lock_. Tiedosto sisältää kaikkien asennettujen riippuvuuksien versiotiedot. Sen tietojen avulla Poetry pystyy aina asentamaan `poetry install` -komennolla riippuvuuksista täsmälleen oikeat versiot. Tästä syystä tiedosto tulee lisätä versionhallintaan.
 
-Tekemiemme [asetusten muutosten](/poetry#asetukset) takia hakemistoon tulee myös tiedosto _.venv_ johon Poetry tallentaa projektin virtuaaliympäristön riippuvuuksineen. Tätä tiedostoa _ei tule tallentaa_ versionhallintaan, eli se on syytä lisätä heti tiedostoon _.gitignore_.
+Tekemiemme [asetusten muutosten](/poetry#asetusten-hienosäätö) takia hakemistoon tulee myös tiedosto _.venv_ johon Poetry tallentaa projektin virtuaaliympäristön riippuvuuksineen. Tätä tiedostoa _ei tule tallentaa_ versionhallintaan, eli se on syytä lisätä heti tiedostoon _.gitignore_.
 
 Kannattaa huomata, että hakemistoa _.venv_  ei oletusarvoisesti näe komennolla _ls_, sillä Unix-tyyppisissä käyttöjärjestelmissä pisteellä alkavat ovat [piilotiedostoja](https://help.ubuntu.com/stable/ubuntu-help/files-hidden.html.en). Komento _ls -a_ tuo näkyviin myös piilotiedostot/hakemistot. Vielä parempi muoto voi olla, _ls -la_, joka tulostaa tiedot hieman laajemmassa muodossa:
 
 ![]({{ "/images/lh1-venv.png" | absolute_url }}){:height="350px" }
-
-
 
 ### Riippuvuuksien asentaminen
 
@@ -320,6 +341,30 @@ Kehityksen aikaisten riippuvuuksien määritteleminen on kätevää, koska se v�
 
 ### Ratkaisuja yleisiin ongelmiin
 
+Muistithan, että ennen kuin voit suorittaa komennon, esim.
+
+```
+pytest src/tests
+```
+
+tulee aktivoida virtuaaliympäristö, eli antaa komento
+
+```
+poetry shell
+```
+
+Jos tästä huolimatta tulee valitus siitä, että ohjelman käyttämä kirjasto ei löydy (ja kirjasto on varmuudella asennettu), asenna riippuvuudet ja virtuaaliympäristö uudelleen, eli anna komennot:
+
+```
+rm -rf .venv
+rm poetry.lock
+poetry install
+``` 
+
+Yritä tämän jälkeen uudelleen!
+
+#### muita ongelmia
+
 Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
 
 1. Varmista, että Poetrysta on asennettu uusin versio suorittamalla komento `poetry self update`
@@ -346,6 +391,6 @@ Usein Poetry-ongelmat ratkeavat seuraavilla toimenpiteillä:
 
 Kun kaikki toimenpiteet on suoritettu, yritä suorittaa epäonnistunut Poetry-komento uudestaan.
 
-### Keyring-ongelma
+#### Keyring-ongelma
 
 Jos `poetry install`-komennon suorittaminen pyytää keyring-salasanaa, ongelma pitäisi ratketa suorittamalla terminaalissa `export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring` ja sen jälkeen suorittamalla komento `poetry install` uudestaan. Kyseisen rivin voi laittaa _.bashrc_ (tai vastaavaan) tiedostoon, jotta sitä ei tarvitse suorittaa jokaisen terminaali-istunnon aluksi.
