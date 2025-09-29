@@ -14,6 +14,10 @@ Tehtävässä tutustutaan hyväksymistestien kirjoittamiseen robot -kirjaston av
 
 {% include typo_instructions.md %}
 
+{% include norppa.md %}
+
+{% include poetry_ongelma.md %}
+
 ### Tehtävien palauttaminen
 
 
@@ -138,7 +142,7 @@ On todennäköistä että testien tekemisen aikana tulee ongelmia, joiden selvit
 - Onko vika testissä, eli toimiiko sovellus kuten pitääkin? Voit esimerkiksi testata sovelluksen toimivuuden manuaalisesti. Jos näin on, keskity testin korjaamiseen
 - Onko vika sovelluksessa, eli eikö manuaalisesti testattu sovellus toimi kuten pitäisi? Jos näin on, keskity tarkastelemaan ohjelman suoritusta epäonnistuneessa testitapauksessa
 
-Tutustutaan seuraavaksi tekniikoihin, jotka helpottavat ja nopeuttavat virheiden metsästystä.
+Tutustutaan seuraavaksi muihin tekniikoihin, jotka helpottavat ja nopeuttavat virheiden metsästystä.
 
 #### Suoritettavien testien lukumäärän rajoittaminen
 
