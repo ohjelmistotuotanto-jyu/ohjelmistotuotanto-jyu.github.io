@@ -6,7 +6,7 @@ permalink: /tehtavat2/
 ---
 
 
-Tehtävissä tutustutaan koodin _staattiseen analyysin_ Pylint-työkalun avulla, _riippuvuuksien injektointiin_ ja jatketaan Gitiin tutustumista.
+Tehtävissä tutustutaan koodin _staattiseen analyysin_ Pylint-työkalun avulla, _riippuvuuksien injektointiin_ ja jatketaan Gittiin tutustumista.
 
 ### Typoja tai epäselvyyksiä tehtävissä?
 
@@ -191,11 +191,11 @@ Tee seuraavat toimenpiteet:
 - Sovelluksessa ilmenee ensimmäinen bugi. Syynä oli luultavasti se, ettei sovellukselle ole toteutettu vielä yhtään testiä. Päädyt käyttämään testauksessa [pytest](https://pypi.org/project/pytest/)-viitekehystä. **Asenna pytest projektin _kehityksen aikaiseksi riippuvuudeksi_**
   - Pohdi itseksesi, miksi on hyödyllistä määritellä riippuvuus erikseen kehityksen aikaiseksi riippuvuudeksi
 - Sovelluksessa käsitellään paljon JSON-muotoista dataa, joten päädyt etsimään sen serialisointiin ja deserialisointiin sopivia kirjastoja. Törmäät tarkoitukseen sopivaan kirjastoon nimeltä [jsonpickle](https://pypi.org/project/jsonpickle/). **Asenna jsonpickle projektin riippuvuudeksi**
-- Huomaat bugin jsonpickle-kirjastossa, joten alat tutkimaan sen GitHub repositorion [issueita](https://github.com/jsonpickle/jsonpickle/issues). Eräässä issuessa kerrotaan, että löytämäsi bugi ei ilmene kirjaston versiossa `1.3.0`. **Asenna jsonpickle-kirjastosta versio `1.3.0`**.
+- Huomaat bugin jsonpickle-kirjastossa, joten alat tutkimaan sen GitHub repositorion [issueita](https://github.com/jsonpickle/jsonpickle/issues). Eräässä issuessa kerrotaan, että löytämäsi bugi ei ilmene kirjaston versiossa `2.2.0`. **Asenna jsonpickle-kirjastosta versio `2.2.0`**.
   - Tutustu _semanttiseen versiointiin_ [täällä](https://semver.org/)
-  - Pohdi itseksesi, mitä hyötyjä semanttisesta versioinnista on. Jos kirjasto noudattaa semanttista versiointia, miksi kirjaston version `1.1.2` päivittäminen versioon `2.0.0` saattaa sisältää riskejä? Miksei samoja riskejä luultavasti ole version `1.1.3` kanssa?
+  - Pohdi itseksesi, mitä hyötyjä semanttisesta versioinnista on. Jos kirjasto noudattaa semanttista versiointia, miksi kirjaston version `2.2.0` päivittäminen versioon `3.2.2` saattaa sisältää riskejä? Miksei samoja riskejä luultavasti ole version `3.0.3` kanssa?
   - Versiovaatimuksissa on mukana usein `^`-, tai `~`-etuliite. Pohdi itseksesi, mitä näillä ilmaistaan. Asiaa käsitellään mm. [Poetryn dokumentaatiossa](https://python-poetry.org/docs/dependency-specification/)
-- Päätät, että jsonpickle-kirjastosta on ollut vain harmia ja voit helposti toteuttaa sen tarjoaman toiminallisuuden itse. **Poista jsonpickle projektin riippuvuuksien joukosta**
+- Päätät, että jsonpickle-kirjastosta on ollut vain harmia ja voit helposti toteuttaa sen tarjoaman toiminnallisuuden itse. **Poista jsonpickle projektin riippuvuuksien joukosta**
 
 Palautettavasta _poetry-web_-hakemistosta ei tarvitse löytyä muita tiedostoja kuin _pyproject.toml_ ja _poetry.lock_.
 
@@ -285,9 +285,9 @@ Dependencies: python, Flask, editdistance
 Development dependencies: coverage, robotframework, robotframework-seleniumlibrary, requests
 ```
 
-*HUOM* ohjelma ei saa sisältää kuin ainoastaan tiedostossa index.py olevan print-komennon, joka tuostaa `Project`-olion merkkijonoesityksen!
+*HUOM* ohjelma ei saa sisältää kuin ainoastaan tiedostossa index.py olevan print-komennon, joka tulostaa `Project`-olion merkkijonoesityksen!
 
-Laajenna ja hio vielä ratkaisua siten, että esimerkkiprojektin osalta lopputulos näyttää suunilleen seuraavalta
+Laajenna ja hio vielä ratkaisua siten, että esimerkkiprojektin osalta lopputulos näyttää suunnilleen seuraavalta
 
 ```
 Name: Ohtutesting app
@@ -384,7 +384,7 @@ def erotus(x, y):
   - Saat asennettua Maciin `gitk`:n [tämän ohjeen](https://www.geekbitzone.com/posts/git/gitk-for-macos/) avulla
     - jos asennus ei onnistu, on hyvä korvaaja gitk:lle [sourcetree](https://www.sourcetreeapp.com)
 - Mergeä branchin **laskut** sisältö **mainiin** (tämä tapahtuu komennolla`git merge laskut`)
-  - Mergeäminen aiheuttaa ns merge-commitin, ja avaa tekstieditorin mihin joudut kirjoittamaan commit-viestin
+  - Mergeäminen aiheuttaa ns. merge-commitin, ja avaa tekstieditorin mihin joudut kirjoittamaan commit-viestin
     - Jos et ole määritellyt gitille editoria viime viikon [tehtävän 2](/tehtavat1/) ohjeiden mukaan, avautuu ehkä gitin oletusarvoinen editori [vim](http://www.vim.org)
     - Vimistä poistuminen saattaa osoittautua ensikertalaiselle hankalaksi, Google auttaa tarvittaessa
 - Muuta tiedostoa **index.py** seuraavasti ja commitoi muutos:
@@ -410,7 +410,7 @@ logger("lopetetaan")
 
 **Tätä tehtävää ei palauteta mihinkään**
 
-- Olet nyt repositoriosi main-haarassa
+- Olet nyt repositoriosi **main**-haarassa
 - Luo uusi tiedosto _README.md_, **älä** kuitenkaan lisää ja commitoi tiedostoa versionhallintaan
 - Tiedoston sisällöllä ei ole merkitystä, se voi olla esim. seuraava
 
@@ -478,7 +478,7 @@ nothing to commit, working tree clean
 - Siirry jälleen branchiin **laskut** ja huomaat, että _LICENSE_ ei ole olemassa
 - Mergeä **main**-branch branchiin **laskut**
 - Siirry nyt takaisin branchiin **main** ja tuhoa branchi **laskut**
-  - Tuhoaminen ei onnistu suoraan komennolla `git branch -d`, jos branchin sisältö ei ole kokonaisuudessan mergetty mainiin. Jos näin on, tee ensin merge mainiin, tai jos tarkoituksena on poistaa branch silti vaikka siinä on vielä eriäviä muutoksia, käytä `git branch -D` poistaaksesi branch eriävine muutoksineen
+  - Tuhoaminen ei onnistu suoraan komennolla `git branch -d`, jos branchin sisältö ei ole kokonaisuudessaan mergetty mainiin. Jos näin on, tee ensin merge mainiin, tai jos tarkoituksena on poistaa branch silti vaikka siinä on vielä eriäviä muutoksia, käytä `git branch -D` poistaaksesi branch eriävine muutoksineen
 - Tämän tehtävän ideana oli siis havainnollistaa, että working tree (muutokset joista Git ei ole tietoinen) ja staging (gitiin lisättyihin tiedostoihin tehdyt committoimattomat muutokset)
   **eivät liity** mihinkään branchiin, muutokset siirtyvät staging-alueelta branchiin ainoastaan komennon `git commit` suorituksen seurauksena
 
@@ -622,7 +622,7 @@ Jotkut editorit, esim [Visual Studio Code](https://code.visualstudio.com) sisäl
 
 **HUOM** tässä tehtävässä on tunnetusti välillä haastava seurata jokaista askelta siten, että päätyy aina samaan tilaan mitä tehtävä odottaa. Ei kannata stressata tästä liikaa. Pääasia tehtävässä on oppia miten branchit saadaan toimimaan lokaalisti ja GitHubissa siten, että _git push_ ja _git pull_ toimivat kaikille brancheille.
 
-Aloita lukemalla ProGit-kirjasta luku [Remote Branches](http://git-scm.com/book/en/Git-Branching-Remote-Branches).
+Aloita lukemalla ProGit-kirjasta luku [Remote Branches](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches).
 
 Lisätään seuraavaksi branch GitHubiin:
 
@@ -637,7 +637,7 @@ Lisätään seuraavaksi branch GitHubiin:
 Kloonaa GitHub-repositoriosta koneellesi **toinen klooni**:
 
 - Kuten huomaat, eivät branchit tule klooniin
-- Tee paikalliseen klooniin branch joka "träkkää" GitHubissa olevan projektisi branchia **haara1** (ks. <http://git-scm.com/book/en/Git-Branching-Remote-Branches> kohta Tracking Branches)
+- Tee paikalliseen klooniin branch joka "träkkää" GitHubissa olevan projektisi branchia **haara1** (ks. <https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches> kohta Tracking Branches)
 - Lisää "träkkäävään" branchiin jokin tiedosto (hakemistoon viikko2), committaa ja pushaa branchi GitHubiin
 - Tarkastele GitHub-repositoriota selaimella, varmista että branchi päivittyy
 
@@ -658,8 +658,8 @@ Mene jälleen **toiseen klooniin**:
 
 ```
 * remote origin
-  Fetch URL: git@github.com:mluukkai/ohtu-s22-palautukset.git
-  Push  URL: git@github.com:mluukkai/ohtu-s22-palautukset.git
+  Fetch URL: git@github.com:mluukkai/ohtu-palautukset.git
+  Push  URL: git@github.com:mluukkai/ohtu-palautukset.git
   HEAD branch: main
   Remote branches:
     haara1 tracked
@@ -733,7 +733,7 @@ Demonstroidaan vielä (viime viikon [tehtävässä 11](/tehtavat1#11-github-acti
 ```
 $ git push
  ! [rejected]        main -> main (fetch first)
-error: failed to push some refs to 'git@github.com:mluukkai/ohtu-s22-palautukset.git'
+error: failed to push some refs to 'git@github.com:mluukkai/ohtu-palautukset.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
@@ -761,7 +761,7 @@ hint: invocation.
 fatal: Need to specify how to reconcile divergent branches.
 ```
 
-Käytännössä Git haluaa tietää minkälaisella strategialla paikallisen ja etärepositoriosi koodi tulisi yhdistää. Vaihtoehdoista kannattanee valita keskimäinen, eli anna komentorivillä komento
+Käytännössä Git haluaa tietää minkälaisella strategialla paikallisen ja etärepositoriosi koodi tulisi yhdistää. Vaihtoehdoista kannattanee valita keskimmäinen, eli anna komentorivillä komento
 
 ```
 git config pull.rebase true 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Osa 0
-title_long: 'Johdanto'
+title_long: "Johdanto"
 inheader: yes
 permalink: /osa0/
 ---
@@ -30,7 +30,6 @@ Kurssi koostuu kolmesta komponentista, luennoista, laskuharjoituksista ja minipr
 
 Kurssilla on 11 luentoa sekä vähintään yksi vierailuluentokerta. Luennoilla käydään pääasiassa läpi ohjelmistotuotantoon liittyvää käsitteistöä ja teoriaa, samaa asiaa mihin tämä materiaali keskittyy.
 
-
 ### Laskuharjoitukset
 
 Kurssiin liittyy viikoittaiset laskuharjoitukset. Tehtäviä harjoituksissa on kahden tyyppisiä.
@@ -44,13 +43,12 @@ Laskuharjoitusten oletettu kuormittavuus on noin 8 tuntia ensimmäisen kolmen vi
 
 Kurssilla on oma Discord kanava, jossa voit keskustella esimerkiksi tehtävistä: <https://discord.gg/g9eyybWzFr>
 
-Tehtävävien tekemistä tukevat harjoitusryhmät järjestetään yhdessä kurssin [ohjelmistoteustaus](https://opencs.it.jyu.fi/software-testing/) kanssa: 
+Tehtävävien tekemistä tukevat harjoitusryhmät järjestetään yhdessä kurssin [ohjelmistoteustaus](https://opencs.it.jyu.fi/software-testing/) kanssa:
 
 - Maanantaisin klo 10.15-11.45, AgC331.3
 - Torstaisin klo 10.15-11.45, AgC331.3
 
 Ryhmiin osallistuminen on vapaaehtoista ja niihin voi tulla tekemään tehtäviä ja kysymään apua opettajilta. Lisäapua saa esim. [Koodaamon](https://tim.jyu.fi/view/tiedekunnat/it/koodaamo/ilmoittautuminen#koodaamo-ilmoittautuminen) neuvontapäivystyksen kautta.
-
 
 ### Miniprojekti
 
@@ -65,7 +63,6 @@ Miniprojekteissa työskentelyyn tulee varata yhteensä noin 6 tuntia aikaa viik
 _Kurssin läpäisyn edellytyksenä_ on hyväksytysti suoritettu tai hyväksiluettu miniprojekti.
 
 Miniprojektit tapaavat asiakasta kampuksella. Tarvittaessa tehdään yksi tai kaksi etäryhmää.
-
 
 #### Miniprojektin hyväksilukeminen
 
@@ -84,11 +81,11 @@ Kurssilta on jaossa yhteensä 40 pistettä, jotka jakautuvat eri komponenttien k
 
 Tarkat arvosanarajat päätetään myöhemmin, mutta arvosanaan 1 riittää 20 pistettä.
 
-Läpipääsy edellyttää lisäksi miniprojektin hyväksyttyä suoritusta (tai hyväksilukua) ja kokeen hyväksyttyä suorittamista. 
+Läpipääsy edellyttää lisäksi miniprojektin hyväksyttyä suoritusta (tai hyväksilukua) ja kokeen hyväksyttyä suorittamista.
 
 ### Luennot - laskuharjoitukset - miniprojekti
 
-Kurssi siis sisältää kolme pääkomponenttia, luennot, viikoittaiset laskuharjoituset sekä miniprojektin. Komponentit ovat luonteeltaan melko erilaisia, ja se on joskus aiheuttanut hämmennystä opiskelijoiden keskuudessa.
+Kurssi siis sisältää kolme pääkomponenttia, luennot, viikoittaiset laskuharjoitukset sekä miniprojektin. Komponentit ovat luonteeltaan melko erilaisia, ja se on joskus aiheuttanut hämmennystä opiskelijoiden keskuudessa.
 
 Kurssin luennoilla keskitytään pääosin ohjelmistokehityksen teoriaan ja käsitteistöön. Laskareista monivalintatehtävät liittyvät kunkin viikon luentoihin.
 
@@ -98,7 +95,7 @@ Miniprojektin ideana taas on yhdistää luentojen teoria ja laskareissa käsitel
 
 Kokeessa suurin paino tulee olemaan teoriassa ja sen soveltamisessa käytäntöön. Laskareiden teknisimpiä asioita, kuten versionhallintaa ei kokeessa tulla kysymään. Tarkemmin kokeesta ja siihen valmistautumisesta kurssin viimeisellä luennolla.
 
-Kuten kohta tulemme näkemään, ohjelmistotuotanto kattaa suuren kirjon erilaisia asioita alkaen ihmisten johtamisesta aina teknisimpiin komentoriviltä suoritettaviin operaatioihin asti. Sama heijastuu myös kurssin rakenteessa, kurssilla on eri henkisiä komponentteja, näistä yksikään ei ole muita tärkeämpi, kullakin on oma painoarvonsa kurssin arvostelussa. Teoria-asioita arvioidaan koemenestyksen perusteella, käytännöllisimpiä asioita taas "jatkuvana arviona" laskareista kertyvien pisteiden ja miniprojektissa suoriutumisen perusteella.
+Kuten kohta tulemme näkemään, ohjelmistotuotanto kattaa suuren kirjon erilaisia asioita alkaen ihmisten johtamisesta aina teknisimpiin komentoriviltä suoritettaviin operaatioihin asti. Sama heijastuu myös kurssin rakenteessa, kurssilla on erihenkisiä komponentteja, näistä yksikään ei ole muita tärkeämpi, kullakin on oma painoarvonsa kurssin arvostelussa. Teoria-asioita arvioidaan koemenestyksen perusteella, käytännöllisimpiä asioita taas "jatkuvana arviona" laskareista kertyvien pisteiden ja miniprojektissa suoriutumisen perusteella.
 
 ## Aikataulu
 
@@ -120,7 +117,6 @@ Kun teksti on editoitu halutunkaltaiseksi, luodaan muutosehdotus sivun alalaidas
 Tämän jälkeen vielä luodaan muutosehdotuksesta _pull request_
 
 ![]({{ "/images/0-3.png" | absolute_url }})
-¨k
 
 Kun kaikki klikkailu on tehty, syntyy materiaalirepositorioon pull request
 
