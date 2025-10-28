@@ -15,7 +15,7 @@ Tämän viikon tehtävissä harjoitellaan ensin muutaman tärkeän ohjelmistokeh
 
 ### Tehtävien palauttaminen
 
-Tehtävät palautetaan GitHubiin, sekä merkitsemällä tehdyt tehtävät [Timiin]({{site.stats_url}}/konfigurointitehtavat-osa-1). Viikon tehtävät palautetaan yhdellä kertaa, eli tee merkintä palautussovellukseen vasta kun olet valmis viikon tehtävien osalta.
+Tehtävät palautetaan GitHubiin, sekä merkitsemällä tehdyt tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-1). Viikon tehtävät palautetaan yhdellä kertaa, eli tee merkintä palautussovellukseen vasta kun olet valmis viikon tehtävien osalta.
 
 Käytännössä tällä viikolla tehdään palautusta varten yksi GitHub repositoria nimeltään ohtuvarasto. Jos et vielä tiedä mikä on GitHub ja repositorio, niin pian opit.
 
@@ -272,7 +272,7 @@ On suositeltavaa, että teet [tämän](/poetry#asetusten-hienosäätö) muutokse
 - Asenna varasto-projektin riippuvuudet suorittamalla sen juurihakemistossa komento `poetry install`
 - Käynnistä sovellus komennolla `poetry run python3 src/index.py`
   - [Run](https://python-poetry.org/docs/cli/#run)-komento suorittaa annetun komennon (tässä tapauksessa `python3 src/index.py`) virtuaaliympäristössä
-- Siirry virtuaaliympäristöön komennolla `poetry shell`
+- Siirry virtuaaliympäristöön komennolla `poetry shell` tätä komentoa ei ladata automaattisesti poetry 2.0.0 version jälkeen, uusi versio on `poetry env activate`, joka tulostaa komennon millä ympäristö voidaan aktivoida. Poetry shell on kuitenkin vielä olemassa pluginina [täällä](https://github.com/python-poetry/poetry-plugin-shell) sen voi ladata esim komennolla `poetry self add poetry-plugin-shell`
 - Suorita komento `python3 src/index.py`
   - Virtuaaliympäristössä komentoja voi suorittaa "normaalisti", eli ilman `run`-komentoa
   - Kun uutta koodia kehitetään ja suoritetaan tiheissä sykleissä, on komentojen suorittaminen kätevintä tehdä virtuaaliympäristön sisällä
@@ -685,5 +685,4 @@ Pushaa koodi GitHubiin ja varmista, että Codecov generoi raportin siten, että 
 
 ### Tehtävien palauttaminen
 
-Pushaa kaikki tekemäsi tehtävät (paitsi ne, joissa mainitaan, että tehtävää ei palauteta mihinkään) GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin]({{site.stats_url}}/konfigurointitehtavat-osa-1).
-
+Pushaa kaikki tekemäsi tehtävät (paitsi ne, joissa mainitaan, että tehtävää ei palauteta mihinkään) GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-1)
