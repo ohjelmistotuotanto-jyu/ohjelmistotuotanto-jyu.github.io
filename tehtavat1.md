@@ -685,4 +685,5 @@ Pushaa koodi GitHubiin ja varmista, että Codecov generoi raportin siten, että 
 
 ### Tehtävien palauttaminen
 
-Pushaa kaikki tekemäsi tehtävät (paitsi ne, joissa mainitaan, että tehtävää ei palauteta mihinkään) GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin]({{site.stats_url}}/konfigurointitehtavat-osa-1)
+Pushaa kaikki tekemäsi tehtävät (paitsi ne, joissa mainitaan, että tehtävää ei palauteta mihinkään) GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin]({{site.stats_url}}/konfigurointitehtavat-osa-1).
+

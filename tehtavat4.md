@@ -5,7 +5,7 @@ inheader: no
 permalink: /tehtavat4/
 ---
 
-
+{% include paivitys_kesken.md %}
 
 Tehtävissä tutustutaan riippuvuuksien "mockaamiseen" yksikkötesteissä. 
 
@@ -291,4 +291,4 @@ Pidä huoli siitä, että miniprojektitiimisi pitää toisen sprintin lopussa jo
 
 ### Tehtävien palauttaminen
 
-Pushaa mock-tehvät GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin]({{site.stats_url}}/konfigurointitehtavat-osa-4). Retrospektiivitehtävä palautetaan suoraan Timissä olevalle lomakkeelle.
+Pushaa kaikki tekemäsi tehtävät ja GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin]({{site.stats_url}}/konfigurointitehtavat-osa-4) Retrospektiivitehtävä palautetaan suoraan Timissä olevalle lomakkeelle.

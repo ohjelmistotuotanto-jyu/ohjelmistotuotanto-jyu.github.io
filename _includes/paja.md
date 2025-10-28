@@ -2,5 +2,7 @@ Apua tehtävien tekoon saa [Koodaamosta](https://tim.pm/Koodaamo), Agoran Latin 
 
 Lisäksi Ohjelmistotuotanto kurssin opiskelijat voivat osallistua [ohjelmistoteustaus](https://opencs.it.jyu.fi/software-testing/) kurssin kanssa yhteisiin harjoituksiin maanantaisin ja torstaisin 9:15-10:45 luokassa C331.3.
 
+Ryhmiin osallistuminen on vapaaehtoista ja niihin voi tulla tekemään tehtäviä ja kysymään apua opettajilta. 
+
 
 

@@ -224,3 +224,4 @@ Kun olet lopettanut debuggaamiseen, syötä `exit()` ja poista koodista `set_tra
 
 Pushaa kaikki tekemäsi tehtävät ja GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin]({{site.stats_url}}/konfigurointitehtavat-osa-3)
 
+
