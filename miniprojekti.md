@@ -18,7 +18,7 @@ permalink: /miniprojekti/
 
 ### Ryhmän muodostaminen
 
-Täytä ryhmien muodostamisessa käytettävä lomaka viimeistään keskiviikkona 20.11. Lomake löytyy [täältä](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/ajanvaraus). Ryhmät ja ryhmien tapaamisajat julkaistaan torstaina (21.11.). Ensimmäiset tapaamiset ovat heti seuraavalla viikolla. Ensimmäinen tapaaminen voi kestää enemmän, kuin puoli tuntia (tapaaminen jatkuu puoli tuntia valitsemasi ajan jälkeen - tai aloitetaan puoli tuntia aikaisemmin) 
+Täytä ryhmien muodostamisessa käytettävä lomaka viimeistään keskiviikkona 20.11. Lomake löytyy [täältä]({{site.tim_url}}/ajanvaraus). Ryhmät ja ryhmien tapaamisajat julkaistaan torstaina (21.11.). Ensimmäiset tapaamiset ovat heti seuraavalla viikolla. Ensimmäinen tapaaminen voi kestää enemmän, kuin puoli tuntia (tapaaminen jatkuu puoli tuntia valitsemasi ajan jälkeen - tai aloitetaan puoli tuntia aikaisemmin) 
 
 - Ensimmäiseen tapaamiseen tullessa on syytä tuntea materiaalin osien 1 ja 2 asioista ainakin seuraavat:
   - Scrum
