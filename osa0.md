@@ -28,27 +28,23 @@ Kurssi koostuu kolmesta komponentista, luennoista, laskuharjoituksista ja minipr
 
 ### Luennot
 
-Kurssilla on 11 luentoa sekä vähintään yksi vierailuluentokerta. Luennoilla käydään pääasiassa läpi ohjelmistotuotantoon liittyvää käsitteistöä ja teoriaa, samaa asiaa mihin tämä materiaali keskittyy.
+Kurssilla on 11 luentoa sekä useampi vierailuluento. Luennoilla käydään pääasiassa läpi ohjelmistotuotantoon liittyvää käsitteistöä ja teoriaa, samaa asiaa mihin tämä materiaali keskittyy.
 
 ### Laskuharjoitukset
 
 Kurssiin liittyy viikoittaiset laskuharjoitukset. Tehtäviä harjoituksissa on kahden tyyppisiä.
 
 Luennoilla ja tässä materiaalissa käytävää teoriaa kertaavat _viikoittaiset_ tehtävien (monivalintoja tai lyhyitä pohdintatehtäviä) deadline on sunnuntaina klo 23.59.
-Toinen osa tehtävistä käsittelee ohjelmistotuotantoon liittyviä teknisempiä asioita, kuten versionhallintaa, testaamista ja ohjelmistojen konfigurointia, näiden deadline on _tiistaina klo 23:59_. Tehtävien ohjelmointikieli on Python.
+Toinen osa tehtävistä käsittelee ohjelmistotuotantoon liittyviä teknisempiä asioita, kuten versionhallintaa, testaamista ja ohjelmistojen konfigurointia, näiden deadline on _maanantaina klo 23:59_. Tehtävien ohjelmointikieli on Python.
 
-Laskuharjoitusten oletettu kuormittavuus on noin 8 tuntia ensimmäisen kolmen viikon aikana ja 4 tuntia jälkimmäisinä viikkoina. Teoriatehtäviin vastaaminen on suhteellisen nopeaa, mutta järkevästi vastaaminen edellyttää osallistumista luennoille ja/tai viikon materiaalin lukemista.
+Laskuharjoitusten oletettu kuormittavuus on ensimmäisen kolmen viikon aikana enemmän ja tämän jälkeen vähemmän. Teoriatehtäviin vastaaminen on suhteellisen nopeaa, mutta järkevästi vastaaminen edellyttää osallistumista luennoille ja/tai viikon materiaalin lukemista.
 
 ### Apua laskuharjoituksiin
 
-Kurssilla on oma Discord kanava, jossa voit keskustella esimerkiksi tehtävistä: <https://discord.gg/g9eyybWzFr>
+Kurssilla on oma Discord kanava, jossa voit keskustella esimerkiksi tehtävistä: TODO
 
-Tehtävävien tekemistä tukevat harjoitusryhmät järjestetään yhdessä kurssin [ohjelmistoteustaus](https://opencs.it.jyu.fi/software-testing/) kanssa:
+{% include paja.md %}
 
-- Maanantaisin klo 10.15-11.45, AgC331.3
-- Torstaisin klo 10.15-11.45, AgC331.3
-
-Ryhmiin osallistuminen on vapaaehtoista ja niihin voi tulla tekemään tehtäviä ja kysymään apua opettajilta. Lisäapua saa esim. [Koodaamon](https://tim.jyu.fi/view/tiedekunnat/it/koodaamo/ilmoittautuminen#koodaamo-ilmoittautuminen) neuvontapäivystyksen kautta.
 
 ### Miniprojekti
 
@@ -70,18 +66,16 @@ Miniprojektiin osallistuminen ei ole välttämätöntä, jos sinulla on vähint
 
 ### Kurssin arvostelu
 
-Kurssilta on jaossa yhteensä 40 pistettä, jotka jakautuvat eri komponenttien kesken seuraavasti (alustava)
+Kurssin eri osa-alueista saa pisteitä. Osa-alueiden painoarvot lopullisessa arvostelussa ovat:
 
-- laskarit, 10 pistettä (laskaripisteet skaalataan välille 0-10)
-  - teoriatehtävät 4p
-  - konfigurointitehtävät 6p
-- miniprojekti 10 pistettä
-- koe 18 pistettä
-- osallistuminen paikan päällä vierailuluennoille 2 pistettä
+- Monivalintatehtävät 10%
+- konfigurointitehtävät 15%
+- miniprojekti 25% pistettä
+- koe 45%
+- osallistuminen vierailulunennoille 5%
 
-Tarkat arvosanarajat päätetään myöhemmin, mutta arvosanaan 1 riittää 20 pistettä.
 
-Läpipääsy edellyttää lisäksi miniprojektin hyväksyttyä suoritusta (tai hyväksilukua) ja kokeen hyväksyttyä suorittamista.
+Läpipääsy edellyttää miniprojektin hyväksyttyä suoritusta (tai hyväksilukua) ja kokeen hyväksyttyä suorittamista.
 
 ### Luennot - laskuharjoitukset - miniprojekti
 

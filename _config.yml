@@ -18,13 +18,52 @@ url: 'https://ohjelmistotuotanto-jyu.github.io'
 github_username: ihantola
 repo_url: 'https://github.com/ohjelmistotuotanto-jyu/ohjelmistotuotanto-jyu.github.io'
 repo_branch: 'master'
+stats_url: 'https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat'
 
-norppa: https://norppa.app.jyu.fi/targets/6/feedback
+norppa: https://norppa.jyu.fi/targets/7131/feedback
 
 
 python_exercise_repo_url: 'https://github.com/ohjelmistotuotanto-jyu/tehtavat'
 java_exercise_repo_url: 'https://github.com/ohjelmistotuotanto-jyu/syksy2021-java'
 
+moniv-dl:
+  - 'FAIL'
+  - 'sunnuntai 2.11. klo 23:59:00'
+  - 'sunnuntai 9.11. klo 23:59:00'
+  - 'sunnuntai 16.11. klo 23:59:00'
+  - 'sunnuntai 23.11. klo 23:59:00'
+  - 'sunnuntai 30.11. klo 23:59:00'
+  - 'ei tehtäviä'
+  - 'ei tehtäviä'
+
+lask-dl:
+  - 'FAIL'
+  - 'maanantai 3.11. klo 23:59'
+  - 'maanantai 10.11. klo 23:59'
+  - 'maanantai 17.11. klo 23:59'
+  - 'maanantai 24.11. klo 23:59'
+  - 'ei tehtäviä'
+  - 'ei tehtäviä'
+  - 'ei tehtäviä'
+
+luennot:
+  - 'FAIL'
+  - 'tiistai 28.10. klo 10:15 - 12:00 Ag B122.1 Alfa'
+  - 'keskiviikko 29.10. klo 10:15 - 12:00 Ag B122.1 Alfa'
+  - 'tiistai 4.11. klo 10:15 - 12:00 Ag B105 Auditorio 2'
+  - 'keskiviikko 5.11. klo 10:15 - 12:00 Ag B121.1 Beeta'
+  - 'tiistai 11.11. klo 10:15 - 12:00 Ag B121.1 Beeta'
+  - 'keskiviikko 12.11. klo 10:15 - 12:00 Ag B122.1 Alfa'
+  - 'tiistai 18.11. klo 10:15 - 12:00 Ag B121.1 Beeta'
+  - 'keskiviikko 19.11. klo 10:15 - 12:00 Ag B122.1 Alfa'
+  - 'tiistai 25.11. klo 10:15 - 12:00 Ag B121.1 Beeta'
+  - 'keskiviikko 26.11. klo 10:15 - 12:00 Ag B122.1 Alfa'
+  - 'tiistai 2.12. klo 10:15 - 12:00 Ag B121.1 Beeta'
+  - 'keskiviikko 3.12. klo 10:15 - 12:00 Ag B122.1 Alfa'
+  - 'tiistai 9.12. klo 10:15 - 12:00 Ag B122.1 Alfa'
+  - 'keskiviikko 10.12. klo 10:15 - 12:00 Ag B122.1 Alfa'
+  - 'tiistai 16.12. klo 10:15 - 12:00 Ag B122.1 Alfa'
+  - 'keskiviikko 17.12. klo 10:15 - 12:00 Ag B122.1 Alfa'
 
 # Build settings
 markdown: kramdown
