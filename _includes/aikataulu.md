@@ -4,11 +4,10 @@
   - [Johdanto](/osa0)
   - [Ohjelmistotuotantoprosessin vaiheet](/osa1#ohjelmistotuotanto-ja-sen-osa-alueet)
   - [Ketterä ohjelmistokehitys](/osa1#ketterä-ohjelmistokehitys)
-  - [tallenne](https://youtu.be/9UaFvaRtTM0)
 - Luento 2: {{site.luennot[2]}}
   - [Scrum](/osa1#scrum)
 - Laskarit
-  -  [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat1) deadline {{site.lask-dl[1]}}
+  - Luentoja 1 ja 2 <a href="{{site.stats_url}}/teoriatehtavat-osa-1">monivalintatehtävät</a> deadline {{site.moniv-dl[1]}}
 
 ### Viikko 2
 
@@ -19,9 +18,8 @@
   - [Ketterä vaatimusten hallinta jatkuu](/osa2#user-story)
   - [Sprintin suunnittelu ja hallinta](/osa2#sprintin-suunnittelu) 
 - Laskarit
-  - Kahden ensimmäisen luennon <a href="{{site.stats_url}}/quiz/1">monivalintatehtävät</a> deadline {{site.moniv-dl[1]}}
-  - Luentojen 3 ja 4 <a href="{{site.stats_url}}/quiz/2">monivalintatehtävät</a> deadline {{site.moniv-dl[2]}}
-  - [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat2) deadline {{site.lask-dl[2]}}
+  - Luentojen 3 ja 4 <a href="{{site.stats_url}}/teoriatehtavat-osa-2">monivalintatehtävät</a> deadline {{site.moniv-dl[2]}}
+  - [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat1) deadline {{site.lask-dl[1]}}
 
 ### Viikko 3
 
@@ -30,8 +28,8 @@
 - Luento 6: {{site.luennot[6]}} 
   - [Laadunhallinnan perusteet ja Ketterien menetelmien testauskäytänteet](/osa3)
 - Laskarit
-  - <a href="{{site.stats_url}}/quiz/3">monivalintatehtävät</a> deadline {{site.moniv-dl[3]}}
-  - [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat3), deadline {{site.lask-dl[3]}}
+  - Luentojen 5 ja 6 <a href="{{site.stats_url}}/teoriatehtavat-osa-3">monivalintatehtävät</a> deadline {{site.moniv-dl[3]}}
+  - [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat2), deadline {{site.lask-dl[2]}}
 - [Miniprojekti](/miniprojekti)
   - Miniprojektin esittely
   - Ryhmien muodostaminen
@@ -46,7 +44,7 @@
   - [Arkkitehtuuri ketterissä menetemissä](/osa4#arkkitehtuuri-ketterissä-menetelmissä)
   - [Olio/komponenttisuunnittelu](/osa4#olio--ja-komponenttisuunnittelu)
 - Laskarit
-  - <a href="{{site.stats_url}}/quiz/4">monivalintatehtävät</a> deadline {{site.moniv-dl[4]}}
+  - Luentojen 7 ja 8 <a href="{{site.stats_url}}/teoriatehtavat-osa-4">monivalintatehtävät</a> deadline {{site.moniv-dl[4]}}
   - [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat4), deadline {{site.lask-dl[4]}}
 - [Miniprojekti](/miniprojekti)
   - Ryhmät kokoontuvat itsenäisesti ja valmistautuvat ensimmäiseen tapaamiseen
@@ -60,30 +58,25 @@
   - [Laajan skaalan ketterä ohjelmistokehitys](/osa5#laajan-skaalan-ketter%C3%A4-ohjelmistokehitys)
   - [Ketterien menetelmien käyttö ja hyödyt tutkimuksen valossa](/osa5#ketterien-menetelmien-käyttö-ja-hyödyt-tutkimuksen-valossa)
 - Laskarit
-  - <a href="{{site.stats_url}}/quiz/5">monivalintatehtävät</a> deadline {{site.moniv-dl[5]}}
-  - [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat6), deadline {{site.lask-dl[6]}}
-- Laskarit
-  - [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat5), deadline {{site.lask-dl[5]}}
+  - Luentojen 9 ja 10 <a href="{{site.stats_url}}/teoriatehtavat-osa-5">monivalintatehtävät</a> deadline {{site.moniv-dl[5]}}
 - [Miniprojekti](/miniprojekti)
   - Asiakastapaamiset (sprintin 0 review, sprintin 1 suunnittelu)
 
 ### Viikko 6
 
-- Vieraluluennot varmistuvat myöhemmin
-- Laskarit
-  - <a href="{{site.stats_url}}/quiz/5">monivalintatehtävät</a> deadline {{site.moniv-dl[5]}}
-  - [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat6), deadline {{site.lask-dl[6]}}
+- Vieraluluennot (aikataulu tarkentuu myöhemmin)
 - Miniprojekti
   - Asiakastapaamiset (sprintin 1 review, sprintin 2 suunnittelu)
 
 ### Viikko 7
 
-- Vierailuluennot (aikataulu tarkentuu myöhemmin)
-
-- [Miniprojekti](/miniprojekti)
-  - Loppudemot 
+- Luento 9: {{site.luennot[9]}}
+  - Vierailuluento: Työkokemusta jo hankkineiden opiskelijoiden paneelikeskustelu 
+- Luento 10: {{site.luennot[10]}} 
+  - varalla
 
     
 ### Viikko 8
 
 - Koe tiistaina 16.12. klo 13-16 A111 ja CHE A110 (sähköinen salitentti)
+- Miniprojektin loppudemot keskiviikkona
