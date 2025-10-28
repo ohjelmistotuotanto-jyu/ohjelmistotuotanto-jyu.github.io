@@ -291,4 +291,4 @@ Pidä huoli siitä, että miniprojektitiimisi pitää toisen sprintin lopussa jo
 
 ### Tehtävien palauttaminen
 
-Pushaa mock-tehvät GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-4). Retrospektiivitehtävä palautetaan suoraan Timissä olevalle lomakkeelle.
+Pushaa mock-tehvät GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin]({{site.stats_url}}/konfigurointitehtavat-osa-4). Retrospektiivitehtävä palautetaan suoraan Timissä olevalle lomakkeelle.

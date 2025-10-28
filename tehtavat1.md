@@ -15,7 +15,7 @@ Tämän viikon tehtävissä harjoitellaan ensin muutaman tärkeän ohjelmistokeh
 
 ### Tehtävien palauttaminen
 
-Tehtävät palautetaan GitHubiin, sekä merkitsemällä tehdyt tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-1). Viikon tehtävät palautetaan yhdellä kertaa, eli tee merkintä palautussovellukseen vasta kun olet valmis viikon tehtävien osalta.
+Tehtävät palautetaan GitHubiin, sekä merkitsemällä tehdyt tehtävät [Timiin]({{site.stats_url}}/konfigurointitehtavat-osa-1). Viikon tehtävät palautetaan yhdellä kertaa, eli tee merkintä palautussovellukseen vasta kun olet valmis viikon tehtävien osalta.
 
 Käytännössä tällä viikolla tehdään palautusta varten yksi GitHub repositoria nimeltään ohtuvarasto. Jos et vielä tiedä mikä on GitHub ja repositorio, niin pian opit.
 
@@ -685,4 +685,4 @@ Pushaa koodi GitHubiin ja varmista, että Codecov generoi raportin siten, että 
 
 ### Tehtävien palauttaminen
 
-Pushaa kaikki tekemäsi tehtävät (paitsi ne, joissa mainitaan, että tehtävää ei palauteta mihinkään) GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-1)
+Pushaa kaikki tekemäsi tehtävät (paitsi ne, joissa mainitaan, että tehtävää ei palauteta mihinkään) GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin]({{site.stats_url}}/konfigurointitehtavat-osa-1)
