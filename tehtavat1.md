@@ -272,7 +272,7 @@ On suositeltavaa, että teet [tämän](/poetry#asetusten-hienosäätö) muutokse
 - Asenna varasto-projektin riippuvuudet suorittamalla sen juurihakemistossa komento `poetry install`
 - Käynnistä sovellus komennolla `poetry run python3 src/index.py`
   - [Run](https://python-poetry.org/docs/cli/#run)-komento suorittaa annetun komennon (tässä tapauksessa `python3 src/index.py`) virtuaaliympäristössä
-- Siirry virtuaaliympäristöön komennolla `poetry shell`
+- Siirry virtuaaliympäristöön komennolla `poetry shell`. Huom tätä komentoa ei ladata automaattisesti poetry 2.0.0 version jälkeen, uusi versio on `poetry env activate`, joka tulostaa komennon millä ympäristö voidaan aktivoida (eli siis näyttää mistä virtuaali ympäristösi activate skripti löytyy). Poetry shell on kuitenkin vielä olemassa [pluginina](https://github.com/python-poetry/poetry-plugin-shell), sen voi ladata esim komennolla `poetry self add poetry-plugin-shell`
 - Suorita komento `python3 src/index.py`
   - Virtuaaliympäristössä komentoja voi suorittaa "normaalisti", eli ilman `run`-komentoa
   - Kun uutta koodia kehitetään ja suoritetaan tiheissä sykleissä, on komentojen suorittaminen kätevintä tehdä virtuaaliympäristön sisällä
@@ -685,5 +685,4 @@ Pushaa koodi GitHubiin ja varmista, että Codecov generoi raportin siten, että 
 
 ### Tehtävien palauttaminen
 
-Pushaa kaikki tekemäsi tehtävät (paitsi ne, joissa mainitaan, että tehtävää ei palauteta mihinkään) GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin]({{site.stats_url}}/konfigurointitehtavat-osa-1).
-
+Pushaa kaikki tekemäsi tehtävät (paitsi ne, joissa mainitaan, että tehtävää ei palauteta mihinkään) GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin]({{site.stats_url}}/konfigurointitehtavat-osa-1)
