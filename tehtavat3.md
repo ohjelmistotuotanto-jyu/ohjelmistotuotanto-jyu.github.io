@@ -5,8 +5,6 @@ inheader: no
 permalink: /tehtavat3/
 ---
 
-{% include paivitys_kesken.md %}
-
 
 Tehtävässä tutustutaan Dockerin käyttöön, pull requestien tekoon ja hyväksymistestien kirjoittamiseen robot -kirjaston avulla,
 
