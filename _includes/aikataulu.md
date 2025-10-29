@@ -78,5 +78,5 @@
     
 ### Viikko 8
 
-- Koe tiistaina 16.12. klo 13-16 A111 ja CHE A110 (sähköinen salitentti)
+- Koe tiistaina 16.12.2025 (tarkempi aika ja sali varmistuvat myöhemmin)
 - Miniprojektin loppudemot keskiviikkona

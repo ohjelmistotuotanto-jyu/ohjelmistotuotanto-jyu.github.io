@@ -2,8 +2,10 @@
 
   <ul>
     <li>
-      Kurssi alkaa 28.10.2025. Ensimmäinen luento on 10.15 - 12.00 Salissa Ag B122.1 (Alfa)
       Kahden ensimmäisen kierroksen monivalinta- ja konfigurointitehtävät on avattu 28.10.2025
+    </li>
+    <li>
+      Tentin tarkka kellonaika ja sali voivat vielä muuttua (tieto päivitetty aikatauluun)
     </li>
   </ul>
 
