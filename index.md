@@ -3,10 +3,16 @@ layout: home
 permalink: /
 ---
 
+{% include paja.md path="/index.md" %}
+
 Kurssilla käsitellään ohjelmistotuotantoprojektien hallinnan, työvaiheiden ja työvälineiden perusteita painottaen ketteriä ohjelmistotuotantomenetelmiä. 
 
 Kurssin opetusjärjestelyt ja arvosteluperusteet on kuvattu [osassa 0](/osa0), lue ne tarkasti heti kurssin alussa!
 
+
+## Ajankohtaista
+
+{% include ajankohtaista.md path="/index.md" %}
 
 
 ## Neuvonta
