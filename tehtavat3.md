@@ -8,7 +8,7 @@ permalink: /tehtavat3/
 {% include paivitys_kesken.md %}
 
 
-Tehtävässä tutustutaan hyväksymistestien kirjoittamiseen robot -kirjaston avulla,
+Tehtävässä tutustutaan Dockerin käyttöön, pull requestien tekoon ja hyväksymistestien kirjoittamiseen robot -kirjaston avulla,
 
 ### Typoja tai epäselvyyksiä tehtävissä?
 
@@ -20,19 +20,222 @@ Tehtävässä tutustutaan hyväksymistestien kirjoittamiseen robot -kirjaston av
 
 ### Tehtävien palauttaminen
 
+Konttitehtävä palautetaan pull requestina tehtävässä mainittuun repositorioon.
 
-**Kaikki tämän viikon tehtävät palautetaan** jo edellisillä viikoilla käyttämääsi **palautusrepositorioon**, jonne teit hakemiston _osa2_. Tee repositorioon hakemisto _osa3_ ja palauta tehtävän sinne. 
+**Robot testaus tehtävät palautetaan** jo edellisillä viikoilla käyttämääsi **palautusrepositorioon**, jonne teit hakemiston _osa2_. Tee repositorioon hakemisto _osa3_ ja palauta tehtävän sinne. 
 
 
 ### VS Coden konfigurointi
 
 Osaatko konfiguroida VS Coden oikein? Jos ei, lue [tämä](/tehtavat2/#bonus-vs-coden-konfigurointi)!
 
-### 1. Tutustuminen Robot Frameworkkiin
+
+# Kontittaminen (Docker)
+
+**Kontittaminen** tarkoittaa ohjelmiston ja sen riippuvuuksien pakkaamista yhteen kevytrakenteiseen ympäristöön eli konttiin.  
+Kontti toimii eristetysti ja sisältää kaiken, mitä sovellus tarvitsee toimiakseen.
+
+Kontit eroavat virtuaalikoneista siinä, että ne jakavat isäntäjärjestelmän ytimen ja ovat siten kevyempiä, nopeampia ja helpommin hallittavia.
+
+**Keskeiset hyödyt:**
+- Ympäristöriippumattomuus  
+- Nopea käyttöönotto ja skaalautuvuus  
+- Helppo kehitys, testaus ja jakaminen  
+- Toistettavat ja vakioidut ajoympäristöt  
+
+
+### Dockerin latausohjeet
+
+Dockerin käyttämiseksi sinun tulee asentaa **Docker Desktop**.
+**Asennusohjeet:**  
+[https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
+
+Asennuksen jälkeen varmista, että Docker Desktop on käynnissä, jotta Docker-komennot toimivat.
+
+Tarkista asennus:
+```bash
+docker --version
+```
+
+# Dockerin käyttö
+
+> Tutustu Dockerin perusteisiin virallisilla ohjeilla: [Docker Documentation](https://docs.docker.com/get-started/docker-overview/). Ohjeista löydät tiedot komennoista, Dockerfileistä, imageista ja konteista.
+
+
+**Yksinkertaistettuna**
+1. Määrittele sovelluksen ympäristö Dockerfilessa, mitä kuva (image) sisältää ja miten sovellus ajetaan.
+2. Rakenna Docker-image Dockerfilesta, valmis paketti sovelluksesta.
+3. Aja kontti imagesta, sovellus toimii eristetyssä, itsenäisessä ympäristössä
+4. Kontteja voidaan pysäyttää, poistaa ja käynnistää uudelleen tarpeen mukaan. Sama image toimii samalla tavalla kaikilla alustoilla, mikä tekee kehityksestä ja testauksesta luotettavaa ja toistettavaa.
+
+
+![]({{ "/images/docker-ohjeet.png" | absolute_url }})
+
+Kurssi Käyttöjärjestelmät käsittelee käyttöjärjestelmien toimintaa, ja sen harjoituksissa on myös Dockerin käyttöön liittyviä ohjeita. Vapaaehtoisena lisämateriaalina ohjeita voi lukea tästä: [tästä](https://itka203.it.jyu.fi/demovedokset/p/).
+
+
+## 1. Kontissa ajettu sovellus osa 1
+
+Luodaan yksinkertainen Python-sovellus ja ajetaan se Docker-kontissa.
+
+
+**Vaihe 1: Sovelluksen luonti**
+
+Luo kansio hello-docker/ ja lisää tiedosto hello.py:
+```python
+from datetime import datetime
+
+def tervehdys():
+    print("Hei Dockerista! Nykyinen aika on:", datetime.now())
+
+if __name__ == "__main__":
+    tervehdys()
+```
+
+**Vaihe 2: Luo Dockerfile**
+
+Samaan kansioon Dockerfile:
+
+```Dockerfile
+# Käytetään Python 3.10 -pohjakuvaa
+FROM python:3.10
+
+# Työhakemisto kontissa
+WORKDIR /app
+
+# Kopioidaan ohjelma konttiin
+COPY hello.py .
+
+# Määritellään käynnistyskomento
+CMD ["python", "hello.py"]
+```
+**Vaihe 3: Rakenna ja aja kontti**
+Avaa terminaali projektikansiossa ja suorita:
+
+```bash
+docker build -t hello-docker .
+docker run hello-docker
+```
+
+Tulosteen pitäisi näyttää tältä:
+
+```yaml
+Hei Dockerista! Nykyinen aika on: 2025-10-19 12:34:56.789123
+```
+
+Tätä tehtävää ei palauteta mihinkään, mutta se oli hyvää harjoittelua :)
+
+## 2. Kontissa ajettu sovellus osa 2
+
+**Tavoite:** Saat valmiin pienen web-sovelluksen (Python + Flask) ja ohjeet, miten ajaa se Docker-kontissa. Tehtävässä harjoitellaan `Dockerfile`-tiedoston luomista, kuvan rakentamista ja kontin käynnistämistä paikallisesti portin kautta. Lisäksi opit todellisesta open source -työnkulusta, jossa muutokset tehdään forkkaamalla projekti, kehittämällä uutta ominaisuutta ja ehdottamalla sitä takaisin alkuperäiseen repositorioon pull requestin kautta.
+
+### Tehtävänanto 
+1. Luo hakemisto `oma-kontti/`.
+2. Forkkaa [tehtäväpohja](https://github.com/ohjelmistotuotanto-jyu/Palautusrepositorio).
+3. kloonaa forkattu tehtäväpohja
+4. Täydennä `Dockerfile`.
+5. Rakenna Docker-image ja aja kontti.
+6. Varmista selaimella, että sovellus vastaa odotetulla tavalla.
+7. Palauta sovellus Pull requestin muodossa palautusrepositorioon.
+
+## Lisätietoja
+
+> **Flask** on kevyt Python-web-framework. Flask-sovellus käynnistää pienen HTTP-palvelimen, joka vastaa selaimen pyyntöihin. Kun sovellus ajetaan (esim. `python app.py` tai Docker-kontissa), avaa selaimessa osoite `http://localhost:PORT` ja näet sovelluksen sivun.
+
+> Projektin Python-riippuvuudet listataan yleensä tiedostoon **`requirements.txt`**. Dockerfile:ssa riippuvuudet asennetaan build-vaiheessa esimerkiksi:
+```dockerfile
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+```
+
+### Rakenna image
+Kun Dockerfile on valmis, avaa terminaali hakemistossa ``oma-kontti/`` ja aja 
+
+```bash
+docker build -t oma-kontti .
+```
+Selitys:
+  - -t : asettaa image:lle "tagin" eli nimen (helpottaa kuvan löytämistä ja viittaamista).
+  - . (piste): build context eli kansio, jonka Docker kopioi buildin aikana (tavallisesti nykyinen kansio).
+
+
+Jos build onnistui, näet Successfully built ... ja Successfully tagged oma-kontti.
+
+### Aja kontti
+
+Käynnistä kontti ja ohjaa hostin portti 80 konttiin 80:
+
+```bash
+docker run --rm -p 80:80 --name oma-kontti-demo oma-kontti
+```
+
+Selitys:
+- --rm
+  - Poistaa kontin automaattisesti, kun se pysähtyy. Hyvä kehityksessä, ettei vanhoja pysähtyneitä kontteja jää.
+- -p 80:80
+  - Portin kartoitus/mapping: vasen osa on isännän (host) portti, oikea osa kontin portti. Tässä isännän portti 80 ohjataan kontin porttiin 80.
+  - Muoto on HOST_PORT:CONTAINER_PORT.
+- --name oma-kontti-demo
+  - Asettaa kontin ihmisluettavan nimen. Mahdollistaa komennot kuten docker stop oma-kontti-demo tai docker logs oma-kontti-demo.
+- oma-kontti
+  - Image:n nimi tai tag (tässä image, joka luotiin aiemmin). 
+
+
+Avaa selaimessa: http://localhost:80
+Pitäisi näkyä otsikko ja palvelimen aika.
+
+### Taustalle ajo (Valinnainen)
+
+Jos haluat ajaa kontin taustalla (detached):
+
+```bash
+docker run -d -p 80:80 --name oma-kontti-demo oma-kontti
+```
+
+Pysäytä ja poista seuraavasti:
+
+```bash
+docker stop oma-kontti-demo
+docker rm oma-kontti-demo
+```
+
+
+### Virheenkorjaus
+
+Jos docker build epäonnistuu: lue virheilmoitus — yleensä puuttuva tiedosto, väärä requirements-merkintä tai pip-virhe. Kokeile build-komentoa uudelleen ja katso viimeiset rivit.
+
+
+- Kontti ei käynnisty tai kaatuu heti:
+  - docker ps -a — katso exit-koodi.
+  - docker logs <name> — katso sovellusvirheet.
+
+
+- Portin varaus hostissa:
+  - sudo lsof -iTCP:80 -sTCP:LISTEN -n -P ; jos varattu, käytä toista host-porttia (esim. -p 8080:80).
+
+- Yleinen nopea korjaus:
+  - pysäytä/poista vanha kontti: docker stop <name> && docker rm {name}
+  - aja uudella portilla: docker run -p 8080:80 --rm --name temp {image}
+
+Katso kontin lokit:
+```bash
+docker logs <container_id_or_name>
+```
+
+### Tehtävän palautus
+
+Pushaa forkkiin ja tee PR GitHubissa:
+```bash
+git push -u origin oma-tehtava
+# sitten GitHub: Compare & pull request -> valitse base = alkuperäinen repo
+```
+
+
+### 3. Tutustuminen Robot Frameworkkiin
 
 Lue [täällä](/robot_framework) oleva Robot Framework -johdanto ja tee siihen liittyvät tehtävät.
 
-### 2. Kirjautumisen testit
+### 4. Kirjautumisen testit
 
 Hae [kurssirepositorion]({{site.python_exercise_repo_url}}) hakemistossa _osa3/login-robot_ oleva projekti.
 
@@ -87,7 +290,7 @@ Login With Nonexistent Username
 
 Suorita testitapauksissa sopivat avainsanat, jotta haluttu tapaus tulee testattua.
 
-### 3. Uuden käyttäjän rekisteröitymisen testit
+### 5. Uuden käyttäjän rekisteröitymisen testit
 
 Lisää testihakemistoon uusi testitiedosto _register.robot_. Toteuta tiedostoon user storylle _A new user account can be created if a proper unused username and a proper password are given_ seuraavat testitapaukset:
 
@@ -222,5 +425,5 @@ Kun olet lopettanut debuggaamiseen, syötä `exit()` ja poista koodista `set_tra
 
 ### Tehtävien palauttaminen
 
-Pushaa kaikki tekemäsi tehtävät ja GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-3)
+Pushaa tekemäsi **Robot framework** tehtävät ja GitHubiin palautusrepositorioosi ja merkkaa tekemäsi tehtävät [Timiin](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2024/tehtavat/konfigurointitehtavat-osa-3)
 
