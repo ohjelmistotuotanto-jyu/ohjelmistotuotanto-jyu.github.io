@@ -515,29 +515,20 @@ Laita repositoriossa olevaan tiedostoon _README.md_ koodin tilasta kertova _Stat
 [Tämän](https://docs.github.com/en/free-pro-team@latest/actions/managing-workflow-runs/adding-a-workflow-status-badge) ohjeen mukaan badgen osoite on muotoa
 
 ```
-https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_NAME>/badge.svg
+https://github.com/OWNER/REPOSITORY/actions/workflows/WORKFLOW-FILE/badge.svg
 ```
 
-_WORKFLOW_NAME_ on määritelty konfiguraatiotiedostossa:
+_WORKFLOW-FILE_ löytyy hakemistosta `.github/workflows`
 
-```yml
-name: CI
+Oletusasetuksilla tiedoston nimi on _main.yml_
 
-on:
-  push:
-    branches: [main]
-# ...
-```
-
-Olemme käyttäneet nimeä _CI_, nimi voi kuitenkin olla mikä vaan, esimerkiksi:
+Esimerkiksi:
 
 ```
-https://github.com/mluukkai/ohtuvarasto/workflows/CI/badge.svg
+https://github.com/mluukkai/ohtuvarasto/actions/workflows/main.yml/badge.svg
 ```
 
 Lisää badge editoimalla tiedostoa _README.md_ suoraan GitHubissa:
-
-![]({{ "/images/py-lh1-27-22.png" | absolute_url }})
 
 Oikein toimiva badge näyttää seuraavalta:
 
