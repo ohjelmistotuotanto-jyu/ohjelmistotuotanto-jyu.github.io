@@ -70,13 +70,13 @@
 
 ### Viikko 7
 
-- Luento 9: {{site.luennot[9]}}
+- Luento 9: {{site.luennot[13]}}
   - Vierailuluento: Työkokemusta jo hankkineiden opiskelijoiden paneelikeskustelu 
-- Luento 10: {{site.luennot[10]}} 
+- Luento 10: {{site.luennot[14]}} 
   - varalla
 
     
 ### Viikko 8
 
-- Koe tiistaina 16.12.2025 (tarkempi aika ja sali varmistuvat myöhemmin)
-- Miniprojektin loppudemot keskiviikkona
+- **Koe** 16.12.2025 {{site.luennot[15]}}
+- **Miniprojektien loppudemot** {{site.luennot[15]}}

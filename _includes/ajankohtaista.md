@@ -5,7 +5,10 @@
       Kahden ensimmäisen kierroksen monivalinta- ja konfigurointitehtävät on avattu 28.10.2025
     </li>
     <li>
-      Tentin tarkka kellonaika ja sali voivat vielä muuttua (tieto päivitetty aikatauluun)
+      Muista, että ensimmäisten tehtävien palautuksen määräaika on jo sunnuntaina
+    </li>
+    <li>
+      Kokeen ja loppudemojen ajankohta ja paikka ovat päivittyneet
     </li>
   </ul>
 
