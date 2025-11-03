@@ -15,6 +15,10 @@ Kurssin opetusjärjestelyt ja arvosteluperusteet on kuvattu [osassa 0](/osa0), l
 {% include norppa.md %}
 
 
+## Henkilökunta
+
+Petri Ihantola ja Simo Lehtinen  toivivat kurssin vastuuopettajina ja Niko Iljin kurssiassistenttina. Henkikökunnalle voi lähettää sähköpostia osoitteeseen ohtu1@tim.jyu.fi (esim kurssikorvaavuuden tai henkilökohtaiset järjestelyt).
+
 ## Neuvonta
 
 {% include paja.md path="/index.md" %}
