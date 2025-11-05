@@ -5,13 +5,7 @@
       <a href="/miniprojekti">Miniprojektin</a> ajoituskysely on auki. Vastaa mahdollisimman pian (viimeistään 7.11) aikatoiveisiin <a href="{{site.tim_url}}/ajanvaraus)">täällä</a>
     </li>
     <li>
-      Kahden ensimmäisen kierroksen monivalinta- ja konfigurointitehtävät on avattu 28.10.2025
-    </li>
-    <li>
-      Muista, että ensimmäisten tehtävien palautuksen määräaika on jo sunnuntaina
-    </li>
-    <li>
-      Kokeen ja loppudemojen ajankohta ja paikka ovat päivittyneet
+      Kolmennen kierroksen tehtävät on jo avattu. Toisen viikon tehtävien määräaika on taas sunnuntaina ja maanantaina.
     </li>
   </ul>
 
