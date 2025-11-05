@@ -2,6 +2,9 @@
 
   <ul>
     <li>
+      [Miniprojektin](/miniprojekti) ajoituskysely on auki. Vastaa mahdollisimman pian (viimeistään 7.11) aikatoiveisiin [täällä]({{site.tim_url}}/ajanvaraus)
+    </li>
+    <li>
       Kahden ensimmäisen kierroksen monivalinta- ja konfigurointitehtävät on avattu 28.10.2025
     </li>
     <li>

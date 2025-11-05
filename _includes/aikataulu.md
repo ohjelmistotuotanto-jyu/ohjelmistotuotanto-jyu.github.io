@@ -20,6 +20,7 @@
 - Laskarit
   - Luentojen 3 ja 4 <a href="{{site.stats_url}}/teoriatehtavat-osa-2">monivalintatehtävät</a> deadline {{site.moniv-dl[2]}}
   - [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat1) deadline {{site.lask-dl[1]}}
+- Miniprojektin aikataulukysely
 
 ### Viikko 3
 
