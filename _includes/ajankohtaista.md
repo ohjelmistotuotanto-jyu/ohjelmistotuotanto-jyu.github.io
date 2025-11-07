@@ -7,6 +7,9 @@
     <li>
       Kolmennen kierroksen tehtävät on jo avattu. Toisen viikon tehtävien määräaika on taas sunnuntaina ja maanantaina.
     </li>
+    <li>
+        Tällä viikolla perjantain koodaamossa Niko ei ole paikalla. Kurssitehtäviin saa kuitenkin normaalisti apua paikan päältä. Niko on tavoitettavissa Discordin kautta perjantaina 7.11. klo 14 asti.
+    </li>
   </ul>
 
 </div>
