@@ -83,4 +83,4 @@
 ### Viikko 8
 
 - **Koe** 16.12.2025 {{site.luennot[15]}}
-- **Miniprojektien loppudemot** {{site.luennot[15]}}
+- **Miniprojektien loppudemot** {{site.luennot[16]}}
