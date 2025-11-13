@@ -38,7 +38,7 @@ Alla olevat sprinttien arvosteluperusteet ovat suuntaa antavia ja arvotelussa py
 
 Ennen ensimmäistä sprinttiä pyri huolehtimaan seuraavista
 
-- Ryhmällä on yhteinen repositorio, jonne kaikilla on pääsy. Repositoriossa on vähintään README tiedosto, jonne sprinteissä tarvittavat tiedot voidaan myöshemmin litäsä (esim. ajankäytön seuranta).
+- Ryhmällä on yhteinen repositorio, jonne kaikilla on pääsy. Repositoriossa on vähintään README tiedosto, jonne sprinteissä tarvittavat tiedot voidaan myöhemmin lisätä (esim. ajankäytön seuranta).
 - Ryhmällä on yhteinen viestintäkanava ja ryhmä on sopinnut työtavoistaan.
 - Ryhmällä on alustava backlog
   - Backlogit voi toteuttaa esim. Google Docs -spreadsheetinä, mallia voi ottaa seuraavista:
