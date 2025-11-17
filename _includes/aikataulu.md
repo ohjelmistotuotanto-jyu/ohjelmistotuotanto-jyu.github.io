@@ -34,6 +34,7 @@
 - [Miniprojekti](/miniprojekti)
   - Miniprojektin esittely
   - Ryhmien muodostaminen
+  - Ryhmät kokoontuvat itsenäisesti ja valmistautuvat ensimmäiseen tapaamiseen
 
 ### Viikko 4
 
@@ -48,7 +49,7 @@
   - Luentojen 7 ja 8 <a href="{{site.stats_url}}/teoriatehtavat-osa-4">monivalintatehtävät</a> deadline {{site.moniv-dl[4]}}
   - [ohjelmointi/versionhallinta/konfigurointitehtävät](/tehtavat4), deadline {{site.lask-dl[4]}}
 - [Miniprojekti](/miniprojekti)
-  - Ryhmät kokoontuvat itsenäisesti ja valmistautuvat ensimmäiseen tapaamiseen
+  - Asiakastapaamiset (sprintin 0 review, sprintin 1 suunnittelu)
 
 
 ### Viikko 5
@@ -61,13 +62,13 @@
 - Laskarit
   - Luentojen 9 ja 10 <a href="{{site.stats_url}}/teoriatehtavat-osa-5">monivalintatehtävät</a> deadline {{site.moniv-dl[5]}}
 - [Miniprojekti](/miniprojekti)
-  - Asiakastapaamiset (sprintin 0 review, sprintin 1 suunnittelu)
+  - Asiakastapaamiset (sprintin 1 review, sprintin 2 suunnittelu)
 
 ### Viikko 6
 
 - Vieraluluennot (aikataulu tarkentuu myöhemmin)
 - Miniprojekti
-  - Asiakastapaamiset (sprintin 1 review, sprintin 2 suunnittelu)
+  - Asiakastapaamiset (sprintin 2 review, sprintin 3 suunnittelu)
 
 ### Viikko 7
 
@@ -75,9 +76,11 @@
   - Vierailuluento: Työkokemusta jo hankkineiden opiskelijoiden paneelikeskustelu 
 - Luento 10: {{site.luennot[14]}} 
   - varalla
+- [Miniprojekti](/miniprojekti)
+  - Ei asiakastapaamista, ryhmät tekevät itsenäisesti sprintin 3 ja siihen liittyvät jälkityöt ja valmistautuvat seuraavan viikon loppudemoon
 
     
 ### Viikko 8
 
 - **Koe** 16.12.2025 {{site.luennot[15]}}
-- **Miniprojektien loppudemot** {{site.luennot[15]}}
+- **Miniprojektien loppudemot** {{site.luennot[16]}}
