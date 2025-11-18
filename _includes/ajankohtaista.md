@@ -5,7 +5,8 @@
       <a href="/miniprojekti">Miniprojektin</a> ensimmäiset tapaamiset ovat nyt 17.11. alkavalla viikolla </a>
     </li>
     <li>
-      Neljännen kierroksen kurssitehtävät on avattu. Kolmannen viikon tehtävien määräaika on taas sunnuntaina ja maanantaina. (Konffitehtävien määräaika oli Timissä maanantaina hetken aikaa väärin. Jos tehtävät jäivät tämän takia palauttamatta, niin ota yhteyttä ohtu1@tim.jyu.fi 
+      Neljännen kierroksen kurssitehtävät on avattu. </li>
+    <li>Kolmannen kierroksen konffitehtävien määräaika oli Timissä maanantaina hetken aikaa väärin. Jos tehtävät jäivät tämän takia palauttamatta, niin ota yhteyttä ohtu1@tim.jyu.fi 
     </li>
   </ul>
 
