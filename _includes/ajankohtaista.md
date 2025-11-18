@@ -2,10 +2,10 @@
 
   <ul>
     <li>
-      <a href="/miniprojekti">Miniprojektin</a> ajoituskysely on auki. Vastaa mahdollisimman pian (viimeistään 7.11) aikatoiveisiin <a href="{{site.tim_url}}/ajanvaraus)">täällä</a>
+      <a href="/miniprojekti">Miniprojektin</a> ensimmäiset tapaamiset ovat nyt 17.11. alkavalla viikolla </a>
     </li>
     <li>
-      Neljännen kierroksen kurssitehtävät on avattu. Kolmannen viikon tehtävien määräaika on taas sunnuntaina ja maanantaina. 
+      Neljännen kierroksen kurssitehtävät on avattu. Kolmannen viikon tehtävien määräaika on taas sunnuntaina ja maanantaina. (Konffitehtävien määräaika oli Timissä maanantaina hetken aikaa väärin. Jos tehtävät jäivät tämän takia palauttamatta, niin ota yhteyttä ohtu1@tim.jyu.fi 
     </li>
   </ul>
 
