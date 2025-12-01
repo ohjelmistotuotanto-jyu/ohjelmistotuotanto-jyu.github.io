@@ -74,10 +74,10 @@
 
 ### Viikko 7
 
-- Luento 9: {{site.luennot[13]}}
-  - Vierailuluento: Työkokemusta jo hankkineiden opiskelijoiden paneelikeskustelu 
-- Luento 10: {{site.luennot[14]}} 
-  - Vierailuluennot:
+- Paneelikeskustelu/Vierailuluento: {{site.luennot[13]}}
+  - Työkokemusta jo hankkineiden opiskelijoiden paneelikeskustelu 
+- Vierailuluennot: {{site.luennot[14]}} 
+  - Ohjelma:
     - 9:15-9:45 Vlad Strirbu: AI native software engineering
     - 9:45-10:15, Tomi Suomi: TBD
     - 10:15-10:20 Tauko
