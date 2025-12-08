@@ -78,10 +78,10 @@
   - Työkokemusta jo hankkineiden opiskelijoiden paneelikeskustelu 
 - Vierailuluennot: {{site.luennot[14]}} 
   - Ohjelma:
-    - 9:15-9:45 Vlad Strirbu: AI native software engineering
-    - 9:45-10:15, Tomi Suomi: TBD
-    - 10:15-10:20 Tauko
-    - 10:20-10:50 Jussi Koskinen, Solita: Konsultointi ja asiakkaan kanssa eläminen  
+    - 10:15-10:45 Vlad Strirbu: AI native software engineering
+    - 10:45-11:15, Tomi Suomi: TBD
+    - 11:15-11:20 Tauko
+    - 11:20-11:50 Jussi Koskinen, Solita: Konsultointi ja asiakkaan kanssa eläminen  
 - [Miniprojekti](/miniprojekti)
   - Ei asiakastapaamista, ryhmät tekevät itsenäisesti sprintin 3 ja siihen liittyvät jälkityöt ja valmistautuvat seuraavan viikon loppudemoon
 
