@@ -56,7 +56,7 @@
 
 - Luento 9: {{site.luennot[9]}}
   - [Lean](/osa5#lean)
-- Luento 10: {{site.luennot[10]}} 
+- Luento 10: {{site.luennot[10]}} (Peruttu sairastumisen vuoksi)
   - [Laajan skaalan ketterä ohjelmistokehitys](/osa5#laajan-skaalan-ketter%C3%A4-ohjelmistokehitys)
   - [Ketterien menetelmien käyttö ja hyödyt tutkimuksen valossa](/osa5#ketterien-menetelmien-käyttö-ja-hyödyt-tutkimuksen-valossa)
 - Laskarit
@@ -66,16 +66,22 @@
 
 ### Viikko 6
 
-- Vieraluluennot (aikataulu tarkentuu myöhemmin)
+- Luento 11: {{site.luennot[11]}}
+  - [Laajan skaalan ketterä ohjelmistokehitys](/osa5#laajan-skaalan-ketter%C3%A4-ohjelmistokehitys)
+  - [Ketterien menetelmien käyttö ja hyödyt tutkimuksen valossa](/osa5#ketterien-menetelmien-käyttö-ja-hyödyt-tutkimuksen-valossa)
 - Miniprojekti
   - Asiakastapaamiset (sprintin 2 review, sprintin 3 suunnittelu)
 
 ### Viikko 7
 
-- Luento 9: {{site.luennot[13]}}
-  - Vierailuluento: Työkokemusta jo hankkineiden opiskelijoiden paneelikeskustelu 
-- Luento 10: {{site.luennot[14]}} 
-  - varalla
+- Paneelikeskustelu/Vierailuluento: {{site.luennot[13]}}
+  - Työkokemusta jo hankkineiden opiskelijoiden paneelikeskustelu 
+- Vierailuluennot: {{site.luennot[14]}} 
+  - Ohjelma:
+    - 10:15-10:45 Vlad Strirbu: AI native software engineering
+    - 10:45-11:15, Tomi Suomi: TBD
+    - 11:15-11:20 Tauko
+    - 11:20-11:50 Jussi Koskinen, Solita: Konsultointi ja asiakkaan kanssa eläminen  
 - [Miniprojekti](/miniprojekti)
   - Ei asiakastapaamista, ryhmät tekevät itsenäisesti sprintin 3 ja siihen liittyvät jälkityöt ja valmistautuvat seuraavan viikon loppudemoon
 
