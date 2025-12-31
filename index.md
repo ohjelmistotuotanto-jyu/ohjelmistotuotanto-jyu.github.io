@@ -12,7 +12,6 @@ Kurssin opetusjärjestelyt ja arvosteluperusteet on kuvattu [osassa 0](/osa0), l
 
 {% include ajankohtaista.md path="/index.md" %}
 
-{% include norppa.md %}
 
 
 ## Henkilökunta
