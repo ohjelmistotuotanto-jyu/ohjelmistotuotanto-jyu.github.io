@@ -23,6 +23,17 @@ stats_url: 'https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s202
 
 norppa: https://norppa.jyu.fi/targets/7131/feedback
 
+header_pages:
+  - osa0.md
+  - osa1.md
+  - osa2.md
+  - osa3.md
+  - osa4.md
+  - osa5.md
+  - miniprojekti.md
+  - tehtavat.md
+
+
 
 python_exercise_repo_url: 'https://github.com/ohjelmistotuotanto-jyu/tehtavat'
 java_exercise_repo_url: 'https://github.com/ohjelmistotuotanto-jyu/syksy2021-java'
