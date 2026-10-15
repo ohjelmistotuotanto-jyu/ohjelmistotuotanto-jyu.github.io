@@ -19,7 +19,7 @@ permalink: /miniprojekti/
 
 ### Ryhmän muodostaminen
 
-Täytä ryhmien muodostamisessa käytettävä lomake viimeistään perjantaina 7.11. Lomake löytyy [täältä]({{site.tim_url}}/ajanvaraus). Ryhmät ja ryhmien tapaamisajat julkaistaan mahdollismman pian. Ensimmäiset tapaamiset ovat heti seuraavalla viikolla. Ensimmäinen tapaaminen voi kestää tavallista enemmän. Huolellinen alkuvalmistelu (tehtävänantoon tutustuminen, versionhallinnan ja backlogin pystyttäminen yms) auttaa pitämään tapaamisen lyhyenä ja onnistuneena. 
+Täytä ryhmien muodostamisessa käytettävä lomake viimeistään perjantaina 6.11. Lomake löytyy [täältä]({{site.tim_url}}/ajanvaraus). Ryhmät ja ryhmien tapaamisajat julkaistaan mahdollismman pian. Ensimmäiset tapaamiset ovat heti seuraavalla viikolla. Ensimmäinen tapaaminen voi kestää tavallista enemmän. Huolellinen alkuvalmistelu (tehtävänantoon tutustuminen, versionhallinnan ja backlogin pystyttäminen yms) auttaa pitämään tapaamisen lyhyenä ja onnistuneena. 
 
 - Ensimmäiseen tapaamiseen tullessa on syytä tuntea materiaalin osien 1 ja 2 asioista ainakin seuraavat:
   - Scrum
@@ -43,36 +43,36 @@ Täytä ryhmien muodostamisessa käytettävä lomake viimeistään perjantaina 7
 Seuraavien viikkojen asiakastapaaminen (sprintin katselmointi ja uuden sprintin suunnittelu) tapahtuu saman 2h sisällä missä aloitustilaisuus pidetään. Tilaisuuden kesto on 30 minuuttia. 
 
 Ryhmät pyritään muodostamaan mahdollisimman pian
-#### viikko 3 (10.11. alkava viikko)
+#### viikko 3 (9.11. alkava viikko)
 
 - "0. sprintti"
 - Kaikille ryhmille yhteisenä tehtävänä ennen ensimmäistä tapaamista versionhallinnan pystyttäminen ja alustavan backlogin laatiminen. Varmistakaa että ylempänä olevana termilista on hallussa.
 
-#### viikko 4 (17.11. alkava viikko)
+#### viikko 4 (16.11. alkava viikko)
 
 - Ensimmäinen tapaaminen
 - Vaatimusten tarkempi kartoitus ja ensimmäisen sprintin suunnittelu
 
-#### viikko 5 (24.11. alkava viikko)
+#### viikko 5 (23.11. alkava viikko)
 
 - Sprintin 1 katselmointi, retrospektiivi ja sprintin 2 suunnittelu
 
-#### viikko 6 (1.12. alkava viikko)
+#### viikko 6 (30.11. alkava viikko)
 
 - Sprintin 2 katselmointi, retrospektiivi ja sprintin 3 suunnittelu
 
-#### viikko 7  (8.12. alkava viikko)
+#### viikko 7 (7.12. alkava viikko)
 
 - Ryhmät tekevät 3. sprintin loppuun itsenäisesti (ei asiakastapaamista) ja valmistautuvat seuraavaan viikon loppudemoon.
 
 #### viikko 8 
 
-- Loppudemot 17.12. Viimeisen sprintin retrospektiivi loppuesittelyn yhteydessä.
+- Loppudemot 16.12. Viimeisen sprintin retrospektiivi loppuesittelyn yhteydessä.
 
 
 ### Toteutettava ohjelmisto
 
-Esitellään alustavasti tiistain 11.11. luennolla ja tarkemmin ensimmäisessä asikastapaamisessa.
+Esitellään alustavasti tiistain 10.11. luennolla ja tarkemmin ensimmäisessä asikastapaamisessa.
 
 ### Tekniset ja prosessiin liittyvät vaatimukset
 

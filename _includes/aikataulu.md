@@ -56,7 +56,7 @@
 
 - Luento 9: {{site.luennot[9]}}
   - [Lean](/osa5#lean)
-- Luento 10: {{site.luennot[10]}} (Peruttu sairastumisen vuoksi)
+- Luento 10: {{site.luennot[10]}}
   - [Laajan skaalan ketterä ohjelmistokehitys](/osa5#laajan-skaalan-ketter%C3%A4-ohjelmistokehitys)
   - [Ketterien menetelmien käyttö ja hyödyt tutkimuksen valossa](/osa5#ketterien-menetelmien-käyttö-ja-hyödyt-tutkimuksen-valossa)
 - Laskarit
@@ -88,5 +88,5 @@
     
 ### Viikko 8
 
-- **Koe** 16.12.2025 {{site.luennot[15]}}
+- **Koe** 15.12.2026 {{site.luennot[15]}}
 - **Miniprojektien loppudemot** {{site.luennot[16]}}

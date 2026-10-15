@@ -10,7 +10,7 @@
 
 # Site settings
 
-title: Ohjelmistotuotanto JYU 2025
+title: Ohjelmistotuotanto JYU 2026
 email: petri.j.ihantola@jyu.fi
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: ''
@@ -18,8 +18,8 @@ url: 'https://ohjelmistotuotanto-jyu.github.io'
 github_username: ihantola
 repo_url: 'https://github.com/ohjelmistotuotanto-jyu/ohjelmistotuotanto-jyu.github.io'
 repo_branch: 'master'
-tim_url: 'https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025'
-stats_url: 'https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat'
+tim_url: 'https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2026'
+stats_url: 'https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2026/tehtavat'
 
 norppa: https://norppa.jyu.fi/targets/7131/feedback
 
@@ -40,42 +40,42 @@ java_exercise_repo_url: 'https://github.com/ohjelmistotuotanto-jyu/syksy2021-jav
 
 moniv-dl:
   - 'FAIL'
-  - 'sunnuntai 2.11. klo 23:59:00'
-  - 'sunnuntai 9.11. klo 23:59:00'
-  - 'sunnuntai 16.11. klo 23:59:00'
-  - 'sunnuntai 23.11. klo 23:59:00'
-  - 'sunnuntai 30.11. klo 23:59:00'
+  - 'sunnuntai 1.11. klo 23:59:00'
+  - 'sunnuntai 8.11. klo 23:59:00'
+  - 'sunnuntai 15.11. klo 23:59:00'
+  - 'sunnuntai 22.11. klo 23:59:00'
+  - 'sunnuntai 29.11. klo 23:59:00'
   - 'ei tehtäviä'
   - 'ei tehtäviä'
 
 lask-dl:
   - 'FAIL'
-  - 'maanantai 3.11. klo 23:59'
-  - 'maanantai 10.11. klo 23:59'
-  - 'maanantai 17.11. klo 23:59'
-  - 'maanantai 24.11. klo 23:59'
+  - 'maanantai 2.11. klo 23:59'
+  - 'maanantai 9.11. klo 23:59'
+  - 'maanantai 16.11. klo 23:59'
+  - 'maanantai 23.11. klo 23:59'
   - 'ei tehtäviä'
   - 'ei tehtäviä'
   - 'ei tehtäviä'
 
 luennot:
   - 'FAIL'
-  - 'tiistai 28.10. klo 10:15 - 12:00 Ag B122.1 Alfa'
-  - 'keskiviikko 29.10. klo 10:15 - 12:00 Ag B122.1 Alfa'
-  - 'tiistai 4.11. klo 10:15 - 12:00 Ag B105 Auditorio 2'
-  - 'keskiviikko 5.11. klo 10:15 - 12:00 Ag B121.1 Beeta'
-  - 'tiistai 11.11. klo 10:15 - 12:00 Ag B121.1 Beeta'
-  - 'keskiviikko 12.11. klo 10:15 - 12:00 Ag B122.1 Alfa'
-  - 'tiistai 18.11. klo 10:15 - 12:00 Ag B121.1 Beeta'
-  - 'keskiviikko 19.11. klo 10:15 - 12:00 Ag B122.1 Alfa'
-  - 'tiistai 25.11. klo 10:15 - 12:00 Ag B121.1 Beeta'
-  - 'keskiviikko 26.11. klo 10:15 - 12:00 Ag B122.1 Alfa'
-  - 'tiistai 2.12. klo 10:15 - 12:00 Ag B121.1 Beeta'
-  - 'keskiviikko 3.12. klo 10:15 - 12:00 Ag B122.1 Alfa'
-  - 'tiistai 9.12. klo 10:15 - 12:00 Ag B122.1 Alfa'
-  - 'keskiviikko 10.12. klo 10:15 - 12:00 Ag B122.1 Alfa'
-  - 'tiistai 16.12. klo 8:30 - 11:30 salissa Ag Aud3'
-  - 'keskiviikko 17.12. klo 9:15-12 salissa Ag Aud3'
+  - 'tiistai 27.10. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'keskiviikko 28.10. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'tiistai 3.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'keskiviikko 4.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'tiistai 10.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'keskiviikko 11.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'tiistai 17.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'keskiviikko 18.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'tiistai 24.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'keskiviikko 25.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'tiistai 1.12. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'keskiviikko 2.12. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'tiistai 8.12. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'keskiviikko 9.12. klo 10:15 - 12:00 Ag B103 Auditorio 3'
+  - 'tiistai 15.12. klo 12:00 – 16.00 salissa Ag Aud3'
+  - 'keskiviikko 16.12. klo 8:15-12 salissa Ag Aud3'
 
 # Build settings
 markdown: kramdown
