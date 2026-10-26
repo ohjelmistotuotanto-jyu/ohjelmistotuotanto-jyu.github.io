@@ -41,8 +41,6 @@ Laskuharjoitusten oletettu kuormittavuus on ensimmäisen kolmen viikon aikana en
 
 ### Apua laskuharjoituksiin
 
-Kurssilla on oma Discord kanava, jossa voit keskustella esimerkiksi tehtävistä: TODO
-
 {% include paja.md %}
 
 
@@ -70,7 +68,7 @@ Kurssin eri osa-alueista saa pisteitä. Osa-alueiden painoarvot lopullisessa arv
 
 - Monivalintatehtävät 10%
 - konfigurointitehtävät 15%
-- miniprojekti 25% pistettä
+- miniprojekti 25% 
 - koe 45%
 - osallistuminen vierailulunennoille 5%
 
