@@ -17,7 +17,7 @@ Tämän viikon tehtävissä harjoitellaan ensin muutaman tärkeän ohjelmistokeh
 
 Tehtävät palautetaan GitHubiin, sekä merkitsemällä tehdyt tehtävät [Timiin]({{site.stats_url}}/konfigurointitehtavat-osa-1). Viikon tehtävät palautetaan yhdellä kertaa, eli tee merkintä palautussovellukseen vasta kun olet valmis viikon tehtävien osalta.
 
-Käytännössä tällä viikolla tehdään palautusta varten yksi GitHub repositoria nimeltään ohtuvarasto. Jos et vielä tiedä mikä on GitHub ja repositorio, niin pian opit.
+Käytännössä tällä viikolla tehdään palautusta varten yksi GitHub-repositorio nimeltään ohtuvarasto. Jos et vielä tiedä mikä on GitHub ja repositorio, niin pian opit.
 
 Tehtävää 1 ei varsinaisesti palauteta minnekään, eikä sitä arvostella.
 
@@ -123,7 +123,7 @@ Olet jo todennäköisesti käyttänyt Gitiä aiemmilla kursseilla. Tässä teht�
 - `git checkout -- file`
 - `git reset HEAD`
 
-- Jos et vielä hallitse komentoja, kertaan kurssin
+- Jos et vielä hallitse komentoja, kertaa kurssin
   [Ohjelmointi 2 Git -materiaali](https://tim.jyu.fi/view/kurssit/tie/ohj2/tyokalut/git/ohj2git).
 
 Lisää Git-ohjeita löytyy runsaasti internetistä, esim:
@@ -132,7 +132,6 @@ Lisää Git-ohjeita löytyy runsaasti internetistä, esim:
 - [GitHubin helpit](https://help.github.com/articles/)
 - <https://www.atlassian.com/git/tutorials>
 - <https://we.riseup.net/debian/git-development-howto>
-- <http://www.ralfebert.de/tutorials/git/>
 
 **Tee nyt seuraavat:**
 
@@ -670,7 +669,7 @@ source = src
 omit = src/tests/**,src/index.py
 ```
 
-Konfiguraatiossa määritellä pilkulla eroteltuna niin kutsuttaja [glob](<https://en.wikipedia.org/wiki/Glob_(programming)>)-polkuja. Voimme jättää huomioimatta esimerkiksi yksittäisen tiedoston polun (_src/index.py_), tai kaikki tietyn hakemiston alla olevat polut (_src/tests/\*\*_).
+Konfiguraatiossa määritellään pilkulla eroteltuina niin kutsuttuja [glob](https://en.wikipedia.org/wiki/Glob_(programming\)) -polkuja. Voimme jättää huomioimatta esimerkiksi yksittäisen tiedoston polun (_src/index.py_), tai kaikki tietyn hakemiston alla olevat polut (_src/tests/\*\*_).
 
 Pushaa koodi GitHubiin ja varmista, että Codecov generoi raportin siten, että _src/index.py_-tiedosto ja _src/tests_-hakemiston tiedostot jätetään huomioimatta.
 

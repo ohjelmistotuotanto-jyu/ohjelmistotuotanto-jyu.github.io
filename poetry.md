@@ -46,7 +46,7 @@ curl -sSL https://install.python-poetry.org | POETRY_HOME=$HOME/.local python3 -
 
 **HUOM:** jos `python3`-komentoa ei löydy, käytä sen sijaan komennon lopussa `python`-komentoa. Varmista kuitenkin, että Python-versio on oikea edellisen ohjeen mukaisesti.
 
-**HUOM:** jos törmäät macOS-tietokoneella virheeseen `SSL: CERTIFICATE_VERIFY_FAILED`, avaa Python-asennuksen hakemisto komenolla `open /Applications/Python\ 3.9` (korvaa "3.9" käytössä olevalla Python-versiolla) ja klikkaa hakemistossa olevaa tiedostoa _Install Certificates.command_. Odota, että operaatio valmistuu ja suorita tämän jälkeen edellä mainittu asennus-komento uudestaan.
+**HUOM:** jos törmäät macOS-tietokoneella virheeseen `SSL: CERTIFICATE_VERIFY_FAILED`, avaa Python-asennuksen hakemisto komennolla `open /Applications/Python\ 3.9` (korvaa "3.9" käytössä olevalla Python-versiolla) ja klikkaa hakemistossa olevaa tiedostoa _Install Certificates.command_. Odota, että operaatio valmistuu ja suorita tämän jälkeen edellä mainittu asennus-komento uudestaan.
 
 Asennuksen jälkeen Poetry-binäärin polku tulee asettaa `PATH`-muuttujaan. Tämä onnistuu lisäämällä kotihakemiston _.bashrc_-tiedoston loppuun seuraava rivi:
 
@@ -60,7 +60,7 @@ Lisääminen onnistuu esimerkiksi muokkaamalla tiedostoa nano-editorin avulla, t
 echo "export PATH=\"\$HOME/.local/bin:\$PATH\"" >> $HOME/.bashrc
 ```
 
-**HUOM:** jos käytössäsi on zsh-komentorivi, on oikea konfiguraatiotiedosto _.bashrc_-tiedoston sijaan _.zshrc_-tiedosto. Voit tarkistaa käytössä olevan komentirivin komennolla `echo $SHELL`. Käytä tässä tapauksessa edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.zshrc`.
+**HUOM:** jos käytössäsi on zsh-komentorivi, on oikea konfiguraatiotiedosto _.bashrc_-tiedoston sijaan _.zshrc_-tiedosto. Voit tarkistaa käytössä olevan komentorivin komennolla `echo $SHELL`. Käytä tässä tapauksessa edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.zshrc`.
 
 **HUOM:** jos käytössäsi on macOS-käyttöjärjestelmä ja bash-komentorivi, käytä edellisessä komennossa käytetyn `$HOME/.bashrc`-polun sijaan polkua `$HOME/.bash_profile`.
 
@@ -82,7 +82,7 @@ Käynnistä terminaali uudestaan ja varmista, että asennus onnistui suorittamal
 
 #### Poetry ja Docker
 
-Ehkä paras tapa Poetryllä tapahtuvaan sovelluskehitykeen on [Dockerin](https://www.docker.com/) käyttö. Tällöin et tarvitse koneellesi muuta kuin Dockerin, mitään varsinaista asennusta ei tarvita sillä voit käyttää kurssia varten konfiguroitua Docker imagea [mluukkai/poetry](https://hub.docker.com/repository/docker/mluukkai/poetry/general), ks myös [GitHub-repositorio](https://github.com/mluukkai/docker-poetry).
+Ehkä paras tapa Poetryllä tapahtuvaan sovelluskehitykseen on [Dockerin](https://www.docker.com/) käyttö. Tällöin et tarvitse koneellesi muuta kuin Dockerin, mitään varsinaista asennusta ei tarvita sillä voit käyttää kurssia varten konfiguroitua Docker imagea [mluukkai/poetry](https://hub.docker.com/r/mluukkai/poetry), ks myös [GitHub-repositorio](https://github.com/mluukkai/docker-poetry).
 
 Poetryn käyttö tapahtuu seuraavasti. Mene hakemistoon, missä haluat suorittaa Poetry-komentoja. Joudut (todennäköisesti) antamaan hakemiston sisältöön kirjoitus- lukuoikeudet Dockerille komennolla:
 
@@ -108,7 +108,7 @@ Lisää Dockerista kurssilla [Devops with Docker](https://devopswithdocker.com/)
 
 #### Docker ja Robot-testit
 
-Web-sovelluksia testatessa käytä imagen [mluukkai/poetry](https://hub.docker.com/repository/docker/mluukkai/poetry) sijaan imagea [mluukkai/poetry-robot](https://hub.docker.com/repository/docker/mluukkai/poetry-robot/). Image toimii ainoastaan intelin prosessoriarkkitehtuurilla varustetuilla koneilla, eli M1 käyttäjät joutuvat etsimään jonkun muun ratkaisun...
+Web-sovelluksia testatessa käytä imagen [mluukkai/poetry](https://hub.docker.com/r/mluukkai/poetry) sijaan imagea [mluukkai/poetry-robot](https://hub.docker.com/r/mluukkai/poetry-robot). Image toimii ainoastaan intelin prosessoriarkkitehtuurilla varustetuilla koneilla, eli M1 käyttäjät joutuvat etsimään jonkun muun ratkaisun...
 
 Jotta kontissa suoritettu web-sovellus näkyisi isäntäkoneelle, tulee konttia käynnistettäessä julkaista kontin portti 5001 (missä sovellus toimii) isäntäkoneen porttiin. Tämä tapahtuu seuraavasti:
 
@@ -116,7 +116,7 @@ Jotta kontissa suoritettu web-sovellus näkyisi isäntäkoneelle, tulee konttia 
 docker run -it -p 5001:5001 --volume="$PWD:/mydir" mluukkai/poetry-robot
 ```
 
-Robot-testit suoritetaan menemällä komennolla `docker exec` samaan kontiin, missä sovellus on jo päällä: 
+Robot-testit suoritetaan menemällä komennolla `docker exec` samaan konttiin, missä sovellus on jo päällä: 
 
 ```bash
 docker exec -it kontainerintunnistetahan bash
@@ -157,7 +157,7 @@ virtualenvs.prefer-active-python = false
 virtualenvs.prompt = "{project_name}-py{python_version}"
 ```
 
-Konfiguraatioissa on pari meitä kiinnostava kohtaa. _cache-dir_ ja _virtualenvs.path_ kertovat yhdessä, että jokaisen projektin virtuaaliympäristo, eli talletetaan oletusarvoisesti kansion _/Users/mluukkai/Library/Caches/pypoetry_ alle. Tämä voi olla ok ratkaisu, mutta ainakin omaan makuun parempi on jos kunkin projektin virtuaaliympäristö talletetaan projektin hakemistoon. Tämä on yleinen käytäntö esimerkiksi JavaScritp-ekosysteemissä. Konfiguraatio tapahtuu seuraavasti
+Konfiguraatioissa on pari meitä kiinnostava kohtaa. _cache-dir_ ja _virtualenvs.path_ kertovat yhdessä, että jokaisen projektin virtuaaliympäristo, eli talletetaan oletusarvoisesti kansion _/Users/mluukkai/Library/Caches/pypoetry_ alle. Tämä voi olla ok ratkaisu, mutta ainakin omaan makuun parempi on jos kunkin projektin virtuaaliympäristö talletetaan projektin hakemistoon. Tämä on yleinen käytäntö esimerkiksi JavaScript-ekosysteemissä. Konfiguraatio tapahtuu seuraavasti
 
 ```bash
 poetry config virtualenvs.in-project true
@@ -236,7 +236,7 @@ Kannattaa huomata, että hakemistoa _.venv_  ei oletusarvoisesti näe komennolla
 
 {% include no_pip.md %}
 
-Asennetaan seuraavaksi projektiimme ensimmäisen riippuvuus. Riippuvuuksien löytäminen onnistuu helpoiten Googlettamalla ja etsimällä hakutuloksista sopivia GitHub-repositorioita, tai PyPI-sivuja. Asennetaan esimerkkinä projektiimme [cowsay](https://pypi.org/project/cowsay/)-kirjasto. Tämä onnistu projektin juurihakemistossa (samassa hakemistossa, missä _pyproject.toml_-tiedosto sijaitsee) komennolla:
+Asennetaan seuraavaksi projektiimme ensimmäisen riippuvuus. Riippuvuuksien löytäminen onnistuu helpoiten Googlettamalla ja etsimällä hakutuloksista sopivia GitHub-repositorioita, tai PyPI-sivuja. Asennetaan esimerkkinä projektiimme [cowsay](https://pypi.org/project/cowsay/)-kirjasto. Tämä onnistuu projektin juurihakemistossa (samassa hakemistossa, missä _pyproject.toml_-tiedosto sijaitsee) komennolla:
 
 ```bash
 poetry add cowsay
@@ -274,13 +274,13 @@ import cowsay
 cowsay.tux("Poetry is awesome!")
 ```
 
-Koodissa käyttämme `import`-lausetta saadaksemme cowsay-kirjaston käyttöömme. Jos suoritamme tiedoston terminaalissa komennolla:
+Koodissa käytämme `import`-lausetta saadaksemme cowsay-kirjaston käyttöömme. Jos suoritamme tiedoston terminaalissa komennolla:
 
 ```bash
 python3 src/index.py
 ```
 
-On lopputuloksena seuravaa virheilmoitus:
+On lopputuloksena seuraava virheilmoitus:
 
 ```
 ModuleNotFoundError: No module named 'cowsay'
@@ -294,11 +294,13 @@ poetry run python3 src/index.py
 
 `poetry run`-komento siis suorittaa annetun komennon virtuaaliympäristössä, jonka sisällä Python löytää riippuvuutemme.
 
-Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa jatkuvasti, on kätevintä olla koko ajan virtuaaliympäristön sisällä. Voimme siirtyä virtuaaliympäristön sisään kommennolla [shell](https://python-poetry.org/docs/cli/#shell):
+Kun projektia kehitetään aktiivisesti ja komentoja suoritetaan terminaalissa jatkuvasti, on kätevintä olla koko ajan virtuaaliympäristön sisällä. Voimme siirtyä virtuaaliympäristön sisään komennolla [shell](https://python-poetry.org/docs/cli/#shell):
 
 ```bash
 poetry shell
 ```
+
+**HUOM:** Jos käytössäsi on Poetryn versio 2.0 tai uudempi, `poetry shell` -komento ei ole mukana oletuksena. Voit joko asentaa sen lisäosana komennolla `poetry self add poetry-plugin-shell` tai käyttää uudempaa komentoa `poetry env activate` (tai ajaa komennot suoraan `poetry run <komento>`).
 
 Kun olemme virtuaaliympäristössä, komentorivin syöterivin edessä on suluissa virtuaaliympäristön nimi:
 
@@ -318,7 +320,7 @@ Poetry:n tuodut riippuvuudet ovat vain virtuaalisessa ympäristössä saatavilla
 
 ### Kehityksen aikaiset riippuvuudet
 
-Poetryn avulla riippuvuuksia on mahdollista ryhmitellä niiden käyttötarkoituksen mukaan. Melko yleinen tapa ryhmitellä riippuuvuuksia on ryhmitellä ne _kehityksen_ ja _suorituksen_ aikaisiksi riippuvuuksiksi. Kehityksen aikaisia riippuvuuksia tarvitaan ohjelmiston kehityksen aikana, mutta ne eivät ole välttämättömiä ohjelman suorituksessa.
+Poetryn avulla riippuvuuksia on mahdollista ryhmitellä niiden käyttötarkoituksen mukaan. Melko yleinen tapa ryhmitellä riippuvuuksia on ryhmitellä ne _kehityksen_ ja _suorituksen_ aikaisiksi riippuvuuksiksi. Kehityksen aikaisia riippuvuuksia tarvitaan ohjelmiston kehityksen aikana, mutta ne eivät ole välttämättömiä ohjelman suorituksessa.
 
 Komennon `poetry add` suorittaminen asentaa oletusarvoisesti riippuvuudet `[tool.poetry.dependencies]`-osion alle. Näiden riippuvuuksien lisäksi voimme asentaa projektiimme riippuvuuksia, joita tarvitsemme vain kehityksen aikana. Näitä riippuvuuksia ovat kaikki ne, joita itse sovelluksen käynnistäminen (esimerkiksi `python3 src/index.py`-komennon suorittaminen) ei tarvitse.
 
