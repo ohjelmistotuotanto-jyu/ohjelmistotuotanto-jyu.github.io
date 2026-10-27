@@ -5,6 +5,8 @@ inheader: no
 permalink: /tehtavat1
 ---
 
+{% include paivitys_kesken.md %}
+
 Tämän viikon tehtävissä harjoitellaan ensin muutaman tärkeän ohjelmistokehityksen työkalun (_komentorivi, versionhallinta, riippuvuuksien hallinta, automatisoitu testaus, jatkuva integraatio_) käyttöä.
 
 ### Typoja tai epäselvyyksiä tehtävissä?

@@ -5,6 +5,7 @@ inheader: no
 permalink: /tehtavat4/
 ---
 
+{% include paivitys_kesken.md %}
 
 Tehtävissä tutustutaan riippuvuuksien "mockaamiseen" yksikkötesteissä. 
 
