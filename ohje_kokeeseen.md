@@ -22,7 +22,7 @@ Kannattaa huomata, että koe ja sen "oikeat vastaukset" perustuvat kurssimateria
 Koealueena kurssimateriaalin osat 1-5 sekä laskarit, paitsi
 
 - Git
-- poetry
+- uv
 - GitHub Actions
 - unittest
 - Robot/Selenium
