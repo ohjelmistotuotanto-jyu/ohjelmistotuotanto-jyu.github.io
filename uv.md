@@ -41,7 +41,7 @@ python --version
 
 Jos molemmissa tapauksissa versio on alle 3.14, ei hätää: uv osaa itse asentaa ja hallita Python-versioita, joten erillistä Python-asennusta ei välttämättä tarvita, katso alempaa.
 
-_Kurssilla käytetään uv:n versiota 0.13.5 (tai uudempaa). Versiossa 0.13.4 ja sitä vanhemmissa on kriittinen haavoittuvuus, joten jos koneellasi on vanhempi versio, se on ehdottomasti syytä päivittää komennolla `uv self update`!_
+{% include uv_varoitus.md %}
 
 ### Asennus
 

@@ -13,13 +13,13 @@
 title: Ohjelmistotuotanto JYU 2026
 email: petri.j.ihantola@jyu.fi
 description: >- # this means to ignore newlines until "baseurl:"
-baseurl: ''
-url: 'https://ohjelmistotuotanto-jyu.github.io'
+baseurl: ""
+url: "https://ohjelmistotuotanto-jyu.github.io"
 github_username: ihantola
-repo_url: 'https://github.com/ohjelmistotuotanto-jyu/ohjelmistotuotanto-jyu.github.io'
-repo_branch: 'master'
-tim_url: 'https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2026'
-stats_url: 'https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2026/tehtavat'
+repo_url: "https://github.com/ohjelmistotuotanto-jyu/ohjelmistotuotanto-jyu.github.io"
+repo_branch: "master"
+tim_url: "https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2026"
+stats_url: "https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2026/tehtavat"
 
 norppa: https://norppa.jyu.fi/targets/7131/feedback
 
@@ -33,49 +33,47 @@ header_pages:
   - miniprojekti.md
   - tehtavat.md
 
-
-
-python_exercise_repo_url: 'https://github.com/ohjelmistotuotanto-jyu/tehtavat'
-java_exercise_repo_url: 'https://github.com/ohjelmistotuotanto-jyu/syksy2021-java'
+python_exercise_repo_url: "https://github.com/ohjelmistotuotanto-jyu/tehtavat"
+java_exercise_repo_url: "https://github.com/ohjelmistotuotanto-jyu/syksy2021-java"
 
 moniv-dl:
-  - 'FAIL'
-  - 'sunnuntai 1.11. klo 23:59:00'
-  - 'sunnuntai 8.11. klo 23:59:00'
-  - 'sunnuntai 15.11. klo 23:59:00'
-  - 'sunnuntai 22.11. klo 23:59:00'
-  - 'sunnuntai 29.11. klo 23:59:00'
-  - 'ei tehtäviä'
-  - 'ei tehtäviä'
+  - "FAIL"
+  - "sunnuntai 1.11. klo 23:59:00"
+  - "sunnuntai 8.11. klo 23:59:00"
+  - "sunnuntai 15.11. klo 23:59:00"
+  - "sunnuntai 22.11. klo 23:59:00"
+  - "sunnuntai 29.11. klo 23:59:00"
+  - "ei tehtäviä"
+  - "ei tehtäviä"
 
 lask-dl:
-  - 'FAIL'
-  - 'maanantai 2.11. klo 23:59'
-  - 'maanantai 9.11. klo 23:59'
-  - 'maanantai 16.11. klo 23:59'
-  - 'maanantai 23.11. klo 23:59'
-  - 'ei tehtäviä'
-  - 'ei tehtäviä'
-  - 'ei tehtäviä'
+  - "FAIL"
+  - "keskiviikko 4.11. klo 23:59"
+  - "maanantai 9.11. klo 23:59"
+  - "maanantai 16.11. klo 23:59"
+  - "maanantai 23.11. klo 23:59"
+  - "ei tehtäviä"
+  - "ei tehtäviä"
+  - "ei tehtäviä"
 
 luennot:
-  - 'FAIL'
-  - 'tiistai 27.10. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'keskiviikko 28.10. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'tiistai 3.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'keskiviikko 4.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'tiistai 10.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'keskiviikko 11.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'tiistai 17.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'keskiviikko 18.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'tiistai 24.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'keskiviikko 25.11. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'tiistai 1.12. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'keskiviikko 2.12. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'tiistai 8.12. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'keskiviikko 9.12. klo 10:15 - 12:00 Ag B103 Auditorio 3'
-  - 'tiistai 15.12. klo 12:00 – 16.00 salissa Ag Aud3'
-  - 'keskiviikko 16.12. klo 8:15-12 salissa Ag Aud3'
+  - "FAIL"
+  - "tiistai 27.10. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "keskiviikko 28.10. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "tiistai 3.11. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "keskiviikko 4.11. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "tiistai 10.11. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "keskiviikko 11.11. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "tiistai 17.11. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "keskiviikko 18.11. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "tiistai 24.11. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "keskiviikko 25.11. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "tiistai 1.12. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "keskiviikko 2.12. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "tiistai 8.12. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "keskiviikko 9.12. klo 10:15 - 12:00 Ag B103 Auditorio 3"
+  - "tiistai 15.12. klo 12:00 – 16.00 salissa Ag Aud3"
+  - "keskiviikko 16.12. klo 8:15-12 salissa Ag Aud3"
 
 # Build settings
 markdown: kramdown

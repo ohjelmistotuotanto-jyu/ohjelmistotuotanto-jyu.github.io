@@ -5,7 +5,6 @@ inheader: no
 permalink: /tehtavat1
 ---
 
-{% include paivitys_kesken.md %}
 
 Tämän viikon tehtävissä harjoitellaan ensin muutaman tärkeän ohjelmistokehityksen työkalun (_komentorivi, versionhallinta, riippuvuuksien hallinta, automatisoitu testaus, jatkuva integraatio_) käyttöä.
 
@@ -233,9 +232,10 @@ _Huom. Mikäli esimerkkikuvissa näkyy vanhemman kurssiversion mukainen `poetry.
 
 Tämän kurssin ohjelmointitehtävissä käytetään Pythonia. Kurssilla käytetään Python-projektien riippuvuuksien _ja_ Python-version hallintaan [uv](/uv)-komentorivityökalua, joten aloitetaan asentamalla se.
 
+{% include uv_varoitus.md %}
+
 Asenna uv seuraamalla [uv-ohjeen](/uv#asennus) asennusosiota
 
-- Kurssilla käytetään uv:n versiota 0.13.5 (tai uudempaa). Versiossa 0.13.4 ja sitä vanhemmissa on kriittinen haavoittuvuus, joten jos koneellasi on vanhempi versio, se on ehdottomasti syytä päivittää komennolla `uv self update`
 - Jos kohtaat ongelmia, katso [täältä](/uv#ratkaisuja-yleisiin-ongelmiin) ratkaisuja joihinkin tyypillisiin ongelmatilanteisiin
 
 Kun uv on asennettu, sen avulla onnistuu myös kurssilla tarvittavan Python-version asentaminen, mitään erillistä Python-asennusta ei siis tarvita:
