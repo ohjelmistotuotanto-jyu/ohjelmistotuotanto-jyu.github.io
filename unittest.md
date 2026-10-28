@@ -50,15 +50,13 @@ class Maksukortti:
 Luo Labtooliin rekisteröimäsi repositorion hakemistoon _laskarit/viikko2_ hakemisto _maksukortti_. Suorita terminaalissa hakemiston sisällä tuttu, projektin alustamiseen vaadittava komento:
 
 ```bash
-poetry init --python "^3.10"
+uv init --python 3.14 --no-package
 ```
-
-Poetryn kysymillä projektin tiedoilla ei ole väliä, joten voit hyvin käyttää Poetryn ehdottamia tietoja.
 
 Asennetaan projektiin kehityksen aikaiseksi riippuvuudeksi [pytest](https://docs.pytest.org/en/stable/)-sovelluskehys, joka helpottaa testien suorittamista. Riippuvuuden asentaminen onnistuu samassa hakemistossa komennolla:
 
 ```bash
-poetry add pytest --group dev
+uv add pytest --dev
 ```
 
 Seuraavaksi muodosta _maksukortti_-hakemistoon seuraava rakenne:
@@ -76,7 +74,7 @@ maksukortti/
 Lisää tiedostoon _src/maksukortti.py_ edellä esitelty `Maksukortti`-luokan koodi.
 
 
-Yritetään seuraavaksi suorittaa testejä. Siirrytään virtuaaliympäristöön komennolla `poetry shell`, jonka jälkeen suoritetaan komento `pytest src`. Komennon suorittaminen antaa ymmärtää, ettei yhtään testiä ole suoritettu. Syy on yksinkertaisesti siinä, ettemme ole vielä toteuttaneet yhtään testiä.
+Yritetään seuraavaksi suorittaa testejä. Siirrytään virtuaaliympäristöön komennolla `source .venv/bin/activate` (tai Windows PowerShellissä `.venv\Scripts\activate`), jonka jälkeen suoritetaan komento `pytest src`. (Testit voisi suorittaa myös ilman virtuaaliympäristön aktivointia suoraan komennolla `uv run pytest src`.) Komennon suorittaminen antaa ymmärtää, ettei yhtään testiä ole suoritettu. Syy on yksinkertaisesti siinä, ettemme ole vielä toteuttaneet yhtään testiä.
 
 Toteutetaan <i>src/tests/maksukortti_test.py</i>-tiedostoon projektimme ensimmäinen testi. Tiedoston sisältö tulee olla seuraava:
 
@@ -354,10 +352,10 @@ Koska haarautumakattavuus antaa tyypillisesti realistisemman kuvan testien katta
 
 ### Testikattavuusraportti
 
-Testikattavuuden kerääminen testien suorituksesta onnistuu [coverage](https://coverage.readthedocs.io/en/latest/)-työkalun avulla. Sen asentamisen projektin kehityksen aikaiseksi riippuvuudeksi onnistuu tuttuun tapaan komennolla:
+Testikattavuuden kerääminen testien suorituksesta onnistuu [coverage](https://coverage.readthedocs.io/en/latest/)-työkalun avulla. Sen asentaminen projektin kehityksen aikaiseksi riippuvuudeksi onnistuu tuttuun tapaan komennolla:
 
 ```bash
-poetry add coverage --group dev
+uv add coverage --dev
 ```
 
 Testikattavuuden kerääminen `pytest src`-komennolla suoritetuista testeistä onnistuu virtuaaliympäristössä komennolla:
