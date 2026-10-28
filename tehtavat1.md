@@ -216,14 +216,16 @@ Haetaan sitten seuraavissa tehtävissä käytettävä koodi:
 - Siirrä paketin sisällä olevat tiedostot kloonattuun repositorioon siten, että **paketissa olevat tiedostot ja hakemistot tulevat repositorion juureen**
 - Repositoriosi sisältävän hakemiston tulee nyt näyttää seuraavalta
 
-![]({{ "/images/py-lh1-4-22.png" | absolute_url }})
+![]({{ "/images/lh1-1-25.png" | absolute_url }})
 
 - Lisää ja committoi zipistä puretut tavarat repositorioosi ja pushaa ne GitHubiin
 - Katso vielä kerran selaimella, että GitHubissa kaikki on ajan tasalla
 
 **Huomaa, että repositoriosi tulee näyttää tehtävän jälkeen suunnilleen seuraavalta:**
 
-![]({{ "/images/py-lh1-5.png" | absolute_url }})
+![]({{ "/images/varasto.png" | absolute_url }})
+
+_Huom. Mikäli esimerkkikuvissa näkyy vanhemman kurssiversion mukainen `poetry.lock`, uv:ta käytettäessä repositoriossa ei ole kyseistä tiedostoa, vaan `.python-version` sekä riippuvuuksien asennuksen yhteydessä syntyvä `uv.lock`._
 
 **Jos hakemisto _src_ ja tiedostot _pyproject.toml_ ym. eivät ole repositorion juuressa, siirrä ne sinne ennen kuin siirryt eteenpäin.**
 
@@ -233,7 +235,7 @@ Tämän kurssin ohjelmointitehtävissä käytetään Pythonia. Kurssilla käytet
 
 Asenna uv seuraamalla [uv-ohjeen](/uv#asennus) asennusosiota
 
-- Kurssilla käytetään uv:n versiota 0.13.5 (tai uudempaa). Jos koneellasi on vanhempi versio, se on syytä päivittää komennolla `uv self update`
+- Kurssilla käytetään uv:n versiota 0.13.5 (tai uudempaa). Versiossa 0.13.4 ja sitä vanhemmissa on kriittinen haavoittuvuus, joten jos koneellasi on vanhempi versio, se on ehdottomasti syytä päivittää komennolla `uv self update`
 - Jos kohtaat ongelmia, katso [täältä](/uv#ratkaisuja-yleisiin-ongelmiin) ratkaisuja joihinkin tyypillisiin ongelmatilanteisiin
 
 Kun uv on asennettu, sen avulla onnistuu myös kurssilla tarvittavan Python-version asentaminen, mitään erillistä Python-asennusta ei siis tarvita:
@@ -248,13 +250,13 @@ Koodin editointiin suosittelemme [Visual Studio Code](https://code.visualstudio.
 
 Ohjelmoinnin peruskursseilla olet saattanut suorittaa koodia painamalla VS Coden nuoli-painiketta, ja testejä painamalla silmä-painiketta. Ammattimaisessa ohjelmistokehityksessä koodin suorittaminen ja testaamisen on tapahduttava toistettavalla tavalla, ja siten että operaatiot pystytään suorittamaan millä tahansa koneella, _skriptatusti_ komentoriviltä, eli riippumatta VS Coden kaltaisista kehitysympäristöistä.
 
-Koodin suorittaminen komentoriviltä `python3`-komennolla ei itsessään ole kovin hankalaa. Ongelmia alkaa syntyä vasta, kun projekti tarvitsee ulkoisia _riippuvuuksia_ erilaisten asennettavien kirjastojen muodossa. Kirjastojen asennukseen ja hallintaan tarvitaan erilisiä työkaluja. Pythonin kohdalla on perinteisesti käytetty tähän tarkoitukseen [pip](https://pypi.org/project/pip/)-komentorivityökalua.
+Koodin suorittaminen komentoriviltä `python3`-komennolla ei itsessään ole kovin hankalaa. Ongelmia alkaa syntyä vasta, kun projekti tarvitsee ulkoisia _riippuvuuksia_ erilaisten asennettavien kirjastojen muodossa. Kirjastojen asennukseen ja hallintaan tarvitaan erillisiä työkaluja. Pythonin kohdalla on perinteisesti käytetty tähän tarkoitukseen [pip](https://pypi.org/project/pip/)-komentorivityökalua.
 
 Jotta samalla tietokoneella olevien projektien riippuvuuksissa ei syntyisi ristiriitoja, on käytössä usein niin kutsuttuja projektikohtaisia _virtuaaliympäristöjä_. Virtuaaliympäristöjä luodaan ja käytetään [venv](https://docs.python.org/3/library/venv.html)-moduulin kautta.
 
 Juuri asentamasi uv yhdistää molemmat työkalut: se asentaa ja hallinnoi projektin riippuvuuksia pipin tapaan ja luo projektille automaattisesti oman virtuaaliympäristön. Näin kaikki riippuvuuksien hallintaan liittyvä hoituu yhdellä työkalulla, eikä pipiä tai venv-moduulia tarvitse käyttää erikseen.
 
-Edellisessä tehtävässä lisättiin repositorioon uv-muodossa oleva varasto-projekti. Projekti sisältää erittäin yksinkertaisen varaston hallintaan soveltuvaa koodia. Varaston hallinnasta vastaa _src/varasto.py_-tiedossa määritelty luokka `Varasto`. Luokkaa käyttää _src/index.py_-tiedossa määritelty funktio `main`.
+Edellisessä tehtävässä lisättiin repositorioon uv-muodossa oleva varasto-projekti. Projekti sisältää erittäin yksinkertaisen varaston hallintaan soveltuvaa koodia. Varaston hallinnasta vastaa _src/varasto.py_-tiedostossa määritelty luokka `Varasto`. Luokkaa käyttää _src/index.py_-tiedostossa määritelty funktio `main`.
 
 Tutki uv-muotoisen projektin hakemistorakennetta esim. antamalla komento `tree` projektihakemiston juuressa (`tree` ei ole uv:hen liittyvä käsky vaan normaali shell-komento)
 
@@ -284,7 +286,7 @@ Käynnistä sovellus komennolla `uv run python3 src/index.py`
 
 - [Run](https://docs.astral.sh/uv/reference/cli/#uv-run)-komento suorittaa annetun komennon (tässä tapauksessa `python3 src/index.py`) virtuaaliympäristössä
 
-Siirry _virtuaaliympäristöön_ komennolla `source .venv/bin/activate`
+Siirry _virtuaaliympäristöön_ komennolla `source .venv/bin/activate` (Windows PowerShellissä `.venv\Scripts\activate` tai Git Bashissa `source .venv/Scripts/activate`)
 
 Suorita komento `python3 src/index.py`
 
@@ -331,7 +333,7 @@ Lisää projektin juurihakemistoon konfiguraatiotiedosto _.coveragerc_, jossa ke
 source = src
 ```
 
-Siirry virtuaaliympäristöön komennolla `source .venv/bin/activate`
+Siirry virtuaaliympäristöön komennolla `source .venv/bin/activate` (Windows PowerShellissä `.venv\Scripts\activate`)
 
 Suorita komento `coverage run --branch -m pytest`. Komento suorittaa testit ja kerää testien haarautumakattavuuden
 
@@ -367,7 +369,7 @@ Erillisen build-palvelimen avulla varmistetaan, että ohjelmisto toimii muuallak
 
 Nykyään alkaa olla yleistä, että erillisen build-palvelimen sijaan käytetään jotain verkossa olevaa "build-ohjelmistoa", jolloin softakehittäjien ei tarvitse huolehtia ollenkaan buildaukseen käytettävän palvelimen ja sen ohjelmistojen asentamisesta.
 
-KKurssilla käytetään GitHubiin sisäänrakennettua [Actions](https://github.com/features/actions)-ominaisuutta hoitamaan automatisoitu buildaus.
+Kurssilla käytetään GitHubiin sisäänrakennettua [Actions](https://github.com/features/actions)-ominaisuutta hoitamaan automatisoitu buildaus.
 
 Konfiguroidaan seuraavaksi GitHub Actions huolehtimaan projektistamme.
 
@@ -438,7 +440,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
-    - name: Install uv
+      - name: Install uv
         uses: astral-sh/setup-uv@v10.1.0
         with:
           python-version: "3.14"
@@ -456,7 +458,7 @@ Yksittäinen työ koostuu useista askelista, jotka on määritelty työn alla ko
 
 GitHub varaa työn askelien suorittamista varten virtuaalikoneen. Kohta [runs-on](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on) määrittelee minkälaisella käyttöjärjestelmällä työn askeleet suoritetaan. Esimerkkimme tapauksessa suoritusympäristö on Ubuntu Linux.
 
-Esimerkkimme tapauksessa työ koostuu viidestä askeleesta. Ensimmäinen askel
+Esimerkkimme tapauksessa työ koostuu neljästä askeleesta. Ensimmäinen askel
 
 ```yml
 - uses: actions/checkout@v5
@@ -595,12 +597,9 @@ Projektin lisäämisen jälkeen aukeavassa näkymässä oleva _Step 2_ sisältä
 
 Käytännössä Codecovin repository token on _avain_, jonka avulla palvelu tunnistaa sinut. Tällaisten avainten käytölle on tyypillistä, että niitä ei haluta kaikkien saataville julkiseen repositorioon. 
 
-Lisää nyt avain Github Actioneiden käyttöön [Codecovin dokumentaatiota](https://docs.codecov.com/docs/adding-the-codecov-token) seuraten. Laajemmin sailaisuuksien sisällyttämisestä GitHubiin on kuvattu [GitHubin dokumentaatiossa](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions).
-
+Lisää avain GitHub Actioneiden käyttöön [Codecovin dokumentaatiota](https://docs.codecov.com/docs/adding-the-codecov-token) seuraten. Laajemmin salaisuuksien sisällyttämisestä GitHubiin on kuvattu [GitHubin dokumentaatiossa](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions).
 
 Saamme muodostettua Codecovin ymmärtämän testikattavuusraportin käyttämällä `coverage html`-komennon sijaan komentoa `coverage xml`. Kyseinen komento muodostaa XML-muotoisen testikattavuusraportin. Lisätään GitHub Action -konfiguraatiomme loppuun kaksi uutta askelta:
-
-Lisätään GitHub Action -konfiguraatiomme loppuun kaksi uutta askelta:
 
 ```yml
 {% raw %}
@@ -615,14 +614,11 @@ Lisätään GitHub Action -konfiguraatiomme loppuun kaksi uutta askelta:
 
 **HUOM** rivit on sisennettävä samalle tasolle kuin muut stepit.
 
-Aiemmin codevoc ei vaatinut julkisten repositorioiden osalta upload tokenin käyttöä, mutta nykyisin tällainen tarvitaan. Käytännössä Codecovin upload token on avain, jonka avulla palvelu tunnistaa sinut. Tällaisten avainten käytölle on tyypillistä, että niitä ei haluta kaikkien saataville julkiseen repositorioon. Avaimen luominen ja lisääminen Github Actioneiden käyttöön on selitetty [Codecovin dokumentaatiossa](https://docs.codecov.com/docs/adding-the-codecov-token). Laajemmin sailaisuuksien sisällyttämisestä Githubiin on kuvattu
-[Githubin dokumentaatiossa](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions).
-
 Kertauksena:
 
-1. Luo avain Codecovin ohjeiden mukaan
-1. Siirrä avain GitHubin secretiksi (Githubin repossa settings -> secrets and variables / actions -> New repository secret -> nimeksi CODECOV_TOKEN ja arvoksi avain)
-1. Lisää yllä olevat vaiheet GitHub Action -konfiguraatiosio
+1. Kopioi avain Codecovin ohjeiden mukaan
+1. Siirrä avain GitHubin secretiksi (GitHubin repossa Settings -> Secrets and variables -> Actions -> New repository secret -> nimeksi `CODECOV_TOKEN` ja arvoksi avain)
+1. Lisää yllä olevat askeleet GitHub Action -konfiguraatioosi
 
 Kun seuraavan kerran koodi pushataan GitHubiin, ilmestyy Codecoviin koodin testikattavuusraportti:
 
@@ -632,7 +628,7 @@ Klikkailemalla tiedostojen nimiä, pääset katsomaan yksittäisten luokkien tes
 
 ![]({{ "/images/py-lh1-15-22.png" | absolute_url }})
 
-Käytännössä pyydämme nyt GitHub Actioneja suorittamaan ensin testit ja keräämään testikattavuuden (komennolla `uv run coverage run --branch -m pytest`), jonka jälkeen muodostetaan XML-muotoinen testikattavuusraportti (komennolla `uv run coverage xml`). Tämä testikattavuusraportti lähetetään Codeviin.
+Käytännössä pyydämme nyt GitHub Actioneja suorittamaan ensin testit ja keräämään testikattavuuden (komennolla `uv run coverage run --branch -m pytest`), jonka jälkeen muodostetaan XML-muotoinen testikattavuusraportti (komennolla `uv run coverage xml`). Tämä testikattavuusraportti lähetetään Codecoviin.
 
 GitHub Actionien loki näyttää miten askelten suoritus etenee:
 
@@ -642,7 +638,8 @@ Lisää repositoriosi README.md-tiedostoon myös Codecov-badge. Löydät badgen 
 
 Projektisi GitHub-sivun tulisi lopulta näyttää suunnilleen seuraavalta:
 
-![]({{ "/images/py-lh1-30-22.png" | absolute_url }})
+![]({{ "/images/ccov5.png" | absolute_url }})
+
 
 Huomaa, että GitHub Actionin ja Codecovin badget eivät päivity täysin reaaliajassa. Eli vaikka projektin testikattavuus nousisi, kestää hetken, ennen kuin badge näyttää tuoreen tilanteen.
 
