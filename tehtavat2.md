@@ -15,7 +15,9 @@ Tehtävissä tutustutaan koodin _staattiseen analyysin_ Pylint-työkalun avulla,
 
 {% include norppa.md %}
 
-{% include poetry_ongelma.md %}
+{% include uv_varoitus.md %}
+
+- Jos kohtaat ongelmia, katso [täältä](/uv#ratkaisuja-yleisiin-ongelmiin) ratkaisuja joihinkin tyypillisiin ongelmatilanteisiin
 
 ### 1. Pylint ja koodin staattinen analyysi
 
@@ -41,7 +43,7 @@ Helpoin tapa löytää sääntöjä on hakemalla sopivalla hakusanalla niitä do
 
 **Toimi nyt seuraavasti:**
 
-- Siirry virtuaaliympäristöön komennolla `poetry shell` ja suorita sen sisällä komento `pylint src`. Jos tarkistuksissa löytyy virheitä, korjaa ne
+- Suorita komento `uv run pylint src`. Jos tarkistuksissa löytyy virheitä, korjaa ne
 - Määrittele nyt tiedostoon _.pylintrc_ seuraavat säännöt (katso lista säännöistä pylintin [dokumentaatiosta](https://pylint.readthedocs.io/en/stable/user_guide/configuration/all-options.html#)):
 
   - Rivin pituus on maksimissaan 80 merkkiä
@@ -81,7 +83,7 @@ Nyt luotavan palautusrepositorion rakenne voi olla esimerkiksi seuraava:
 osa2
   riippuvuuksien-injektointi-1
   nhl-statistics-1
-  poetry-web
+  uv-web
 osa3
   login-robot
 ...
@@ -105,14 +107,14 @@ Kurssin ensimmäinen suunnittelumalli _riippuvuuksien injektointi_ (engl. depend
   - **Tämän jälkeen kannattaa kopioida projekti edellisessä tehtävässä luomasi palautusrepositorion sisälle**
   - **HUOM** lue 15 cm ylempää miten koodi kannattaa organisoida palautusrepositorion sisälle
 
-Tutustu riippuvuuksien injektointiin esimerkin avulla. Asenna projektin riippuvuudet sen juurihakemistossa (eli hakemistossa missä tiedosto _pyproject.toml_ sijaitsee) komennolla `poetry install`. Tämän jälkeen saat suoritettua koodin virtuaaliympäristön sisällä komennolla `python3 src/index.py`. Voit myös halutessasi suorittaa testit virtuaaliympäristön sisällä komennolla `pytest`. Jos unohtui miten virtuaaliympäristön sisälle päästään, kertaa asia viime viikon tehtävistä.
+Tutustu riippuvuuksien injektointiin esimerkin avulla. Asenna projektin riippuvuudet sen juurihakemistossa (eli hakemistossa missä tiedosto _pyproject.toml_ sijaitsee) komennolla `uv sync`. Tämän jälkeen saat suoritettua koodin virtuaaliympäristön sisällä komennolla `python3 src/index.py`. Voit myös halutessasi suorittaa testit virtuaaliympäristön sisällä komennolla `pytest`. Jos unohtui miten virtuaaliympäristön sisälle päästään, kertaa asia viime viikon tehtävistä. Vaihtoehtoisesti voit käyttää myös komentoja `uv run python3 src/index.py` ja `uv run pytest`
 
 ### 5. Riippuvuuksien injektointi osa 2: NHL-tilastot
 
 **Myös Tämä tehtävä tehdään juuri luomaasi palautusrepositorioon**
 
 - Kurssin [tehtävärepositorion]({{site.python_exercise_repo_url}}) hakemistossa _osa2/nhl-statistics-1_ on ohjelma, jonka avulla on mahdollista tutkia <https://nhl.com>-sivulla olevia tilastotietoja (vaihtamalla sovelluksen käyttämää URL:ia, voit katsoa eri kausien tilastoja)
-  - Asenna projektin riippuvuudet suorittamalla sen juurihakemistossa komento `poetry install`
+  - Asenna projektin riippuvuudet suorittamalla sen juurihakemistossa komento `uv sync`
 - Ohjelma koostuu kolmesta luokasta.
   - `StatisticsService` on palvelun tarjoava luokka, se tarjoaa metodit yhden pelaajan tietojen näyttämiseen, pistepörssin näyttämiseen ja yhden joukkueen pelaajien tietojen näyttämiseen
   - `Player` on luokka, jonka olioina `StatisticsService`-luokka käsittelee yksittäisen pelaajan tietoja
@@ -173,32 +175,31 @@ class TestStatisticsService(unittest.TestCase):
 
 Kun injektoit `PlayerReaderStub`-olion testissä `StatisticsService`-oliolle, palauttaa se aina saman pelaajalistan.
 
-### 7. Poetryn harjoittelua
+### 7. UV-harjoittelua
 
 **Myös Tämä tehtävä tehdään juuri luomaasi palautusrepositorioon, eli EI KÄYTETÄ viime viikon ohtuvarasto-repositoriota.**
 
-- Tee palautusrepositorioon hakemiston _osa2_ sisälle hakemisto _poetry-web_ tätä tehtävää varten
+- Tee palautusrepositorioon hakemiston _osa2_ sisälle hakemisto _uv-web_ tätä tehtävää varten
 
 {% include no_pip2.md %}
 
-Tässä tehtävässä harjoittelemme lisää Poetryn käyttöä ja tutustumme semanttiseen versiointiin. Apua tehtävän tekoon saa mm. [Poetry-ohjeesta](/poetry) ja [Poetryn dokumentaatiosta](https://python-poetry.org/docs/).
+Tässä tehtävässä harjoittelemme lisää uv:n käyttöä ja tutustumme semanttiseen versiointiin. Apua tehtävän tekoon saa mm. [uv-ohjeesta](/uv) ja [uv:n virallisesta dokumentaatiosta](https://docs.astral.sh/uv/).
 
-Kuvitellaan tilanne, jossa työskentelet ohjelmistokehittäjänä kehitystiimissä, joka on alkamassa kehittämään web-sovellusta. Olette päätyneet kehittämään sovelluksen Pythonilla ja käyttämään Poetrya riippuvuuksien hallinnassa.
+Kuvitellaan tilanne, jossa työskentelet ohjelmistokehittäjänä kehitystiimissä, joka on alkamassa kehittämään web-sovellusta. Olette päätyneet kehittämään sovelluksen Pythonilla ja käyttämään uv:ta riippuvuuksien hallinnassa.
 
 Tee seuraavat toimenpiteet:
 
-- Aluksi Poetry-pohjainen projekti täytyy alustaa. **Alusta projekti Poetryn avulla _poetry-web_ nimiseen hakemistoon tehtävien palautukseen käyttämäsi repositorion hakemiston viikko2 sisälle**. Muista käyttää alustuksessa komentoa `poetry init --python "^3.10"`, jotta projektin Python-version vaatimus asetetaan oikein.
-- Etsit Googlettamalla sopivia kirjastoja web-sovellusta varten ja törmäät [Flask](https://pypi.org/project/Flask/)-viitekehykseen. **Asenna Flask projektin riippuvuudeksi Poetryn avulla**
+- Aluksi uv-pohjainen projekti täytyy alustaa. **Alusta projekti uv:n  avulla _uv-web_ nimiseen hakemistoon tehtävien palautukseen käyttämäsi repositorion hakemiston viikko2 sisälle**. Muista käyttää alustuksessa komentoa `uv init --python 3.14`, jotta projektin Python-version vaatimus asetetaan oikein.
+- Etsit Googlettamalla sopivia kirjastoja web-sovellusta varten ja törmäät [Flask](https://pypi.org/project/Flask/)-viitekehykseen. **Asenna Flask projektin riippuvuudeksi uv:n avulla**
 - Sovelluksessa ilmenee ensimmäinen bugi. Syynä oli luultavasti se, ettei sovellukselle ole toteutettu vielä yhtään testiä. Päädyt käyttämään testauksessa [pytest](https://pypi.org/project/pytest/)-viitekehystä. **Asenna pytest projektin _kehityksen aikaiseksi riippuvuudeksi_**
   - Pohdi itseksesi, miksi on hyödyllistä määritellä riippuvuus erikseen kehityksen aikaiseksi riippuvuudeksi
 - Sovelluksessa käsitellään paljon JSON-muotoista dataa, joten päädyt etsimään sen serialisointiin ja deserialisointiin sopivia kirjastoja. Törmäät tarkoitukseen sopivaan kirjastoon nimeltä [jsonpickle](https://pypi.org/project/jsonpickle/). **Asenna jsonpickle projektin riippuvuudeksi**
 - Huomaat bugin jsonpickle-kirjastossa, joten alat tutkimaan sen GitHub repositorion [issueita](https://github.com/jsonpickle/jsonpickle/issues). Eräässä issuessa kerrotaan, että löytämäsi bugi ei ilmene kirjaston versiossa `2.2.0`. **Asenna jsonpickle-kirjastosta versio `2.2.0`**.
   - Tutustu _semanttiseen versiointiin_ [täällä](https://semver.org/)
   - Pohdi itseksesi, mitä hyötyjä semanttisesta versioinnista on. Jos kirjasto noudattaa semanttista versiointia, miksi kirjaston version `2.2.0` päivittäminen versioon `3.2.2` saattaa sisältää riskejä? Miksei samoja riskejä luultavasti ole version `3.0.3` kanssa?
-  - Versiovaatimuksissa on mukana usein `^`-, tai `~`-etuliite. Pohdi itseksesi, mitä näillä ilmaistaan. Asiaa käsitellään mm. [Poetryn dokumentaatiossa](https://python-poetry.org/docs/dependency-specification/)
 - Päätät, että jsonpickle-kirjastosta on ollut vain harmia ja voit helposti toteuttaa sen tarjoaman toiminnallisuuden itse. **Poista jsonpickle projektin riippuvuuksien joukosta**
 
-Palautettavasta _poetry-web_-hakemistosta ei tarvitse löytyä muita tiedostoja kuin _pyproject.toml_ ja _poetry.lock_.
+Palautettavasta _uv-web_-hakemistosta ei tarvitse löytyä muita tiedostoja kuin _pyproject.toml_ ja _uv.lock_.
 
 ### Bonus: VS coden konfigurointi
 
@@ -253,13 +254,13 @@ Konfiguroinnin voi tehdä myös luomalla kyseisen sisältöisen tiedoston suoraa
 
 Ohjelmistokehittäjälle tulee usein vastaan tilanne, jossa pitäisi löytää tiettyyn käyttötarkoitukseen sopiva kirjasto. Harjoittelemme kyseistä tilannetta tässä tehtävässä.
 
-[TOML](https://toml.io/en/) on eräs helppolukuinen datan esitysformaatti, jota käytetään usein konfiguraatiotiedostoissa, kuten Poetryn _pyproject.toml_-tiedostossa. [Kurssirepositorion]({{site.python_exercise_repo_url}}) hakemistosta _osa2/project-reader_ on pohja ohjelmalle, jonka tarkoituksena on lukea projektin tietoja annetusta osoitteesta löytyvästä _pyproject.toml_-tiedostosta.
+[TOML](https://toml.io/en/) on eräs helppolukuinen datan esitysformaatti, jota käytetään usein konfiguraatiotiedostoissa, kuten uv:n _pyproject.toml_-tiedostossa. [Kurssirepositorion]({{site.python_exercise_repo_url}}) hakemistosta _osa2/project-reader_ on pohja ohjelmalle, jonka tarkoituksena on lukea projektin tietoja annetusta osoitteesta löytyvästä _pyproject.toml_-tiedostosta.
 
 - **Kopioi aluksi projekti palautusrepositorioon hakemiston osa2 sisälle.**
 
-Tehtävänäsi on ensin löytää sopiva kirjasto, jonka avulla TOML-muotoisista merkkijonoista voi muodostaa Pythonin tietorakenteita. Voit hyödyntää tässä esimerkiksi [PyPI](https://pypi.org/)-sivuston hakua tai Googlea. PyPI:ssä eräs hyvä hakusana voisi olla esimerkiksi "toml". Tutustu kirjastojen kuvauksiin ja päättele sen perusteella, sopiiko kirjasto käyttötarkoitukseen. Kun löydät sopivan kirjaston, asenna se projektiin Poetryn avulla.
+Tehtävänäsi on ensin löytää sopiva kirjasto, jonka avulla TOML-muotoisista merkkijonoista voi muodostaa Pythonin tietorakenteita. Voit hyödyntää tässä esimerkiksi [PyPI](https://pypi.org/)-sivuston hakua tai Googlea. PyPI:ssä eräs hyvä hakusana voisi olla esimerkiksi "toml". Tutustu kirjastojen kuvauksiin ja päättele sen perusteella, sopiiko kirjasto käyttötarkoitukseen. Kun löydät sopivan kirjaston, asenna se projektiin uv:n avulla.
 
-**HUOM:** PyPI:n asennusohjeista löytyy usein pip-asennuksen ohje `pip install <kirjasto>`. Kaikki kirjastot pystyy kuitenkin asentamaan yhtä lailla Poetryn avulla komennolla `poetry add <kirjasto>`.
+**HUOM:** PyPI:n asennusohjeista löytyy usein pip-asennuksen ohje `pip install <kirjasto>`. Kaikki kirjastot pystyy kuitenkin asentamaan yhtä lailla uv:n avulla komennolla `uv add <kirjasto>`.
 
 Ota sen jälkeen kirjasto käyttöön projektin <i>src/project_reader.py</i>-tiedoston `ProjectReader`-luokan metodissa `get_project`. Metodin `content`-muuttujaan on tallennettu tiedoston sisältö:
 
