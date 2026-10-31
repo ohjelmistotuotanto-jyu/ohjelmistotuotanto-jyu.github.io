@@ -234,21 +234,6 @@ Näiden toimenpiteiden jälkeen voit suorittaa koodin VS Coden "play"-napilla:
 
 Oikein konfiguroitu VS Code mahdollistaa myös sen sisäänrakennetun debuggerin käytön. Jos debuggeri ei ole vielä tuttu, [täältä](https://ohjelmointi-23.mooc.fi/osa-4/1-vscode#debuggeri) ohje sen käyttöön.
 
-Workspacen konfigurointi luo tiedoston _poetry-web.code-workspace_ jonka sisältä seuraava
-
-```json
-{
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {}
-}
-```
-
-Konfiguroinnin voi tehdä myös luomalla kyseisen sisältöisen tiedoston suoraan projektin alle. Pythonin oikea versio on kuitenkin ehkä valittava itse. Komennon _poetry install_ tulee myös olla suoritettuna jotta kaikki toimisi.
-
 ### 8. Riippuvuuksien hyödyntäminen
 
 
