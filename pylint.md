@@ -14,15 +14,15 @@ Eräs Python-koodin staattisessa analyysissä laajasti käytetty työkalu on [Py
 
 ### Pylintin käyttöönotto projektissa
 
-Pylint on helppo ottaa käyttöön Poetry-projektissa. Aloitetaan asentamalla Pylint projektimme kehityksen aikaiseksi riippuvuudeksi:
+Pylint on helppo ottaa käyttöön uv-projektissa. Aloitetaan asentamalla Pylint projektimme kehityksen aikaiseksi riippuvuudeksi:
 
 ```
-poetry add pylint --group dev
+uv add --dev pylint
 ```
 
 Pylintille tulee määritellä joukko tarkistettavia [sääntöjä](https://pylint.readthedocs.io/en/stable/user_guide/checkers/features.html). Säännöt määritellään projektin juurihakemiston _.pylintrc_-tiedostossa. Luo kyseinen tiedosto ja kopioi sinne [tämän]({{site.python_exercise_repo_url}}/blob/main/osa2/varasto/.pylintrc) tiedoston sisältö. Tiedosto sisältää hieman muunnellun version Pylintin suosittelemasta konfiguraatiosta, jota voi katsella komennolla `pylint --generate-rcfile`.
 
-Pylintin laatutarkitukset voi suorittaa komentoriviltä siirtymällä ensin virtuaaliympäristöön komennolla `poetry shell` ja sen jälkeen suorittamalla komennon `pylint src`. Komento tulee suorittaa projektin juurihakemistossa, eli samassa hakemistossa missä _pyproject.toml_-tiedosto sijaitsee. Kyseinen komento suorittaa laatutarkitukset _src_ hakemistossa. Pylint antaa koodille "arvosanan" sen laadun mukaan, joka löytyy tulosteen lopusta:
+Pylintin laatutarkitukset voi suorittaa komentoriviltä siirtymällä ensin virtuaaliympäristöön komennolla `source .venv/bin/activate`, (Windows PowerShellissä `.venv\Scripts\activate`, Git Bashissa source `.venv/Scripts/activate`) ja sen jälkeen suorittamalla komennon `pylint src`. Voit ajaa suoraan myös komennon `uv run pylint src`. Komento tulee suorittaa projektin juurihakemistossa, eli samassa hakemistossa missä _pyproject.toml_-tiedosto sijaitsee. Kyseinen komento suorittaa laatutarkitukset _src_ hakemistossa. Pylint antaa koodille "arvosanan" sen laadun mukaan, joka löytyy tulosteen lopusta:
 
 ```
 Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
@@ -77,13 +77,13 @@ Jos integroinnin kanssa ilmenee ongelmia, tutustu Visual Studio Coden [ohjeisiin
 Tiettyjen laatukorjausten, kuten sisennysten ja liian pitkien koodirivien korjaaminen tuottaa välillä turhaa manuaalista työtä. Koodin automaattisessa formatoinnissa auttaa [autopep8](https://pypi.org/project/autopep8/)-kirjasto. Kirjasto formatoi koodin automaattisesti [PEP 8](https://www.python.org/dev/peps/pep-0008/)-tyyliohjeiden mukaisesti. Aloitetaan sen käyttö asentamalle se projektin riippuvuudeksi:
 
 ```bash
-poetry add autopep8 --group dev
+uv add --dev autopep8
 ```
 
 Tämän jälkeen voimme virtuaaliympäristössä formatoida _src_ hakemiston koodin komennolla:
 
 ```bash
-autopep8 --in-place --recursive src
+uv run autopep8 --in-place --recursive src
 ```
 
 Koodin formatointi onnistuu myös monissa editoreissa kätevästi yhdellä näppäinkomennolla. Ohje koodin formatointiin Visual Studio Codessa löytyy [täältä](https://code.visualstudio.com/docs/editor/codebasics#_formatting).
