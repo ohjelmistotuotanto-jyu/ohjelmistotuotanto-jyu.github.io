@@ -25,7 +25,7 @@
 ### Viikko 3
 
 - Luento 5: {{site.luennot[5]}} 
-  - [Vierailuluento: Ohjelmistotyön myyminen (Jaakko Vuolasto)](/osa3)
+  - [Ohjelmistotyön myyminen (Jaakko Vuolasto)](/osa3)
 - Luento 6: {{site.luennot[6]}} 
   - [Laadunhallinnan perusteet ja Ketterien menetelmien testauskäytänteet](/osa3)
 - Laskarit
