@@ -73,7 +73,7 @@ Varmista myös, että kun korjaat koodin, kaikki toimii taas moitteettomasti:
 
 ### 3. Palautusrepositorion luominen
 
-Seuraavat tehtävät palautetaan eri repositorioon, kuin aikaisemmissa tehtävissä käytetty ohtuvarasto. Luo siis ny **uusi repositorio**.
+Seuraavat tehtävät palautetaan eri repositorioon, kuin aikaisemmissa tehtävissä käytetty ohtuvarasto. Luo siis nyt **uusi repositorio**.
 
 Nyt luotavan palautusrepositorion rakenne voi olla esimerkiksi seuraava:
 
@@ -87,7 +87,7 @@ osa3
 ...
 ```
 
-Tätä tehtävää ei palaute tai arvostella.
+Tätä tehtävää ei palauteta tai arvostella.
 
 ### 4. Riippuvuuksien injektointi osa 1
 
