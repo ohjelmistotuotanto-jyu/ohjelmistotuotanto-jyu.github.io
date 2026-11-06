@@ -15,7 +15,9 @@ Tehtävässä tutustutaan Dockerin käyttöön, pull requestien tekoon ja hyväk
 
 {% include norppa.md %}
 
-{% include poetry_ongelma.md %}
+{% include uv_varoitus.md %}
+
+- Jos kohtaat ongelmia, katso [täältä](/uv#ratkaisuja-yleisiin-ongelmiin) ratkaisuja joihinkin tyypillisiin ongelmatilanteisiin
 
 ### Tehtävien palauttaminen
 
@@ -238,7 +240,7 @@ Lue [täällä](/robot_framework) oleva Robot Framework -johdanto ja tee siihen 
 
 Hae [kurssirepositorion]({{site.python_exercise_repo_url}}) hakemistossa _osa3/login-robot_ oleva projekti.
 
-- Kopioi projekti palatusrepositorioosi, hakemiston _osa3_ sisälle.
+- Kopioi projekti palautusrepositorioosi, hakemiston _osa3_ sisälle.
 
 Tutustu ohjelman rakenteeseen. Sovellus noudattaa ns. kerrosarkkitehtuuria. Sovelluksen käyttöliittymä on toteutettu luokkaan `App`, ja sovelluslogiikka luokkaan `UserService`.
 Eräs huomionarvoinen seikka on se, että `UserService`-olio ei tallenna suoraan `User`-oliota vaan epäsuorasti `UserRepository`-luokan olion kautta. Mistä on kysymys?
