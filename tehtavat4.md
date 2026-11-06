@@ -16,7 +16,9 @@ Tehtävissä tutustutaan riippuvuuksien "mockaamiseen" yksikkötesteissä.
 
 {% include norppa.md %}
 
-{% include poetry_ongelma.md %}
+{% include uv_varoitus.md %}
+
+- Jos kohtaat ongelmia, katso [täältä](/uv#ratkaisuja-yleisiin-ongelmiin) ratkaisuja joihinkin tyypillisiin ongelmatilanteisiin
 
 
 **Kaikki tämän viikon tehtävät palautetaan** jo edellisillä viikoilla käyttämääsi **palautusrepositorioon**, sinne tehtävän hakemiston _osa4_ sisälle. 
@@ -122,7 +124,7 @@ Kun `Mock`-oliot ovat tulleet tutuksi, voit sulkea terminaalin komennolla `exit(
 
 **Hae seuraavaksi [kurssirepositorion]({{site.python_exercise_repo_url}}) hakemistossa _osa4/mock-demo_ oleva projekti.**
 - Tässä tehtävässä ei tehdä mitään koodia, joten projektia ei ole tarvetta välttämättä palauttaa 
-- Voit halutessasi kopioida projektin palatusrepositorioosi, hakemiston osa4 sisälle.
+- Voit halutessasi kopioida projektin palautusrepositorioosi, hakemiston osa4 sisälle.
 
 Projekti on yksinkertainen verkkokauppa, jonka sovelluslogiikan totutettaa luokka `Kauppa`. Luokalla on riippuvuus `Pankki`- ja `Viitegeneraattori`-olioihin.
 
@@ -205,7 +207,7 @@ def test_kaytetaan_maksussa_palautettua_viitetta(self):
 
 Testin lopussa varmistetaan, että pankin `Mock`-oliota on kutsuttu oikeilla parametrinarvoilla, eli kolmantena parametrina tulee olla viitegeneraattorin palauttama arvo.
 
-Tutustu projektiin ja sen kaikkiin testeihin. Asenna projektin riippuvuudet komennolla `poetry install` ja suorita sen jälkeen testit virtuaaliympäristössä komennolla `pytest`. Riko jokin testi, esimerkiksi jokin edellä mainituista, muuttamalla sen ekspektaatiota esim. seuraavasti:
+Tutustu projektiin ja sen kaikkiin testeihin. Asenna projektin riippuvuudet komennolla `uv sync` ja suorita sen jälkeen testit virtuaaliympäristössä komennolla `pytest`. Riko jokin testi, esimerkiksi jokin edellä mainituista, muuttamalla sen ekspektaatiota esim. seuraavasti:
 
 ```python
 pankki_mock.maksa.assert_called_with(ANY, ANY, 1000)
@@ -218,7 +220,7 @@ Voit tutustua aiheeseen tarkemmin lukemalla mock-kirjaston [dokumentaatiota](htt
 ### 2. Yksikkötestaus ja riippuvuudet: mock-kirjasto, osa 2
 
 Hae [kurssirepositorion]({{site.python_exercise_repo_url}}) hakemistossa _osa4/maksukortti-mock_ oleva projekti.
-- Kopioi projekti palatusrepositorioosi, hakemiston osa4 sisälle.
+- Kopioi projekti palautusrepositorioosi, hakemiston osa4 sisälle.
 
 Tässä tehtävässä on tarkoitus testata ja täydentää luokkaa `Kassapaate`.
 
