@@ -261,7 +261,7 @@ Toinen testi varmistaa, että jos kortilla ei ole riittävästi rahaa, kassapä�
 
 **Testit eivät mene läpi. Korjaa kassapäätteen metodi `osta_lounas`.**
 
-**Muistutus** Maksukortin koodiin ei tehtävässä saa koskea ollenkaan! Maksukortin tilaa ei myöskään ole tarkoitus tutkia suoraan, koska Maksukortti on mock ei attribuuttien arvojen katsominen edes ole mahdollista/mielekästä.
+**Muistutus** Maksukortin koodiin ei tehtävässä saa koskea ollenkaan! Maksukortin tilaa ei myöskään ole tarkoitus tutkia testeissä suoraan, koska Maksukortti on mock ei attribuuttien arvojen katsominen edes ole mahdollista/mielekästä.
 
 **Tee tämän jälkeen samaa periaatetta noudattaen seuraavat testit:**
 
