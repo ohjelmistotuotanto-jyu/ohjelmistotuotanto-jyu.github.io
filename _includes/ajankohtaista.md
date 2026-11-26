@@ -6,4 +6,15 @@
     <li>Tervetuloa kurssille! Kurssi alkoi tiistaina 27.10.</li>
   </ul>
 
+  <ul>
+    <li>Tiistaina 1.12. ei ole luentoa, sillä saimme edellisellä luennolla käsiteltyä laajan skaalan ketterän ohjelmistokehityksen sekä tutkimustietoa ketterien menetelmien hyödyistä. Myöskään keskiviikkona 2.12. ei ole luentoa.</li>
+    <li>Tiistain 8.12. luennolla klo 1015-1200 on työkokemusta jo hankkineiden opiskelijoiden paneelikeskustelu.</li>
+    <li>Keskiviikkona 9.12. klo 1015-1200 on kaksi vierailevaa luennoitsijaa:
+      <ul>
+        <li>Vlad Stirbu, Jyväskylän yliopisto: AI native software engineering</li>
+        <li>Juuso Kari, Akamon</li>
+      </ul>
+    </li>
+  </ul>
+
 </div>
